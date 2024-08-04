@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/style_log.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" href="assests/Logotest.png" type="image/png">
+    <script src="Scripts/script_log.js"></script>
+    <style>
+        /* CSS do elemento switch */
+        .btn-container {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+        }
+
+        .btn-container i {
+            display: inline-block;
+            position: relative;
+            top: -9px;
+        }
+
+        label {
+            font-size: 12px;
+            color: #424242;
+            font-weight: 500;
+        }
+
+        .btn-color-mode-switch {
+            display: inline-block;
+            margin: 0px;
+            position: relative;
+        }
+
+        .btn-color-mode-switch > label.btn-color-mode-switch-inner {
+            margin: 0px;
+            width: 150px;
+            height: 30px;
+            background: #E0E0E0;
+            border-radius: 26px;
+            overflow: hidden;
+            position: relative;
+            transition: all 0.25s ease;
+        }
+
+        .btn-color-mode-switch > label.btn-color-mode-switch-inner:before {
+            content: attr(data-on);
+            position: absolute;
+            font-size: 12px;
+            font-weight: 500;
+            top: 7px;
+            right: 20px;
+        }
+
+        .btn-color-mode-switch > label.btn-color-mode-switch-inner:after {
+            content: attr(data-off);
+            width: 70px;
+            height: 16px;
+            background: #fff;
+            border-radius: 26px;
+            position: absolute;
+            left: 2px;
+            top: 2px;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0px 0px 6px -2px #111;
+            padding: 5px 0px;
+        }
+
+        .btn-color-mode-switch input[type="checkbox"] {
+            cursor: pointer;
+            width: 50px;
+            height: 25px;
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            z-index: 1;
+            margin: 0px;
+        }
+
+        .btn-color-mode-switch input[type="checkbox"]:checked + label.btn-color-mode-switch-inner {
+            background: #151515;
+            color: #fff;
+        }
+
+        .btn-color-mode-switch input[type="checkbox"]:checked + label.btn-color-mode-switch-inner:after {
+            content: attr(data-on);
+            left: 78px;
+            background: #3c3c3c;
+        }
+
+        .btn-color-mode-switch input[type="checkbox"]:checked + label.btn-color-mode-switch-inner:before {
+            content: attr(data-off);
+            right: auto;
+            left: 10px;
+        }
+
+        /* Adicionando a transição do fundo */
+        .btn-color-mode-switch input[type="checkbox"]:checked ~ .alert {
+            display: block;
+        }
+
+        .dark-preview {
+            background: #0d0d0d;
+        }
+
+        .white-preview {
+            background: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assests/G.png" alt="Logo do Site">
+        </div>
+        <div class="site-name">
+            <h1>Nome do Site</h1>
+        </div>
+    </header>
+    <main>
+        <div class="login-container">
+            <div class="btn-container">
+                <label class="switch btn-color-mode-switch">
+                    <input value="1" id="color_mode" name="color_mode" type="checkbox">
+                    <label class="btn-color-mode-switch-inner" data-off="Cadastro" data-on="Login" for="color_mode"></label>
+                </label>
+            </div>
+            <form id="loginForm">
+                <div class="inserir-campo">
+                    <label for="usuario">Username:</label>
+                    <input type="text" id="usuario" name="usuario" required>
+                </div>
+                <div class="inserir-campo">
+                    <label for="senha">Password:</label>
+                    <input type="password" id="senha" name="senha" required>
+                    <span class="alternar-senha" onclick="Alternarsenhavisivel()">
+                        <img src="/assests/olho-aberto.png" alt="mostrar a senha" id="imagem-alternar">
+                    </span>
+                </div>
+                <div class="inserir-campo" id="confirmacaoSenha">
+                    <label for="confirmar_senha" style="display:none">Confirm Password:</label>
+                    <input type="password" id="confirmar_senha" name="confirmar_senha" style="display:none">
+                </div>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </main>
+    <script>
+        // Função para alternar entre os modos de login e cadastro
+        document.addEventListener('DOMContentLoaded', function() {
+            const switchInput = document.getElementById('color_mode');
+
+            switchInput.addEventListener('change', function() {
+                const loginForm = document.getElementById('loginForm');
+                const confirmacaoSenha = document.getElementById('confirmacaoSenha');
+                
+                if (this.checked) {
+                    // Modo Login
+                    loginForm.setAttribute('action', 'login.php'); // Defina o arquivo PHP para login.php
+                    confirmacaoSenha.style.display = 'none';
+                    document.querySelector('label[for="confirmar_senha"]').style.display = 'none';
+                } else {
+                    // Modo Cadastro
+                    loginForm.setAttribute('action', 'cadastro.php'); // Defina o arquivo PHP para cadastro.php
+                    confirmacaoSenha.style.display = 'block';
+                    document.querySelector('label[for="confirmar_senha"]').style.display = 'block';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
+ <!--<link rel="icon" href="assests/Logotest.png" type="image/png">
+    <script src="Scripts/script_log.js"></script>-->

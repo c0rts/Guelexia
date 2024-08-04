@@ -1,0 +1,36 @@
+requisitos funcionais:
+-botões de navegação
+-tarefas clara
+-opção de seleção
+-feedback interativo
+-salvamento na nuvem
+-registro de tarefas feitas
+
+Requisitos não funcionais
+-Facilidade de acesso
+-design prático
+-opções de acessibilidade
+-segurança
+-fixação da leitura
+
+
+Create (Criar):
+
+Permitir que os usuários criem perfis individuais no aplicativo.
+Criar novas tarefas e atividades educacionais para os usuários realizarem.
+Capacidade de adicionar novos itens ao dicionário do aplicativo.
+Read (Ler):
+
+Visualizar tarefas disponíveis e descrições claras sobre cada uma delas.
+Acessar as lições já concluídas, juntamente com o feedback associado.
+Ler definições de palavras consultadas no dicionário, incluindo a pronúncia e a divisão em sílabas.
+Update (Atualizar):
+
+Permitir que os usuários atualizem seus perfis, incluindo informações como nome, idade e preferências de aprendizado.
+Editar anotações feitas no bloco de notas do diário.
+Atualizar configurações de acessibilidade, como tamanho de fonte e cores de fundo.
+Delete (Excluir):
+
+Excluir tarefas incompletas ou desnecessárias da lista de tarefas.
+Remover entradas do diário, se o usuário assim desejar.
+Excluir palavras específicas do dicionário, se necessário.

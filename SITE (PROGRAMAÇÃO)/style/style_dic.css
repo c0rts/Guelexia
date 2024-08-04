@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px;
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #e9ecef;
+}
+
+.logo img {
+    height: 30px;
+}
+
+.site-name {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.site-name h1 {
+    font-size: 24px;
+    color: #343a40;
+}
+
+.log-bnt img {
+    height: 25px; /* Ajuste conforme necessário */
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.log-bnt img:hover {
+    transform: scale(1.1);
+}
+

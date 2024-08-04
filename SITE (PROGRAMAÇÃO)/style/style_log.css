@@ -1,0 +1,173 @@
+/* Estilos gerais do CSS que você já tem */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px;
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #e9ecef;
+}
+
+.logo img {
+    height: 80px;
+    width: 60px;
+}
+
+.site-name {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.site-name h1 {
+    font-size: 24px;
+    color: #343a40;
+}
+
+/* Estilos específicos para o formulário de login e cadastro */
+.switch-container {
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.switch-label {
+    font-size: 18px;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    width: 150px;
+    height: 30px;
+    background: #E0E0E0;
+    border-radius: 26px;
+    overflow: hidden;
+    text-align: center;
+    line-height: 30px;
+    user-select: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.switch-label:before,
+.switch-label:after {
+    content: attr(data-off);
+    position: absolute;
+    font-size: 12px;
+    font-weight: 500;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: left 0.3s ease;
+}
+
+.switch-label:before {
+    left: 10px; /* Posição inicial do texto "Cadastrar" */
+}
+
+.switch-label:after {
+    left: 78px; /* Posição inicial do texto "Login" */
+}
+
+.switch-indicator {
+    position: absolute;
+    top: 50%;
+    left: 2px; /* Posição inicial da barra branca */
+    transform: translateY(-50%);
+    width: 70px; /* Largura da barra branca */
+    height: 30px;
+    background: #fff;
+    border-radius: 26px;
+    transition: left 0.3s ease;
+}
+
+.switch-container input[type="checkbox"] {
+    display: none;
+}
+
+.switch-container input[type="checkbox"]:checked + .switch-label:before {
+    left: 78px; /* Posição do texto "Cadastrar" quando o switch está ativado */
+}
+
+.switch-container input[type="checkbox"]:checked + .switch-label:after {
+    left: 10px; /* Posição do texto "Login" quando o switch está ativado */
+}
+
+.switch-container input[type="checkbox"]:checked + .switch-label + .switch-indicator {
+    left: 78px; /* Posição da barra branca quando o switch está ativado */
+}
+
+
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 20px auto;
+    width: 500px;
+    max-width: 100%;
+}
+
+.form-container form {
+    display: block;
+}
+
+.form-container form.hidden {
+    display: none;
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+}
+
+.inserir-campo {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.inserir-campo:last-child {
+    margin-bottom: 0;
+}
+
+.inserir-campo input[type="text"],
+.inserir-campo input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.inserir-campo input[type="password"].show-password {
+    width: calc(100% - 50px);
+}
+
+.alternar-senha {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}

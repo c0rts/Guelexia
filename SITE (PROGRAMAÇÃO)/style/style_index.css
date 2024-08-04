@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px;
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #e9ecef;
+}
+
+.logo img {
+    height: 80px;
+    width: 60PX;
+}
+
+.site-name {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.site-name h1 {
+    font-size: 24px;
+    color: #343a40;
+}
+
+/* Classe para a imagem de fundo */
+.background-image {
+    /* Propriedades para fazer a imagem ocupar a tela inteira */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Coloca a imagem atrás de todo o conteúdo */
+    /* Substitua 'url('caminho/para/sua/imagem.jpg')' com o caminho para sua imagem */
+    background-image: url('"../assests/Fundo"');
+    /* Define como a imagem será exibida */
+    background-size: cover; /* Cobrir toda a área */
+    background-position: center; /* Centralizar a imagem */
+    background-repeat: no-repeat; /* Evitar repetição */
+}
+
+.log-bnt img {
+    height: 25px; /* Ajuste conforme necessário */
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.log-bnt img:hover {
+    transform: scale(1.1);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+/*@keyframes shake {
+     0% { transform: translate(10px) rotate(20deg); }
+    10% { transform: translate(-10px)rotate(-20deg); }
+    20% { transform: translate(10px)rotate(20deg); }
+    30% { transform: translate(-10px)rotate(-20deg); }
+    40% { transform: translate(10px) rotate(20deg); }
+    50% { transform: translate(-10px)rotate(-20deg); }
+    60% { transform: translate(10px) rotate(20deg); }
+    70% { transform: translate(-10px)rotate(-20deg); }
+    80% { transform: translate(10px) rotate(20deg); }
+    90% { transform: translate(-10px) rotate(-20deg); }
+    100% { transform: translate(10px) rotate(20deg); }
+}*/
+.main-logo img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: 0 auto; /*centraliza a imagem horizontalmente*/
+    margin-bottom: 50px;
+    animation: shake 10s; /* Duração da animação */
+    animation-iteration-count: infinite; /* Repetir indefinidamente */
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    flex: 1 1 45%; /* Responsividade: dois botões por linha em telas médias */
+    max-width: 200px; /* Limite de largura máxima para botões */
+    margin: 5px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.settings-button {
+    margin-top: 10px;
+}
+
+.settings-button img{
+    padding: 5px 5px;
+    border-radius: 0px;
+    text-align: center;
+    height: 25px; /* Ajuste conforme necessário */
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.settings-button img:hover {
+transform: scale(1.2);
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .btn {
+        flex: 1 1 100%; /* Um botão por linha em telas pequenas */
+    }
+}
