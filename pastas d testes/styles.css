@@ -104,3 +104,12 @@ header {
 .image-btn:hover {
     transform: translateY(-5px); /* Levanta o botão quando o mouse está sobre ele */
 }
+
+.paragrafoAcertos, .contadorAcertos {
+    display: inline-block;
+    font-size: 40px;
+}
+
+.contadorAcertos {
+    color: green;
+}
