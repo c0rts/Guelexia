@@ -85,20 +85,11 @@ header {
 }
 
 .opcao_btn {
-    border: none;
-    background-color: transparent;
-    font-size: 20px;
-}
-
-.option {
     width: 180px; /* Largura das opções */
     height: 90px; /* Altura das opções */
-    border: 2px solid #000; /* Borda de 2px */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #fff;
-
+    border: 2px solid #000;
+    background-color: rgb(255, 255, 255);
+    font-size: 20px;
 }
 
 .image-btn {

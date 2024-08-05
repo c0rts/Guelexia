@@ -4,10 +4,8 @@ const imagens = [
     { caminho: 'imagens/Cubo.png', resposta: 'Cubo' },
     { caminho: 'imagens/Estrela.png', resposta: 'Estrela' },
 ];
-
-let botao0, botao1, botao2, botao3;
-
-let respostas = [];
+let botao0, botao1, botao2, botao3, contador;
+let valorAcertos = 0;
 
 // Função para gerar um índice aleatório
 function getRandomIndex(arr) {
@@ -19,13 +17,15 @@ function updateImage() {
     const imageElement = document.getElementById('imagem_qst');
     const imagen = imagens[getRandomIndex(imagens)];
     const randomImage = imagen.caminho;
-    respostas.push(imagen.resposta);
-    pegarRespostas();
+    let respostas = [imagen.resposta];
+    pegarRespostas(respostas);
     imageElement.src = randomImage;
-    Respostas_btn();
+    Respostas_btn(respostas);
+    contador.innerHTML = valorAcertos;
+    valorAcertos++;
 }
 
-function pegarRespostas() {
+function pegarRespostas(respostas) {
     // enquanto o tamanho do array de respostas for menor que 4 ele vai ficar fazendo essa rotina
     while (respostas.length < 4) {
         let imagen = imagens[getRandomIndex(imagens)];
@@ -35,11 +35,10 @@ function pegarRespostas() {
     }
 
     // Embaralhar as respostas 
-    respostas = respostas.sort(() => Math.random() - 0.5);
+    respostas.sort(() => Math.random() - 0.5);
 }
 
-
-function Respostas_btn() {
+function Respostas_btn(respostas) {
     // Seleciona os botões pelo ID e altera o texto deles
     botao0.textContent = respostas[0];
     botao1.textContent = respostas[1];
@@ -56,6 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
     botao1 = document.getElementById('opcao_btn_1');
     botao2 = document.getElementById('opcao_btn_2');
     botao3 = document.getElementById('opcao_btn_3');
+    contador = document.getElementById('contador');
 
     // Adiciona um ouvinte de evento a cada botão
     buttons.forEach(button => {
