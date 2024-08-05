@@ -6,6 +6,12 @@
 
 body {
     font-family: Arial, sans-serif;
+    background-image: url("../assests/fundo_escuro.png");
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    background-size:cover; /* Faz a imagem cobrir toda a área do elemento */
+    background-position: center; /* Centraliza a imagem */
+    background-attachment: fixed; /* Faz a imagem ficar fixa enquanto a página rola */
+    background-blend-mode: multiply; /* Define o modo de mesclagem entre a imagem e a cor de fundo */
 }
 
 header {
@@ -18,8 +24,8 @@ header {
 }
 
 .logo img {
-    height: 80px;
-    width: 60PX;
+    height: 40px;
+    width: 30PX;
 }
 
 .site-name {
@@ -32,22 +38,7 @@ header {
     color: #343a40;
 }
 
-/* Classe para a imagem de fundo */
-.background-image {
-    /* Propriedades para fazer a imagem ocupar a tela inteira */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1; /* Coloca a imagem atrás de todo o conteúdo */
-    /* Substitua 'url('caminho/para/sua/imagem.jpg')' com o caminho para sua imagem */
-    background-image: url('"../assests/Fundo"');
-    /* Define como a imagem será exibida */
-    background-size: cover; /* Cobrir toda a área */
-    background-position: center; /* Centralizar a imagem */
-    background-repeat: no-repeat; /* Evitar repetição */
-}
+
 
 .log-bnt img {
     height: 25px; /* Ajuste conforme necessário */

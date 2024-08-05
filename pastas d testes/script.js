@@ -4,6 +4,7 @@ const imagens = [
     { caminho: 'imagens/Cubo.png', resposta: 'Cubo' },
     { caminho: 'imagens/Estrela.png', resposta: 'Estrela' },
 ];
+
 let botao0, botao1, botao2, botao3, contador;
 let valorAcertos = 0;
 
