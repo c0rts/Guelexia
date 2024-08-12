@@ -58,7 +58,7 @@ header {
 }
 
 .main-box {
-    margin: 100px;
+    margin: 50px;
     width: 300px; /* Tamanho médio da div quadrada */
     height: 300px;
     border: 2px solid #000; /* Borda de 2px */
@@ -112,4 +112,28 @@ header {
 
 .contadorAcertos {
     color: green;
+}
+
+#dif_blc{
+    margin: 5px;
+    display: flex;
+    width:200px;
+    height: 35px;
+    flex-wrap: wrap;
+    gap: 10px; /* Espaçamento entre as opções */
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.dif:hover {
+    transform: scale(1.1)
+}
+
+.dif_btn {
+    width: 50px; /* Largura das opções */
+    height: 20px; /* Altura das opções */
+    border: 2px solid #000;
+    background-color: rgb(255, 255, 255);
+    font-size: 10px;
 }

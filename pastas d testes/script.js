@@ -1,9 +1,6 @@
-const imagens = [
-    { caminho: 'imagens/Bola.png', resposta: 'Bola' },
-    { caminho: 'imagens/Carro.png', resposta: 'Carro' },
-    { caminho: 'imagens/Cubo.png', resposta: 'Cubo' },
-    { caminho: 'imagens/Estrela.png', resposta: 'Estrela' },
-];
+import  imagens_1  from "./level1.js";
+
+console.log(imagens_1[0]);
 
 let botao0, botao1, botao2, botao3, contador;
 let valorAcertos = 0;
@@ -16,7 +13,7 @@ function getRandomIndex(arr) {
 // Função para atualizar a imagem
 function updateImage() {
     const imageElement = document.getElementById('imagem_qst');
-    const imagem = imagens[getRandomIndex(imagens)];
+    const imagem = imagens_1[getRandomIndex(imagens_1)];
     const randomImage = imagem.caminho;
     let respostasArray = [imagem.resposta];
 
@@ -32,7 +29,7 @@ function updateImage() {
 function pegarRespostas(respostasArray) {
     // enquanto o tamanho do array de respostas for menor que 4 ele vai ficar fazendo essa rotina
     while (respostasArray.length < 4) {
-        let imagem = imagens[getRandomIndex(imagens)];
+        let imagem = imagens_1[getRandomIndex(imagens_1)];
         if (!respostasArray.includes(imagem.resposta)) {
             respostasArray.push(imagem.resposta);
         }

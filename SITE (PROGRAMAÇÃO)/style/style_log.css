@@ -34,11 +34,14 @@ header {
     color: #343a40;
 }
 
-/* Estilos específicos para o formulário de login e cadastro */
-.switch-container {
+ /*Estilos específicos para o formulário de login e cadastro*/ 
+ .switch-container {
     position: relative;
+    display: flex;
     text-align: center;
     margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
 .switch-label {
@@ -57,19 +60,30 @@ header {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.switch-label:before,
-.switch-label:after {
+.switch-label:before{
     content: attr(data-off);
     position: absolute;
     font-size: 12px;
     font-weight: 500;
     top: 50%;
+    left: 10px; /* Ajuste conforme necessário */
+    transform: translateY(-50%);
+    transition: left 0.3s ease;
+}
+
+.switch-label:after {
+    content: attr(data-on);
+    position: absolute;
+    font-size: 12px;
+    font-weight: 500;
+    top: 50%;
+    left: 78px; /* Ajuste conforme necessário */
     transform: translateY(-50%);
     transition: left 0.3s ease;
 }
 
 .switch-label:before {
-    left: 10px; /* Posição inicial do texto "Cadastrar" */
+    left: 10px; /* Posição inicial do texto "Cadastrar"*/ 
 }
 
 .switch-label:after {
@@ -78,10 +92,11 @@ header {
 
 .switch-indicator {
     position: absolute;
+    display: inline;
     top: 50%;
-    left: 2px; /* Posição inicial da barra branca */
+    left: 2px;
     transform: translateY(-50%);
-    width: 70px; /* Largura da barra branca */
+    width: 70px;
     height: 30px;
     background: #fff;
     border-radius: 26px;
@@ -103,7 +118,6 @@ header {
 .switch-container input[type="checkbox"]:checked + .switch-label + .switch-indicator {
     left: 78px; /* Posição da barra branca quando o switch está ativado */
 }
-
 
 .form-container {
     background-color: #fff;
