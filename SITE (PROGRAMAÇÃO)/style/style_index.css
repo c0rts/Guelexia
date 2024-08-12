@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-image: url("../assests/fundo_escuro.png");
+    background-image: url("../assests/NOITE.png");
     background-repeat: no-repeat; /* Evita a repetição da imagem */
     background-size:cover; /* Faz a imagem cobrir toda a área do elemento */
     background-position: center; /* Centraliza a imagem */
