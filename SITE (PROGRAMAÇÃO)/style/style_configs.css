@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px;
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #e9ecef;
+}
+
+.logo img {
+    height: 40px;
+    width: 30px;
+}
+
+.site-name {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.site-name h1 {
+    font-size: 24px;
+    color: #343a40;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    flex: 1;
+}
+
+.container_perfil{    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: solid;
+    width: 500px;
+    margin: 20px;
+}
+
+.container_opções {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: solid;
+    width: 900px;
+    margin: 20px;
+}
+
+#tema{
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.light-theme {
+    background-image: url('../assests/fundo\ home.png'); /* Substitua pelo caminho da sua imagem de fundo claro */
+    color: black;
+}
+
+.dark-theme {
+    background-image: url('../assests/NOITE.png'); /* Substitua pelo caminho da sua imagem de fundo escuro */
+    color: white;
+}
+
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-picture {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin-bottom: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-edit {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+.form-section label {
+    margin-bottom: 5px;
+}
+
+.form-section input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-save {
+    background-color: #008CBA;
+    color: white;
+}
+
+.other-options {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.btn-logout {
+    background-color: #f44336;
+    color: white;
+}
+
+.btn-about {
+    background-color: #555;
+    color: white;
+}

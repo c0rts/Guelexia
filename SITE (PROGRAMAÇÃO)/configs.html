@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Configurações</title>
+    <link rel="stylesheet" href="style/style_configs.css">
+    <script src="Scripts/script_configs.js" type="module"></script>
+
+</head>
+<body>
+    <!-- Cabeçalho existente com display: flex -->
+    <header class="header">
+        <div class="logo">
+            <img src="assests/g.png" alt="Logo do Site">
+        </div>
+        <div class="site-name">
+            <h1>Nome do Site</h1>
+        </div>
+    </header>
+
+    <!-- Conteúdo da tela de configurações -->
+    <div class="main-content">
+        <div class="container_perfil">
+            <div class="profile-section">
+                <div class="profile-picture"></div>
+                <button class="btn btn-edit">Editar Foto</button>
+            </div>
+
+            <div class="form-section">
+                <label for="username">Nome de Usuário</label>
+                <input type="text" id="username" name="username" placeholder="Seu nome de usuário">
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="Seu e-mail">
+
+                <label for="password">Senha</label>
+                <input type="password" id="password" name="password" placeholder="Nova senha">
+
+                <button class="btn btn-save">Salvar Alterações</button>
+            </div>
+        </div>
+
+        <div class="opções_site">
+            <div class="container_opções">
+                <div class="form-section">
+                    <button id="tema">Mudar para Escuro</button>
+                    <label for="option1">Opção 1</label>
+                    <input type="text" id="option1" name="option1" placeholder="Configuração 1">
+
+                    <label for="option2">Opção 2</label>
+                    <input type="text" id="option2" name="option2" placeholder="Configuração 2">
+
+                    <label for="option3">Opção 3</label>
+                    <input type="text" id="option3" name="option3" placeholder="Configuração 3">
+
+                    <button class="btn btn-save">Salvar Configurações</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="other-options">
+        <button class="btn btn-logout">Sair</button>
+        <button class="btn btn-about">Sobre o Aplicativo</button>
+    </div>
+</body>
+</html>
