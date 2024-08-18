@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px;
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #e9ecef;
+}
+
+.logo img {
+    height: 40px;
+    width: 30px;
+}
+
+.site-name {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.site-name h1 {
+    font-size: 24px;
+    color: #343a40;
+}
+
+.log-bnt img {
+    height: 50px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.log-bnt img:hover {
+    transform: scale(1.1);
+}
+
+.container {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content:space-between;
+    text-align: center;
+    border: solid;
+    border-width: 100px;
+}
+
+#bloco_tarefa{
+    flex-direction:row;
+    margin: 40px;
+    display: flex;
+    width:800px;
+    height: 200px;
+    flex-wrap:wrap;
+    gap: 25px; /* Espaçamento entre as opções */
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.tarefa:hover {
+    transform: scale(1.1)
+}
+
+.tarefa_btn {
+    width: 300px; /* Largura das opções */
+    height: 600px; /* Altura das opções */
+    border: 2px solid #000;
+    background-color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
