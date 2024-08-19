@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url("../assests/fundo_escuro_g.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px;
+    background-color: #432651;
+    border-bottom: 2px solid #e9ecef;
+}
+
+.logo img {
+    height: 40px;
+    width: 30px;
+}
+
+.site-name {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.site-name h1 {
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.log-bnt img {
+    height: 25px; 
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.log-bnt img:hover {
+    transform: scale(1.1);
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+}
+
+#p1{
+    margin: 50px;
+    font-size: 25px;
+    color: #ffffff;
+}
+
+#p2{
+    font-size: 25px;
+    margin: 50px;
+    color: #ffffff;
+}
+
+#ft p{
+    text-align: center;
+    font-size: 25px;
+    color: #ffffff;
+}
+
+#ft img{
+    height: 800px;
+    width: 1000px;
+}
