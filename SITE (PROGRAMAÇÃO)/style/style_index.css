@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-   /* background-image: url("../assests/fundo_preto.jpeg");*/
+   background-image: url("../assests/fundo_preto.jpeg");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -19,7 +19,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 5px 15px;
-    background-color: rgba(255, 255, 255);
+    background-color: #432651;
     border-bottom: 2px solid #e9ecef;
 }
 
@@ -35,7 +35,7 @@ header {
 
 .site-name h1 {
     font-size: 24px;
-    color: #343a40;
+    color: #ffffff;
 }
 
 
@@ -70,7 +70,7 @@ main {
     100% { transform: translate(10px) rotate(20deg); }
 }*/
 .main-logo img {
-    padding-top: 100px ;
+    padding-top: 50px ;
     width: 100%;
     max-width: 700px;
     height: auto;
@@ -78,54 +78,43 @@ main {
     margin-bottom: 10px;
     animation: shake 10s; /* Duração da animação */
     animation-iteration-count: infinite; /* Repetir indefinidamente */
+    margin-bottom: 50px;
 }
 
 
 .button-container {
-    width: 210px;
+    width: 500px;
     height: 300px;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin: 100px;
     gap: 10px;
     border: 2px black solid;
     text-align: center;
+
 }
 
 .btn {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #ffffff;
     text-decoration: none;
     border-radius: 4px;
     text-align: center;
-    transition: background-color 0.5s ease;
+    justify-content: left;
+    transition: 0.5s ease;
     flex: 1 1 45%; /* Responsividade: dois botões por linha em telas médias */
-    width: 200px;
-    margin: 5px;
+    width:550px ;
+}
+
+.imgs{
+    height: 110px;
 }
 
 .btn:hover {
-    background-color: #0056b3;
-}
-
-.settings-button {
-    margin-top: 10px;
-}
-
-.settings-button img{
-    padding: 5px 5px;
-    border-radius: 0px;
-    text-align: center;
-    height: 25px; /* Ajuste conforme necessário */
-    cursor: pointer;
-    transition: transform 0.5s ease;
-}
-
-.settings-button img:hover {
-transform: scale(1.2);
+    background-color: #adabab1a;
+    scale: 1.1;
+    border-radius: 50px;
 }
 
 /* Estilos responsivos */

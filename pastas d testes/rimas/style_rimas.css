@@ -56,9 +56,25 @@ main {
 }
 
 #container{
-
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+    flex-direction: row;
+    gap: 500px;
 }
 
 .bloco_plvr{
-    
+    font-size: 25px ;
+    align-items: center;
+    flex-direction:column;
+    margin: 40px;
+    display: flex;
+    flex-wrap:nowrap;
+    gap: 10px;
+    justify-content: center;
+    transition: transform 0.5s ease;
+    width: 500px;
+    height: 600px;
+    border: 2px solid black;
 }

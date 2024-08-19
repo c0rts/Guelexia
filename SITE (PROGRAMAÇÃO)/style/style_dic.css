@@ -11,6 +11,12 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-image: url("../assests/fundo_escuro_g.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+    background-size: cover;
 }
 
 header {
@@ -18,7 +24,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 5px 15px;
-    background-color: rgba(255, 255, 255);
+    background-color: #432651;
     border-bottom: 2px solid #e9ecef;
 }
 
@@ -34,7 +40,7 @@ header {
 
 .site-name h1 {
     font-size: 24px;
-    color: #343a40;
+    color: #ffffff;
 }
 
 .log-bnt img {
@@ -56,6 +62,7 @@ main {
 }
 
 #container {
+    background-color: white;
     position: relative;
     display: flex;
     align-items: center;
