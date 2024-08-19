@@ -11,19 +11,26 @@
 <body>
     <header>
         <div class="logo">
-            <img src="assests/Logotest.png" alt="Logo do Site">
+            <a href="index.html"><img src="assests/g.png" alt="Logo do Site"></a>
         </div>
         <div class="site-name">
-            <h1>Nome do Site</h1>
+            <h1>Dicionário</h1>
         </div>
         <div class="log-bnt">
             <a href="login.html"><img src="assests/perfil.png"></a>
         </div>
     </header>
     <main>
-        <label for="palavra">Digite uma palavra:</label>
-        <input type="text" id="palavra" name="palavra">
-        <button id="bntconfirma" onclick="confirmaPlvr()">Confirmar</button>
+        <div id="container">
+            <div id="pergunta">
+                <label for="palavra">Digite uma palavra:</label>
+                <input type="text" id="palavra" name="palavra">
+                <button id="btn_top" onclick="confirmaPlvr()">Confirmar</button>
+            </div>
+            <div id="resposta">
+                <p>-Definição-</p>
+            </div>
+        </div>
     </main>
 </body>
 </html>

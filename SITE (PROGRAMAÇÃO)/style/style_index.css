@@ -6,12 +6,12 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-image: url("../assests/NOITE.png");
-    background-repeat: no-repeat; /* Evita a repetição da imagem */
-    background-size:cover; /* Faz a imagem cobrir toda a área do elemento */
-    background-position: center; /* Centraliza a imagem */
-    background-attachment: fixed; /* Faz a imagem ficar fixa enquanto a página rola */
-    background-blend-mode: multiply; /* Define o modo de mesclagem entre a imagem e a cor de fundo */
+   /* background-image: url("../assests/fundo_preto.jpeg");*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+    background-size: cover;
 }
 
 header {
@@ -19,7 +19,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 5px 15px;
-    background-color: #f8f9fa;
+    background-color: rgba(255, 255, 255);
     border-bottom: 2px solid #e9ecef;
 }
 
@@ -41,7 +41,7 @@ header {
 
 
 .log-bnt img {
-    height: 25px; /* Ajuste conforme necessário */
+    height: 25px; 
     cursor: pointer;
     transition: transform 0.5s ease;
 }
@@ -70,20 +70,28 @@ main {
     100% { transform: translate(10px) rotate(20deg); }
 }*/
 .main-logo img {
+    padding-top: 100px ;
     width: 100%;
-    max-width: 500px;
+    max-width: 700px;
     height: auto;
     margin: 0 auto; /*centraliza a imagem horizontalmente*/
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     animation: shake 10s; /* Duração da animação */
     animation-iteration-count: infinite; /* Repetir indefinidamente */
 }
 
+
 .button-container {
+    width: 210px;
+    height: 300px;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    flex-direction: column;
     justify-content: center;
+    margin: 100px;
     gap: 10px;
+    border: 2px black solid;
+    text-align: center;
 }
 
 .btn {
@@ -93,9 +101,9 @@ main {
     text-decoration: none;
     border-radius: 4px;
     text-align: center;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.5s ease;
     flex: 1 1 45%; /* Responsividade: dois botões por linha em telas médias */
-    max-width: 200px; /* Limite de largura máxima para botões */
+    width: 200px;
     margin: 5px;
 }
 

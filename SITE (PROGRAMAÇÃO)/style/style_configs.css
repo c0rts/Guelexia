@@ -69,15 +69,15 @@ header {
     cursor: pointer;
 }
 
-.light-theme {
-    background-image: url('../assests/fundo\ home.png'); /* Substitua pelo caminho da sua imagem de fundo claro */
+/*.light-theme {
+    background-image: url('../assests/fundo\ home.png'); /* Substitua pelo caminho da sua imagem de fundo claro 
     color: black;
 }
 
 .dark-theme {
-    background-image: url('../assests/NOITE.png'); /* Substitua pelo caminho da sua imagem de fundo escuro */
+    background-image: url('../assests/NOITE.png'); /* Substitua pelo caminho da sua imagem de fundo escuro 
     color: white;
-}
+}*/
 
 .profile-section {
     display: flex;
@@ -117,6 +117,7 @@ header {
 
 .form-section label {
     margin-bottom: 5px;
+    padding: 5px;
 }
 
 .form-section input {
