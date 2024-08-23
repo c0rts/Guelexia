@@ -1,36 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    display: flex;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    border-bottom: 1.5px solid #e9ecef;
+}
+
+.logo img {
+    height: 80px;
+    width: 60px;
+}
+
+.site-name {
+    flex-grow: 0.5;
+    text-align: center;
+}
+
+.site-name h1 {
+    font-size: 24px;
+    color: #343a40;
+    text-align: center;
+}
+
+.log-bnt img {
+    height: 25px; /* Ajuste conforme necessário */
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.log-bnt img:hover {
+    transform: scale(1.1);
 }
 
 .container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 300px;
-    position: relative;
-}
-
-.box {
-    display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #fff;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    position: relative;
-    z-index: 1; /* Garantir que as caixas fiquem acima do canvas */
+    justify-content: center;
+    text-align: center;
 }
 
-canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
+.main-box {
+    margin: 50px;
+    width: 300px; /* Tamanho médio da div quadrada */
+    height: 300px;
+    border: 2px solid #000; /* Borda de 2px */
+    margin-bottom: 20px; /* Espaço entre a div principal e as opções */
+    display:flex;
+    overflow: hidden;       
+    ;
+}
+
+#opcoes_blc{
+    margin: 40px;
+    display: flex;
+    width:450px;
+    height: 200px;
+    flex-wrap: wrap;
+    gap: 25px; /* Espaçamento entre as opções */
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.option:hover {
+    transform: scale(1.1)
+}
+
+.opcao_btn {
+    width: 180px; /* Largura das opções */
+    height: 90px; /* Altura das opções */
+    border: 2px solid #000;
+    background-color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+.image-btn {
+    width: 120px; /* Largura dos botões */
+    height: 40px; /* Altura dos botões */
+    border: 2px solid #000;
+    background-color: #fff;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.image-btn:hover {
+    transform: translateY(-5px); /* Levanta o botão quando o mouse está sobre ele */
+}
+
+.paragrafoAcertos, .contadorAcertos {
+    display: inline-block;
+    font-size: 40px;
+}
+
+.contadorAcertos {
+    color: green;
+}
+
+#dif_blc{
+    margin: 5px;
+    display: flex;
+    width:200px;
+    height: 35px;
+    flex-wrap: wrap;
+    gap: 10px; /* Espaçamento entre as opções */
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.dif:hover {
+    transform: scale(1.1)
+}
+
+.dif_btn {
+    width: 80px; /* Largura das opções */
+    height: 20px; /* Altura das opções */
+    border: 2px solid #000;
+    background-color: rgb(255, 255, 255);
+    font-size: 10px;
 }

@@ -1,34 +1,95 @@
-const check1 = document.getElementById('check1');
-const check2 = document.getElementById('check2');
-const canvas = document.getElementById('lineCanvas');
-const ctx = canvas.getContext('2d');
+import  imagens_1  from "./_level1.js";
+const imagens = [
 
-// Ajustar o tamanho do canvas
-function adjustCanvas() {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+];
+console.log(imagens_1[0]);
+
+let botao0, botao1, botao2, botao3, contador;
+let valorAcertos = 0;
+
+// Função para gerar um índice aleatório
+function getRandomIndex(arr) {
+    return Math.floor(Math.random() * arr.length);
 }
 
-// Desenhar a linha
-function drawLine() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height); // Limpar o canvas
-    if (check1.checked && check2.checked) {
-        const box1 = document.getElementById('box1').getBoundingClientRect();
-        const box2 = document.getElementById('box2').getBoundingClientRect();
+// Função para atualizar a imagem
+function updateImage() {
+    const imageElement = document.getElementById('imagem_qst');
+    const imagem = imagens_1[getRandomIndex(imagens_1)];
+    const randomImage = imagem.caminho;
+    let respostasArray = [imagem.resposta];
 
-        ctx.beginPath();
-        ctx.moveTo(box1.right, box1.top + box1.height / 2); // Início da linha (lado direito da primeira caixa)
-        ctx.lineTo(box2.left, box2.top + box2.height / 2);  // Fim da linha (lado esquerdo da segunda caixa)
-        ctx.strokeStyle = '#007bff';
-        ctx.lineWidth = 2;
-        ctx.stroke();
+    pegarRespostas(respostasArray);
+    respostasBotoes(respostasArray);
+    respostaCerta(imagem.resposta);
+
+    imageElement.src = randomImage;
+
+    contador.innerHTML = valorAcertos;
+}
+
+function pegarRespostas(respostasArray) {
+    // enquanto o tamanho do array de respostas for menor que 4 ele vai ficar fazendo essa rotina
+    while (respostasArray.length < 4) {
+        let imagem = imagens_1[getRandomIndex(imagens_1)];
+        if (!respostasArray.includes(imagem.resposta)) {
+            respostasArray.push(imagem.resposta);
+        }
     }
+
+    // Embaralhar as respostas 
+    respostasArray.sort(() => Math.random() - 0.5);
 }
 
-// Ajustar o tamanho do canvas quando a janela é redimensionada
-window.addEventListener('resize', adjustCanvas);
-adjustCanvas();
+function respostasBotoes(respostasArray) {
+    // Seleciona os botões pelo ID e altera o texto deles
+    botao0.textContent = respostasArray[0];
+    botao1.textContent = respostasArray[1];
+    botao2.textContent = respostasArray[2];
+    botao3.textContent = respostasArray[3];
+}
 
-// Adicionar eventos para desenhar a linha quando as caixas são marcadas/desmarcadas
-check1.addEventListener('change', drawLine);
-check2.addEventListener('change', drawLine);
+function removerRespostasBotoes() {
+
+    let botoes = [botao0, botao1, botao2, botao3];
+    botoes.forEach(botao => { // clona um botão e substitui o botão original pelo seu clone, isso faz com que remova o evento que o botão que foi clonado tinha
+        let novoBotao = botao.cloneNode(true);
+        botao.parentNode.replaceChild(novoBotao, botao);
+    });
+
+    // Reatribuir os novos botões aos identificadores
+    botao0 = document.getElementById('opcao_btn_0');
+    botao1 = document.getElementById('opcao_btn_1');
+    botao2 = document.getElementById('opcao_btn_2');
+    botao3 = document.getElementById('opcao_btn_3');
+}
+
+function respostaCerta(respostaCerta) {
+    removerRespostasBotoes();
+
+    let botoes = [botao0, botao1, botao2, botao3];
+
+    botoes.forEach(botao => {
+        if (botao.textContent == respostaCerta) { // se o botão clicado for o certo ele adiciona ao contador
+            botao.addEventListener('click', () => {
+                valorAcertos++;
+                updateImage();
+            });
+        } else { // senão ele apenas troca a imagem e troca a resposta, sem adicionar ao contador
+            botao.addEventListener('click', updateImage);
+        }
+    });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+
+    // Seleciona um por um os botões após o carregamento completo do context do site
+    botao0 = document.getElementById('opcao_btn_0');
+    botao1 = document.getElementById('opcao_btn_1');
+    botao2 = document.getElementById('opcao_btn_2');
+    botao3 = document.getElementById('opcao_btn_3');
+    contador = document.getElementById('contador');
+
+    // Atualiza a imagem quando a página carrega
+    updateImage();
+});
