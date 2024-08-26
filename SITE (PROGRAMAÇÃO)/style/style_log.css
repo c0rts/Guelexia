@@ -8,6 +8,12 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
+    background-image: url("../assests/fundo_escuro_g.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+    background-size: cover;
 }
 
 header {
@@ -15,13 +21,13 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 5px 15px;
-    background-color: #f8f9fa;
+    background-color: #432651;
     border-bottom: 2px solid #e9ecef;
 }
 
 .logo img {
-    height: 80px;
-    width: 60px;
+    height: 40px;
+    width: 30PX;
 }
 
 .site-name {
@@ -31,11 +37,12 @@ header {
 
 .site-name h1 {
     font-size: 24px;
-    color: #343a40;
+    color: #ffffff;
 }
 
  /*Estilos específicos para o formulário de login e cadastro*/ 
  .switch-container {
+    margin-top: 5px;
     position: relative;
     display: flex;
     text-align: center;
@@ -167,9 +174,14 @@ header {
 .alternar-senha {
     cursor: pointer;
     position: absolute;
-    right: 10px;
-    top: 50%;
     transform: translateY(-50%);
+    top: 35%;
+    right: 32.5%;
+}
+
+.alternar-senha img{
+    height: 20px;
+    width: 20px;
 }
 
 button {
