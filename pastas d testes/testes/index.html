@@ -3,21 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conectar Caixas</title>
+    <title>Jogo de Rimas</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="box" id="box1">
-            <input type="checkbox" id="check1">
-            <label for="check1">Caixa 1</label>
+    <div class="game-container">
+        <div class="left-list">
+            <div class="word" data-word="casa">Casa</div>
+            <div class="word" data-word="mato">Mato</div>
+            <div class="word" data-word="faca">Faca</div>
         </div>
-        <div class="box" id="box2">
-            <input type="checkbox" id="check2">
-            <label for="check2">Caixa 2</label>
+        <div class="right-list">
+            <div class="word" data-word="asa">Asa</div>
+            <div class="word" data-word="gato">Gato</div>
+            <div class="word" data-word="traca">Traça</div>
         </div>
     </div>
-    <canvas id="lineCanvas"></canvas>
+    <div id="score">Pontos: 0</div>
     <script src="script.js"></script>
 </body>
 </html>

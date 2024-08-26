@@ -1,36 +1,32 @@
-body {
+.game-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    justify-content: space-around;
+    margin-top: 50px;
 }
 
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 300px;
-    position: relative;
-}
-
-.box {
+.left-list, .right-list {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color: #fff;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    position: relative;
-    z-index: 1; /* Garantir que as caixas fiquem acima do canvas */
 }
 
-canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
+.word {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #000;
+    cursor: pointer;
+    user-select: none;
+}
+
+.word.selected {
+    background-color: #00f;
+    color: #fff;
+}
+
+.word.error {
+    animation: errorBlink 0.5s;
+}
+
+@keyframes errorBlink {
+    0%, 100% { background-color: #f00; color: #fff; }
+    50% { background-color: #fff; color: #f00; }
 }

@@ -1,34 +1,74 @@
-const check1 = document.getElementById('check1');
-const check2 = document.getElementById('check2');
-const canvas = document.getElementById('lineCanvas');
-const ctx = canvas.getContext('2d');
+let selectedWordLeft = null;
+let selectedWordRight = null;
+let score = 0;
 
-// Ajustar o tamanho do canvas
-function adjustCanvas() {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+const wordsLeft = document.querySelectorAll('.left-list .word');
+const wordsRight = document.querySelectorAll('.right-list .word');
+const scoreDisplay = document.getElementById('score');
+
+// Lista de rimas predefinida
+const rhymePairs = {
+    "casa": "asa",
+    "mato": "gato",
+    "faca": "traca"
+};
+
+function resetSelection() {
+    if (selectedWordLeft) selectedWordLeft.classList.remove('selected');
+    if (selectedWordRight) selectedWordRight.classList.remove('selected');
+    selectedWordLeft = null;
+    selectedWordRight = null;
 }
 
-// Desenhar a linha
-function drawLine() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height); // Limpar o canvas
-    if (check1.checked && check2.checked) {
-        const box1 = document.getElementById('box1').getBoundingClientRect();
-        const box2 = document.getElementById('box2').getBoundingClientRect();
+function checkRhyme() {
+    const leftWord = selectedWordLeft.getAttribute('data-word');
+    const rightWord = selectedWordRight.getAttribute('data-word');
 
-        ctx.beginPath();
-        ctx.moveTo(box1.right, box1.top + box1.height / 2); // Início da linha (lado direito da primeira caixa)
-        ctx.lineTo(box2.left, box2.top + box2.height / 2);  // Fim da linha (lado esquerdo da segunda caixa)
-        ctx.strokeStyle = '#007bff';
-        ctx.lineWidth = 2;
-        ctx.stroke();
+    if (rhymePairs[leftWord] === rightWord) {
+        score++;
+        scoreDisplay.textContent = `Pontos: ${score}`;
+        selectedWordLeft.classList.add('selected');
+        selectedWordRight.classList.add('selected');
+        setTimeout(() => {
+            selectedWordLeft.style.visibility = 'hidden';
+            selectedWordRight.style.visibility = 'hidden';
+            resetSelection();
+        }, 1000);
+    } else {
+        selectedWordLeft.classList.add('error');
+        selectedWordRight.classList.add('error');
+        setTimeout(() => {
+            selectedWordLeft.classList.remove('error');
+            selectedWordRight.classList.remove('error');
+            resetSelection();
+        }, 500);
     }
 }
 
-// Ajustar o tamanho do canvas quando a janela é redimensionada
-window.addEventListener('resize', adjustCanvas);
-adjustCanvas();
+// Adicionar eventos para palavras do lado esquerdo
+wordsLeft.forEach(word => {
+    word.addEventListener('click', () => {
+        if (selectedWordLeft) {
+            selectedWordLeft.classList.remove('selected');
+        }
+        selectedWordLeft = word;
+        word.classList.add('selected');
+        if (selectedWordRight) {
+            checkRhyme();
+        }
+    });
+});
 
-// Adicionar eventos para desenhar a linha quando as caixas são marcadas/desmarcadas
-check1.addEventListener('change', drawLine);
-check2.addEventListener('change', drawLine);
+// Adicionar eventos para palavras do lado direito
+wordsRight.forEach(word => {
+    word.addEventListener('click', () => {
+        if (selectedWordRight) {
+            selectedWordRight.classList.remove('selected');
+        }
+        selectedWordRight = word;
+        word.classList.add('selected');
+        if (selectedWordLeft) {
+            checkRhyme();
+        }
+    });
+});
