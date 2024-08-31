@@ -3,54 +3,23 @@ let selectedWordRight = null;
 let score = 0;
 
 const rhymePairs = [
-    {par1: "estrela", par2: "constela"},
-    {par1: "planeta", par2: "orbita"},
-    {par1: "galaxia", par2: "via"},
-    {par1: "cometa", par2: "estrela"},
-    {par1: "astronauta", par2: "foguete"},
-    {par1: "nave", par2: "espacial"},
-    {par1: "terra", par2: "lua"},
-    {par1: "satélite", par2: "orbital"},
-    {par1: "buraco", par2: "negro"},
-    {par1: "nebulosa", par2: "pó"},
-    {par1: "meteoro", par2: "chuva"},
-    {par1: "gravidade", par2: "flutua"},
-    {par1: "cinturão", par2: "asteroide"},
-    {par1: "sol", par2: "luz"},
-    {par1: "eclipse", par2: "sombra"},
-    {par1: "horizonte", par2: "eventos"},
-    {par1: "galáxia", par2: "andromeda"},
-    {par1: "expansão", par2: "universo"},
-    {par1: "luz", par2: "velocidade"},
-    {par1: "estrela", par2: "cadente"},
-    {par1: "big", par2: "bang"},
-    {par1: "cosmos", par2: "infinitos"},
-    {par1: "via", par2: "láctea"},
-    {par1: "rover", par2: "marte"},
-    {par1: "quasar", par2: "energia"},
-    {par1: "singularidade", par2: "tempo"},
-    {par1: "orbita", par2: "trajetória"},
-    {par1: "foguete", par2: "decolagem"},
-    {par1: "supernova", par2: "explosão"},
-    {par1: "exoplaneta", par2: "distante"},
-    {par1: "marte", par2: "vermelho"},
-    {par1: "luz", par2: "estrela"},
-    {par1: "cinturão", par2: "kuiper"},
-    {par1: "fusão", par2: "nuclear"},
-    {par1: "espaço", par2: "tempo"},
-    {par1: "telescope", par2: "hubble"},
-    {par1: "rotação", par2: "eixo"},
-    {par1: "asteroide", par2: "rocha"},
-    {par1: "lunar", par2: "pouso"},
-    {par1: "vacuum", par2: "vácuo"},
-    {par1: "galaxia", par2: "sombrero"},
-    {par1: "terra", par2: "planeta"},
-    {par1: "pulsar", par2: "neutron"},
-    {par1: "júpiter", par2: "gigante"},
-    {par1: "saturno", par2: "anel"},
-    {par1: "energia", par2: "negativa"},
-    {par1: "buraco", par2: "branco"},
-    {par1: "multiverso", par2: "teoria"}
+    {par1: "a", par2: "aa"},
+    {par1: "b", par2: "bb"},
+    {par1: "c", par2: "cc"},
+    {par1: "d", par2: "dd"},
+    {par1: "e", par2: "ee"},
+    {par1: "f", par2: "ff"},
+    {par1: "g", par2: "gg"},
+    {par1: "h", par2: "hh"},
+    {par1: "i", par2: "ii"},
+    {par1: "j", par2: "jj"},
+    {par1: "k", par2: "kk"},
+    {par1: "l", par2: "ll"},
+    {par1: "m", par2: "mm"},
+    {par1: "n", par2: "nn"},
+    {par1: "o", par2: "oo"},
+    {par1: "p", par2: "pp"},
+    {par1: "q", par2: "qq"}
 ];
 
 startingGame();
@@ -89,7 +58,7 @@ function randomizeWords() {
     
     wordsRigthAndLeft = [[], []];
 
-    while (wordsLeft.length < 11) {
+    while (wordsLeft.length < 10) {
         const wordsToAdd = rhymePairs[getRandomIndex(rhymePairs)];
         if (!wordsLeft.includes(wordsToAdd.par1)) {
             wordsLeft.push(wordsToAdd.par1);
@@ -102,7 +71,6 @@ function randomizeWords() {
     wordsRigthAndLeft[0] = wordsLeft;
     wordsRigthAndLeft[1] = wordsRight;
 
-    console.log(wordsRigthAndLeft);
     return wordsRigthAndLeft;
 }
 
@@ -152,14 +120,15 @@ function checkRhyme() {
                 selectedWordLeft.style.visibility = 'hidden';
                 selectedWordRight.style.visibility = 'hidden';
                 resetSelection();
-            }, 1000);
+            }, 500);
 
             break;  
         } 
         
         if(element.par1.match(leftWord) != null && element.par2 != rightWord) {
 
-            console.log("ERROU");
+            console.log(rightWord);
+            console.log(leftWord);
             selectedWordLeft.classList.add('error');
             selectedWordRight.classList.add('error');
             setTimeout(() => {
