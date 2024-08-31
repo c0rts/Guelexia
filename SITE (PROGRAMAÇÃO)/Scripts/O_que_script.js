@@ -1,7 +1,5 @@
 import  imagens_1  from "./_level1.js";
-const imagens = [
 
-];
 console.log(imagens_1[0]);
 
 let botao0, botao1, botao2, botao3, contador;
