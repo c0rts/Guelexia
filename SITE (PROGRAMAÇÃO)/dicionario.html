@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dicionario</title>
     <link rel="icon" href="assests/Logotest.png" type="image/png">
-    <script src="Scripts/script_dic.js"></script>
+    <script src="Scripts/script_dic.js" defer></script>
 </head>
 <body>
     <header>
@@ -25,10 +25,11 @@
             <div id="pergunta">
                 <label for="palavra">Digite uma palavra:</label>
                 <input type="text" id="palavra" name="palavra">
-                <button id="btn_top" onclick="confirmaPlvr()">Confirmar</button>
+                <button id="btn_top">Confirmar</button>
             </div>
             <div id="resposta">
                 <p>-Definição-</p>
+                <p id="caixa"></p>
             </div>
         </div>
     </main>

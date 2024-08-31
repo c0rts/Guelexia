@@ -65,11 +65,19 @@ header {
     margin: 50px;
     width: 300px; /* Tamanho médio da div quadrada */
     height: 300px;
-    border: 2px solid #000; /* Borda de 2px */
+    border: 2px solid #000000; /* Borda de 2px */
     margin-bottom: 20px; /* Espaço entre a div principal e as opções */
     display:flex;
-    overflow: hidden;       
-    ;
+    overflow: hidden;
+    background-color: #ffffff8e;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.image{
+    max-width: 300px;
+    max-height: 250px;
 }
 
 #opcoes_blc{
@@ -112,6 +120,7 @@ header {
 .paragrafoAcertos, .contadorAcertos {
     display: inline-block;
     font-size: 40px;
+    color:#ffffff;
 }
 
 .contadorAcertos {
