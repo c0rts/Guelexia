@@ -27,10 +27,39 @@ startingGame();
 function startingGame() {
 
     createDivDataWordHtml();
+
+    const wordsLeft = document.querySelectorAll('.left-list .word');
+    const wordsRight = document.querySelectorAll('.right-list .word');
+
+    // Adicionar eventos para palavras do lado esquerdo
+    wordsLeft.forEach(word => {
+        word.addEventListener('click', () => {
+            if (selectedWordLeft) {
+                selectedWordLeft.classList.remove('selected');
+            }
+            selectedWordLeft = word;
+            word.classList.add('selected');
+            if (selectedWordRight) {
+                checkRhyme();
+            }
+        });
+    });
+
+    // Adicionar eventos para palavras do lado direito
+    wordsRight.forEach(word => {
+        word.addEventListener('click', () => {
+            if (selectedWordRight) {
+                selectedWordRight.classList.remove('selected');
+            }
+            selectedWordRight = word;
+            word.classList.add('selected');
+            if (selectedWordLeft) {
+                checkRhyme();
+            }
+        });
+    });
 }
 
-const wordsLeft = document.querySelectorAll('.left-list .word');
-const wordsRight = document.querySelectorAll('.right-list .word');
 const scoreDisplay = document.getElementById('score');
 
 // Lista de rimas predefinida
@@ -47,7 +76,6 @@ function resetSelection() {
 function getRandomIndex(arr) {
     return Math.floor(Math.random() * arr.length);
 }
-
 
 function randomizeWords() {
     
@@ -111,7 +139,6 @@ function checkRhyme() {
 
         if(element.par1.match(leftWord) != null && element.par2 == rightWord) {
 
-            console.log("ta certo");
             score++;
             scoreDisplay.textContent = `Pontos: ${score}`;
             selectedWordLeft.classList.add('selected');
@@ -127,8 +154,11 @@ function checkRhyme() {
         
         if(element.par1.match(leftWord) != null && element.par2 != rightWord) {
 
-            console.log(rightWord);
-            console.log(leftWord);
+            if(score != 0) {
+
+                score--;
+            }
+            scoreDisplay.textContent = `Pontos: ${score}`;
             selectedWordLeft.classList.add('error');
             selectedWordRight.classList.add('error');
             setTimeout(() => {
@@ -141,30 +171,4 @@ function checkRhyme() {
     }
 }
 
-// Adicionar eventos para palavras do lado esquerdo
-wordsLeft.forEach(word => {
-    word.addEventListener('click', () => {
-        if (selectedWordLeft) {
-            selectedWordLeft.classList.remove('selected');
-        }
-        selectedWordLeft = word;
-        word.classList.add('selected');
-        if (selectedWordRight) {
-            checkRhyme();
-        }
-    });
-});
 
-// Adicionar eventos para palavras do lado direito
-wordsRight.forEach(word => {
-    word.addEventListener('click', () => {
-        if (selectedWordRight) {
-            selectedWordRight.classList.remove('selected');
-        }
-        selectedWordRight = word;
-        word.classList.add('selected');
-        if (selectedWordLeft) {
-            checkRhyme();
-        }
-    });
-});
