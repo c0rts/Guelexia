@@ -1,6 +1,7 @@
 let selectedWordLeft = null;
 let selectedWordRight = null;
 let score = 0;
+const maxScore = 10; // Número máximo de pares possíveis
 
 const rhymePairs = [
     {par1: "a", par2: "aa"},
@@ -61,10 +62,6 @@ function startingGame() {
 }
 
 const scoreDisplay = document.getElementById('score');
-
-// Lista de rimas predefinida
-
-// aleatorizar os valores disso aq para os botões direito e esquerdo
 
 function resetSelection() {
     if (selectedWordLeft) selectedWordLeft.classList.remove('selected');
@@ -137,7 +134,7 @@ function checkRhyme() {
 
     for(const element of rhymePairs) {
 
-        if(element.par1.match(leftWord) != null && element.par2 == rightWord) {
+        if(element.par1 === leftWord && element.par2 === rightWord) {
 
             score++;
             scoreDisplay.textContent = `Pontos: ${score}`;
@@ -147,15 +144,15 @@ function checkRhyme() {
                 selectedWordLeft.style.visibility = 'hidden';
                 selectedWordRight.style.visibility = 'hidden';
                 resetSelection();
-            }, 500);
+                checkGameOver();
+            }, 100);
 
             break;  
         } 
         
-        if(element.par1.match(leftWord) != null && element.par2 != rightWord) {
+        if(element.par1 === leftWord && element.par2 !== rightWord) {
 
-            if(score != 0) {
-
+            if(score > 0) {
                 score--;
             }
             scoreDisplay.textContent = `Pontos: ${score}`;
@@ -165,10 +162,19 @@ function checkRhyme() {
                 selectedWordLeft.classList.remove('error');
                 selectedWordRight.classList.remove('error');
                 resetSelection();
-            }, 500);
+            }, 200);
             break;
         }
     }
 }
 
-
+function checkGameOver() {
+    
+    const remainingWordsLeft = document.querySelectorAll('.left-list .word:not([style*="visibility: hidden"])').length;
+    console.log(remainingWordsLeft);
+    if(remainingWordsLeft === 0) {
+        setTimeout(() => {
+            alert(`Fim do jogo! Você acertou ${score} de ${maxScore} pares possíveis.`);
+        }, 500)
+    }
+}
