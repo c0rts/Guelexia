@@ -140,12 +140,17 @@ function checkRhyme() {
             scoreDisplay.textContent = `Pontos: ${score}`;
             selectedWordLeft.classList.add('selected');
             selectedWordRight.classList.add('selected');
+            selectedWordLeft.classList.remove('selected');
+                selectedWordLeft.classList.remove('selected');
+                100
+                selectedWordLeft.classList.add('correct');
+                selectedWordRight.classList.add('correct');
             setTimeout(() => {
                 selectedWordLeft.style.visibility = 'hidden';
                 selectedWordRight.style.visibility = 'hidden';
                 resetSelection();
                 checkGameOver();
-            }, 100);
+            }, 500);
 
             break;  
         } 
