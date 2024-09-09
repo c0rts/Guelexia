@@ -13,4 +13,39 @@ const imagens_1 = [
     { caminho: './assests/Explosao.png', resposta: 'Explosao' },
 ];
 
+const Parrimas = [
+    {par1: "Estrela", par2: "Tela"},
+    {par1: "Música", par2: "Lírica"},
+    {par1: "Bola", par2: "Cola"},
+    {par1: "Papel", par2: "Anel"},
+    {par1: "Carro", par2: "Jarro"},
+    {par1: "Cama", par2: "Fama"},
+    {par1: "Sol", par2: "Cobol"},
+    {par1: "Lua", par2: "Rua"},
+    {par1: "Rato", par2: "Pato"},
+    {par1: "Fogo", par2: "Jogo"},
+    {par1: "Livro", par2: "Vidro"},
+    {par1: "Flor", par2: "Cor"},
+    {par1: "Corte", par2: "Forte"},
+    {par1: "Prato", par2: "Gato"},
+    {par1: "Mão", par2: "Pão"},
+    {par1: "Coração", par2: "Canção"},
+    {par1: "Pano", par2: "Sano"},
+    {par1: "Fruta", par2: "Luta"},
+    {par1: "Mesa", par2: "Presa"},
+    {par1: "Mente", par2: "Gente"},
+    {par1: "Fruto", par2: "Luto"},
+    {par1: "Pena", par2: "Cena"},
+    {par1: "Rosa", par2: "Prosa"},
+    {par1: "Rumo", par2: "Resumo"},
+    {par1: "Olho", par2: "Molho"},
+    {par1: "Pula", par2: "Lula"},
+    {par1: "Terra", par2: "Serra"},
+    {par1: "Cesta", par2: "Festa"},
+    {par1: "Mel", par2: "Miguel"},
+    {par1: "Doce", par2: "Você"},
+    {par1: "Cura", par2: "Dura"},
+];
+
+export default Parrimas;
 export default imagens_1;

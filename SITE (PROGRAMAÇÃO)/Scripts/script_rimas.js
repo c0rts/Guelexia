@@ -1,29 +1,12 @@
+
+import Parrimas from './_level1';
 let selectedWordLeft = null;
 let selectedWordRight = null;
 let score = 0;
 const maxScore = 10; // Número máximo de pares possíveis
 
-const rhymePairs = [
-    {par1: "a", par2: "aa"},
-    {par1: "b", par2: "bb"},
-    {par1: "c", par2: "cc"},
-    {par1: "d", par2: "dd"},
-    {par1: "e", par2: "ee"},
-    {par1: "f", par2: "ff"},
-    {par1: "g", par2: "gg"},
-    {par1: "h", par2: "hh"},
-    {par1: "i", par2: "ii"},
-    {par1: "j", par2: "jj"},
-    {par1: "k", par2: "kk"},
-    {par1: "l", par2: "ll"},
-    {par1: "m", par2: "mm"},
-    {par1: "n", par2: "nn"},
-    {par1: "o", par2: "oo"},
-    {par1: "p", par2: "pp"},
-    {par1: "q", par2: "qq"}
-];
-
 startingGame();
+
 
 function startingGame() {
 
@@ -76,7 +59,7 @@ function getRandomIndex(arr) {
 
 function randomizeWords() {
     
-    let wordsRigthAndLeft = [rhymePairs[getRandomIndex(rhymePairs)]];
+    let wordsRigthAndLeft = [Parrimas[getRandomIndex(Parrimas)]];
     
     let wordsLeft = [wordsRigthAndLeft[0].par1];
     let wordsRight = [wordsRigthAndLeft[0].par2];
@@ -84,7 +67,7 @@ function randomizeWords() {
     wordsRigthAndLeft = [[], []];
 
     while (wordsLeft.length < 10) {
-        const wordsToAdd = rhymePairs[getRandomIndex(rhymePairs)];
+        const wordsToAdd = Parrimas[getRandomIndex(Parrimas)];
         if (!wordsLeft.includes(wordsToAdd.par1)) {
             wordsLeft.push(wordsToAdd.par1);
             wordsRight.push(wordsToAdd.par2);
@@ -132,7 +115,7 @@ function checkRhyme() {
     const leftWord = selectedWordLeft.getAttribute('data-word');
     const rightWord = selectedWordRight.getAttribute('data-word');
 
-    for(const element of rhymePairs) {
+    for(const element of Parrimas) {
 
         if(element.par1 === leftWord && element.par2 === rightWord) {
 
