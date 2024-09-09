@@ -1,5 +1,4 @@
-
-import Parrimas from './_level1';
+import { Parrimas } from "./_level1.js";
 let selectedWordLeft = null;
 let selectedWordRight = null;
 let score = 0;

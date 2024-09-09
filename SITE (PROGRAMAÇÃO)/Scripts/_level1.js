@@ -47,5 +47,4 @@ const Parrimas = [
     {par1: "Cura", par2: "Dura"},
 ];
 
-export default Parrimas;
-export default imagens_1;
+export {imagens_1, Parrimas} ;
