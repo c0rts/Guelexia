@@ -1,6 +1,13 @@
-
 const button = document.getElementById('tema');
 const body = document.body;
+
+document.querySelectorAll('.btn-opc').forEach(button => {
+
+    button.addEventListener('click', () => {
+
+        localStorage.setItem("diffLevel", button.value);
+    });
+});
 
 // Verifica o tema atual e aplica a classe correspondente
 if (localStorage.getItem('theme') === 'dark') {

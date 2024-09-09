@@ -1,9 +1,30 @@
-import  imagens_1  from "./_level1.js";
-
-console.log(imagens_1[0]);
+import { imagens_1 } from "./_level1.js";
+import { imagens_2 } from "./_level2.js";
+import { imagens_3 } from "./_level3.js";
 
 let botao0, botao1, botao2, botao3, contador;
 let valorAcertos = 0;
+
+const diffLevel = localStorage.getItem("diffLevel");
+let arrayImagesAndAnswers;
+
+if(diffLevel == '1') {
+
+    arrayImagesAndAnswers = imagens_1;
+} else if(diffLevel == '2') {
+
+    arrayImagesAndAnswers = imagens_2;
+} else if(diffLevel == '3') {
+
+    arrayImagesAndAnswers = imagens_3;
+} else if(!diffLevel) {
+
+    localStorage.setItem("diffLevel", 1);
+    arrayImagesAndAnswers = imagens_1;
+} else {
+
+    throw new Error("There is no level difficult!");
+}
 
 // Função para gerar um índice aleatório
 function getRandomIndex(arr) {
@@ -13,7 +34,7 @@ function getRandomIndex(arr) {
 // Função para atualizar a imagem
 function updateImage() {
     const imageElement = document.getElementById('imagem_qst');
-    const imagem = imagens_1[getRandomIndex(imagens_1)];
+    const imagem = arrayImagesAndAnswers[getRandomIndex(arrayImagesAndAnswers)];
     const randomImage = imagem.caminho;
     let respostasArray = [imagem.resposta];
 
@@ -29,7 +50,7 @@ function updateImage() {
 function pegarRespostas(respostasArray) {
     // enquanto o tamanho do array de respostas for menor que 4 ele vai ficar fazendo essa rotina
     while (respostasArray.length < 4) {
-        let imagem = imagens_1[getRandomIndex(imagens_1)];
+        let imagem = arrayImagesAndAnswers[getRandomIndex(arrayImagesAndAnswers)];
         if (!respostasArray.includes(imagem.resposta)) {
             respostasArray.push(imagem.resposta);
         }

@@ -12,3 +12,5 @@ const imagens_2 = [
     { caminho: './assests/Terra.png', resposta: 'Terra' },
     { caminho: './assests/Explosao.png', resposta: 'Explosao' },
 ];
+
+export { imagens_2 };
