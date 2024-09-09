@@ -6,11 +6,6 @@
 
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -52,6 +47,8 @@ header {
     color: #ffffff;
 }
 
+
+
 .log-bnt img {
     height: 25px; 
     cursor: pointer;
@@ -62,57 +59,63 @@ header {
     transform: scale(1.1);
 }
 
-main {
+.game-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    justify-content: center;
+    justify-content: space-around;
+    margin-top: 50px;
 }
 
-#container {
-    background-color: white;
-    position: relative;
+.left-list, .right-list {
     display: flex;
-    align-items: center;
-    justify-content:center;
+    flex-direction: column;
+}
+
+.word {
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid #000;
+    cursor: pointer;
+    user-select: none;
+    height: 45px;
+    width: 75px;
     text-align: center;
-    flex-direction: column;
+    align-content: center;
+    border-radius: 15px;
+    background-color: #fff;
 }
 
-#pergunta {
+.word.selected {
+    background-color: rgba(0, 0, 255, 0.781);
+    color: #fff;
+}
+
+.word.error {
+    animation: errorBlink 0.5s;
+}
+
+.word.correct{
+    animation: certoBlink 0.5s;
+}
+
+@keyframes errorBlink {
+    0%, 100% { background-color: #f00; color: #fff; }
+    50% { background-color: #fff; color: #f00; }
+}
+
+@keyframes certoBlink {
+    0%, 100% { background-color: #17ff22; color: #110f0f; }
+    50% { background-color: #fff; color: #110f0f; }
+}
+
+#score{
+    height: 30px;
+    width: 200px;
+    border: 1px solid white;
+    padding: 50px;
     display: flex;
-    flex-direction: column;
+    color: #fff;
     align-items: center;
-    gap: 25px;
-    /*border: 2px solid black;*/
-}
-
-#pergunta label{
-    font-size: 50px;
-}
-
-#pergunta input{
-    border-radius: 10px;
-    height: 50px;
-    background-color: rgba(255, 255, 255, 0.5);
-    font-size: 20px;
-}
-
-#btn_top{
-    width: 250px;
-    height: 50px;
-    font-size: 25px;
-}
-
-#resposta{
-    margin: 25px;
-    border: 2px solid black;
-    width:750px;
-    height: 500px;
-}
-
-#resposta p{
-    border: 1px solid black;
-    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    margin-left: 850px;
 }

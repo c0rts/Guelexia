@@ -6,12 +6,21 @@
 
 body {
     font-family: Arial, sans-serif;
-   background-image: url("../assests/fundo_preto.jpeg");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-blend-mode: multiply;
     background-size: cover;
+}
+
+.light-theme {
+    background-image: url('../assests/fundo_claro_g.png'); /* Substitua pelo caminho da sua imagem de fundo claro*/
+    color: black;
+}
+
+.dark-theme {
+    background-image: url('../assests/fundo_escuro_g.png'); /* Substitua pelo caminho da sua imagem de fundo escuro*/
+    color: white;
 }
 
 header {
