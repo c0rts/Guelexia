@@ -74,9 +74,11 @@ header {
     padding: 10px;
 }
 
-.btn-opc{
+.btn-opc, .btn-dif{
     width: 100px;
     height: 50px;
+    border-radius: 5px;
+    background-color: #9e9e9ea4;
 }
 
 #tema{
@@ -103,11 +105,60 @@ header {
 }
 
 .profile-picture {
+    display: flex;
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    background-color: #ccc;
+    border: 1px solid black;
+    background-color: #cccccc88;
     margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+#perfil-pic{
+    width: 200px;
+    height: 200px;
+}
+
+.fts-subnav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+    float: center;
+    overflow: hidden;
+}
+
+.subnav-cont {
+  display: none;
+  position:relative;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0);
+  width: 500px;
+  z-index: 1;
+}
+
+.mini-ft img{
+    width: 50px;
+    height: 50px;
+}
+
+.subnav-cont button {
+  float: right;
+  color: white;
+  text-decoration: none;
+}
+
+.subnav-cont button:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.fts-subnav:hover .subnav-cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn {

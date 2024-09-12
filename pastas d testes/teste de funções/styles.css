@@ -1,36 +1,23 @@
-body {
+.profile-selection {
+    text-align: center;
+}
+
+.profile-images {
     display: flex;
+    gap: 10px;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    margin-top: 10px;
 }
 
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 300px;
-    position: relative;
+.profile-images img {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    transition: border-color 0.3s;
 }
 
-.box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #fff;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    position: relative;
-    z-index: 1; /* Garantir que as caixas fiquem acima do canvas */
-}
-
-canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
+.profile-images img.selected {
+    border-color: #007bff; /* Cor de destaque quando selecionada */
 }

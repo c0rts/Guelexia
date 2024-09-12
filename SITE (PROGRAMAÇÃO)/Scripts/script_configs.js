@@ -1,7 +1,7 @@
 const button = document.getElementById('tema');
 const body = document.body;
 
-document.querySelectorAll('.btn-opc').forEach(button => {
+document.querySelectorAll('.btn-dif').forEach(button => {
 
     button.addEventListener('click', () => {
 
