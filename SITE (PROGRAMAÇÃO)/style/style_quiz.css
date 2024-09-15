@@ -19,13 +19,17 @@ body {
 }
 
 .light-theme {
-    background-image: url('../assests/fundo_claro_g.png'); /* Substitua pelo caminho da sua imagem de fundo claro*/
+    background-image: url('../assests/fundo_claro_g.png');
     color: black;
 }
 
 .dark-theme {
-    background-image: url('../assests/fundo_escuro_g.png'); /* Substitua pelo caminho da sua imagem de fundo escuro*/
+    background-image: url('../assests/fundo_escuro_g.png');
     color: white;
+}
+
+.dark-theme button{
+    color: #ffffff;
 }
 
 header {
@@ -70,35 +74,58 @@ main {
     justify-content: center;
 }
 
-#container {
+#container-tudo{
     display: flex;
+    flex-flow: column wrap;
     align-items: center;
-    justify-content:center;
-    text-align: center;
-    flex-direction: row;
-}
-
-.bloco_tarefa{
-    align-items: center;
-    flex-direction:row;
-    margin: 40px;
-    display: flex;
-    flex-wrap:nowrap;
-    gap: 250px; /* Espaçamento entre as opções */
     justify-content: center;
+}
+
+.blc-per{
+    padding: 15px;
+    width: 1500px;
+    height: 400px;
+    margin: 5px;
+    background-color: #797979be;
+}
+
+#per{
+    font-size: xx-large;
+    line-height: 50px;
+}
+
+.blc-alt{
+    background-color: #797979be;
+    margin: 5px;
+    width: 1500px;
+    height: 400px;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+button{
+    padding-left: 15px;
+    border-radius: 10px;
+    margin: 20px;
+    text-align: center;
+    height: 50px;
+    font-size: x-large;
+    background-color: #ffffff00;
+    border: none;
     transition: transform 0.5s ease;
+    text-decoration:underline;
+    width:fit-content;
 }
 
-.tarefa:hover {
-    transform: scale(1.1)
+button:hover{
+    -webkit-text-stroke: 0.5px rgb(255, 255, 255);
+    transform: scale(1.5);
 }
 
-.tarefa_btn {
-    width: 300px; /* Largura das opções */
-    height: 600px; /* Altura das opções */
-    border: 2px solid #000;
-    background-color: rgba(255, 255, 255, 0.911);
-    font-size: 20px;
-    cursor: pointer;
+#pontos{
+    font-size: xx-large;
 }
 
+#score{
+    color: rgb(53, 255, 53);
+}

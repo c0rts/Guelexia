@@ -28,6 +28,7 @@ body {
     color: white;
 }
 
+
 header {
     display: flex;
     justify-content: space-between;
@@ -71,7 +72,7 @@ main {
 }
 
 #container {
-    background-color: white;
+    background-color: rgba(104, 104, 104, 0.719);
     position: relative;
     display: flex;
     align-items: center;
