@@ -1,10 +1,11 @@
 requisitos funcionais:
--botões de navegação
--tarefas clara
--opção de seleção
+-cadastrar usuário 
+-criar exercícios
+-ensinar como fazer exercícios
 -feedback interativo
--salvamento na nuvem
--registro de tarefas feitas
+-modificar fonte
+-modificar dificuldade
+-alterar dados
 
 Requisitos não funcionais
 -Facilidade de acesso
@@ -12,6 +13,7 @@ Requisitos não funcionais
 -opções de acessibilidade
 -segurança
 -fixação da leitura
+-exercícios repetitivos
 
 
 Create (Criar):
