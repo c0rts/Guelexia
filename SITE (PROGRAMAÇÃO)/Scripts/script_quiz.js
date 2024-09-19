@@ -6,8 +6,6 @@ function getRandomIndex(arr) {
     return Math.floor(Math.random() * arr.length);
 }
 
-
-
 function loadQuestion() {
     let newQuestion = Questions[getRandomIndex(Questions)];
     document.getElementById('per').textContent = newQuestion.question;
