@@ -18,10 +18,12 @@ body {
     color: black;
 }
 
-.dark-theme {
+.dark-theme{
     background-image: url('../assests/fundo_escuro_g.png'); /* Substitua pelo caminho da sua imagem de fundo escuro*/
     color: white;
 }
+
+
 
 header {
     display: flex;
