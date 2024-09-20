@@ -1,11 +1,12 @@
-const tarefaimg = document.getElementById('tarefa');
-const theme = localStorage.getItem('theme');
+const tarefa = document.querySelectorAll("#tarefa"); 
+// AQUI EU SELECIONO TODAS AS IMAGENS DE TAREFA TLGD? AI VAI DE 0 A 3
 
+const tema = localStorage.getItem("theme");
 
-if(theme === 'light') {
+if(tema == 'light') {
 
-    tarefaimg.src = 'assests/fts-perfil/FT4.png'
+    tarefa[0].setAttribute("src", "assests/fts-perfil/FT3.png");
 } else {
 
-    tarefaimg.src = 'assests/tar.png';
+    tarefa[0].setAttribute("src", "assests/tar.png");
 }
