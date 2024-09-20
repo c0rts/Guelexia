@@ -1,0 +1,122 @@
+{
+  "id": "4c80526d-e8b4-4892-b3c4-9030695606ab",
+  "version": "2.0",
+  "name": "Guelexia",
+  "url": "http://127.0.0.1:5500/SITE%20(PROGRAMA%C3%87%C3%83O)/index.html",
+  "tests": [{
+    "id": "356f62ae-9f5f-445b-b519-7ce3057a994e",
+    "name": "teste realizar tarefa \"rimas\" corretamente ",
+    "commands": [{
+      "id": "849c10e1-59ea-406e-9877-8c1cad9c5cf1",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5500/SITE%20(PROGRAMA%C3%87%C3%83O)/index.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0d4e4c12-4f41-4928-b1a6-4141287981f9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7835cce2-66da-4205-a354-300e77b01cfc",
+      "comment": "",
+      "command": "click",
+      "target": "id=tarefa",
+      "targets": [
+        ["id=tarefa", "id"],
+        ["css=.btn:nth-child(1) > #tarefa", "css:finder"],
+        ["xpath=//img[@id='tarefa']", "xpath:attributes"],
+        ["xpath=//main/div[2]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eab3d21e-9dd4-47ea-a853-902b58231915",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Rimas",
+      "targets": [
+        ["linkText=Rimas", "linkText"],
+        ["css=#rimas > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Rimas')]", "xpath:link"],
+        ["xpath=//button[@id='rimas']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'rimas.html')]", "xpath:href"],
+        ["xpath=//button/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Rimas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9bb9cff3-99c9-479d-bb76-79064c20a28d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.left-list > .word:nth-child(1)",
+      "targets": [
+        ["css=.left-list > .word:nth-child(1)", "css:finder"],
+        ["xpath=//div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6e90b688-b323-412d-8f4c-8d04f73dfd7b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.right-list > .word:nth-child(4)",
+      "targets": [
+        ["css=.right-list > .word:nth-child(4)", "css:finder"],
+        ["xpath=//div[2]/div[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "126f2fe9-13b9-4585-a02a-c1d924a7ebae",
+      "comment": "",
+      "command": "click",
+      "target": "css=.left-list > .word:nth-child(2)",
+      "targets": [
+        ["css=.left-list > .word:nth-child(2)", "css:finder"],
+        ["xpath=//div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "05686c60-bc10-41da-ba65-cdbbed6e3a34",
+      "comment": "",
+      "command": "click",
+      "target": "css=.right-list > .word:nth-child(2)",
+      "targets": [
+        ["css=.right-list > .word:nth-child(2)", "css:finder"],
+        ["xpath=//div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1df5fee9-099d-4fc6-b74d-8547a0161d46",
+      "comment": "",
+      "command": "click",
+      "target": "css=.left-list > .word:nth-child(3)",
+      "targets": [
+        ["css=.left-list > .word:nth-child(3)", "css:finder"],
+        ["xpath=//div/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5bc0fa51-1bfe-4a97-90be-2a9896261679",
+      "comment": "",
+      "command": "click",
+      "target": "css=.right-list > .word:nth-child(7)",
+      "targets": [
+        ["css=.right-list > .word:nth-child(7)", "css:finder"],
+        ["xpath=//div[2]/div[7]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "4238ef95-b5c2-4dd7-8096-cf33f93634c7",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["356f62ae-9f5f-445b-b519-7ce3057a994e"]
+  }],
+  "urls": ["http://127.0.0.1:5500/SITE%20(PROGRAMA%C3%87%C3%83O)/index.html"],
+  "plugins": []
+}
