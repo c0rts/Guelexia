@@ -5,8 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login e Cadastro</title>
     <link rel="stylesheet" href="style/style_log.css">
-    <script src="Scripts/script_log.js" defer></script>
-    <script src="Scripts/components/tema.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const cadastroForm = document.getElementById('cadastroForm');
+            cadastroForm.addEventListener('submit', function(event) {
+                event.preventDefault(); 
+
+                const formData = new FormData(this);
+
+                fetch('http://localhost/Guelexia/SITE%20(PROGRAMA%C3%87%C3%83O)/api.php', {
+                    method: 'POST',
+                    body: formData,
+                })
+                .then(response => {
+                    console.log('Response:', response);
+                    return response.text(); // Mude para text() para ver o conteúdo
+                })
+                .then(data => {
+                    console.log('Data:', data); // Veja o que é retornado
+                    return JSON.parse(data); // Tente analisar aqui
+                })
+                .then(jsonData => {
+                    alert(jsonData.message || jsonData.status);
+                })
+                .catch(error => {
+                    console.error('Erro:', error);
+                    alert('Ocorreu um erro: ' + error.message);
+                });
+            });
+        });
+    </script>
 </head>
 <body>
     <header>
@@ -25,23 +53,23 @@
         </div>        
         <div class="form-container">
             <!-- Formulário de Cadastro -->
-            <form id="cadastroForm">
+            <form id="cadastroForm" method="post">
                 <h2>Cadastro</h2>
                 <div class="inserir-campo">
                     <label for="usuario_cadastro">Usuário:</label>
-                    <input type="text" id="usuario_cadastro" required>
+                    <input type="text" id="usuario_cadastro" name="username" required>
                 </div>
                 <div class="inserir-campo">
                     <label for="email">Email:</label>
-                    <input type="email" id="email" required>
+                    <input type="email" id="email" name="email" required>
                 </div>
                 <div class="inserir-campo">
                     <label for="senha_cadastro">Senha:</label>
-                    <input type="password" id="senha_cadastro" required>
+                    <input type="password" id="senha_cadastro" name="password" required>
                 </div>
                 <div class="inserir-campo">
                     <label for="confirmar_senha">Confirmar Senha:</label>
-                    <input type="password" id="confirmar_senha" required>
+                    <input type="password" id="confirmar_senha" name="checkPassword" required>
                 </div>
                 <button type="submit">Cadastrar</button>
             </form>
