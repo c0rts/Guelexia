@@ -1,3 +1,5 @@
+
+
 // Função para alternar entre os modos de login e cadastro
 document.addEventListener('DOMContentLoaded', function() {
     const switchInput = document.getElementById('switch');
@@ -32,3 +34,58 @@ function AlternarsenhavisivelLogin() {
         toggleIcon.alt = "Mostrar Senha";
     }
 }
+
+const cadastroForm = document.getElementById('cadastroForm');
+cadastroForm.addEventListener('submit', function(event) {
+    event.preventDefault();
+    const formData = new FormData(this);
+    fetch('http://localhost/Guelexia/SITE%20(PROGRAMA%C3%87%C3%83O)/login.php', {
+        method: 'POST',
+        body: formData,
+    })
+    .then(response => response.text())
+    .then(data => {
+        const jsonData = JSON.parse(data);
+        if (jsonData.status === 'sucesso') {
+            // Armazena o e-mail no localStorage
+            localStorage.setItem('emailUser', formData.get('email'));
+            localStorage.setItem('username', formData.get('username'));
+            localStorage.setItem('pic', 4);
+            window.location.href = jsonData.redirect; // Redireciona para a página de sucesso
+        } else {
+            alert(jsonData.message || jsonData.status);
+        }
+    })
+    .catch(error => {
+        console.error('Erro:', error);
+        alert('Ocorreu um erro: ' + error.message);
+    });
+});
+
+// Similar para o loginForm
+const loginForm = document.getElementById('loginForm');
+loginForm.addEventListener('submit', function(event) {
+    event.preventDefault();
+    const formData = new FormData(this);
+    fetch('http://localhost/Guelexia/SITE%20(PROGRAMA%C3%87%C3%83O)/login.php', {
+        method: 'POST',
+        body: formData,
+    })
+    .then(response => response.text())
+    .then(data => {
+        const jsonData = JSON.parse(data);
+        if (jsonData.status === 'sucesso') {
+            // Armazena o e-mail no localStorage
+            localStorage.setItem('emailUser', jsonData.email); // Use o campo correto aqui
+            localStorage.setItem('username', formData.get('usuario_login'));
+            localStorage.setItem('pic', 4);
+            window.location.href = jsonData.redirect; // Redireciona para a página de sucesso
+        } else {
+            alert(jsonData.message || jsonData.status);
+        }
+    })
+    .catch(error => {
+        console.error('Erro:', error);
+        alert('Ocorreu um erro: ' + error.message);
+    });
+});

@@ -1,5 +1,7 @@
+import {pics} from './components/fts-head.js';
 const tema = document.getElementById('tema');
 const body = document.body;
+
 
 document.querySelectorAll('.btn-dif').forEach(button => {
 
@@ -31,3 +33,11 @@ tema.addEventListener('click', () => {
         localStorage.setItem('theme', 'light');
     }
 });
+
+document.getElementById("email").textContent = localStorage.getItem("emailUser");
+
+document.getElementById('username').value = localStorage.getItem('username');
+
+console.log(localStorage.getItem('pic'));
+
+document.getElementById('perfil-pic').setAttribute('src', pics[localStorage.getItem('pic')].caminho)

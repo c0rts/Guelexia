@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela de Configurações</title>
     <link rel="stylesheet" href="style/style_configs.css">
-    <script src="Scripts/script_configs.js" defer></script>
+    <script src="Scripts/script_configs.js" defer type="module"></script>
 </head>
 <body>
     <header class="header">
@@ -23,7 +23,7 @@
 
             <div class="profile-section">
 
-                <div class="profile-picture"><img src="assests/fts-perfil/FT0.png" id="perfil-pic" /></div>
+                <div class="profile-picture"><img src="" id="perfil-pic" /></div>
 
                 <div class="fts-subnav">
                     <button class="btn btn-edit">Editar Foto</button>
@@ -39,7 +39,8 @@
 
             <div class="form-section">
                 <label for="username">Nome de Usuário</label>
-                <input type="text" id="username" name="username" placeholder="Seu nome de usuário">
+                <input type="text" id="username" name="username">
+                <label id="email">Email do usuário</label>
 
                 <button class="btn btn-save">Salvar Alterações</button>
             </div>

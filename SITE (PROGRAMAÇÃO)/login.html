@@ -5,36 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login e Cadastro</title>
     <link rel="stylesheet" href="style/style_log.css">
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const cadastroForm = document.getElementById('cadastroForm');
-            cadastroForm.addEventListener('submit', function(event) {
-                event.preventDefault(); 
-
-                const formData = new FormData(this);
-
-                fetch('http://localhost/Guelexia/SITE%20(PROGRAMA%C3%87%C3%83O)/api.php', {
-                    method: 'POST',
-                    body: formData,
-                })
-                .then(response => {
-                    console.log('Response:', response);
-                    return response.text(); // Mude para text() para ver o conteúdo
-                })
-                .then(data => {
-                    console.log('Data:', data); // Veja o que é retornado
-                    return JSON.parse(data); // Tente analisar aqui
-                })
-                .then(jsonData => {
-                    alert(jsonData.message || jsonData.status);
-                })
-                .catch(error => {
-                    console.error('Erro:', error);
-                    alert('Ocorreu um erro: ' + error.message);
-                });
-            });
-        });
-    </script>
+    <script src="Scripts/script_log.js" defer></script>
 </head>
 <body>
     <header>

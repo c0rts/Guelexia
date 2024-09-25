@@ -1,4 +1,6 @@
 import { Questions } from "./_level1.js";
+import { valorpic } from "./components/fts-head.js";
+document.getElementById('perfil-ft').setAttribute('src', valorpic);
 
 let score = 0;
 

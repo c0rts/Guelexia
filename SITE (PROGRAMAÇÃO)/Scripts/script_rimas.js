@@ -1,4 +1,6 @@
 import { Parrimas } from "./_level1.js";
+import { valorpic } from "./components/fts-head.js";
+document.getElementById('perfil-ft').setAttribute('src', valorpic);
 let selectedWordLeft = null;
 let selectedWordRight = null;
 let score = 0;

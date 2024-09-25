@@ -1,6 +1,8 @@
 import { imagens_1 } from "./_level1.js";
 import { imagens_2 } from "./_level2.js";
 import { imagens_3 } from "./_level3.js";
+import { valorpic } from "./components/fts-head.js";
+document.getElementById('perfil-ft').setAttribute('src', valorpic);
 
 let botao0, botao1, botao2, botao3, contador;
 let valorAcertos = 0;
