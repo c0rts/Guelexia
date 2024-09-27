@@ -6,6 +6,11 @@ const pics = [
     {caminho: './assests/fts-perfil/FT4.png'}
 ];
 
+if(!localStorage.getItem('pic')) {
+
+    localStorage.setItem('pic', 0);
+}
+
 const valorpic = pics[localStorage.getItem('pic')].caminho;
 
 export {pics, valorpic};
