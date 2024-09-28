@@ -33,10 +33,17 @@ function getRandomIndex(arr) {
     return Math.floor(Math.random() * arr.length);
 }
 
-// Função para atualizar a imagem
+let respostaAnterior = null;
+
 function updateImage() {
     const imageElement = document.getElementById('imagem_qst');
-    const imagem = arrayImagesAndAnswers[getRandomIndex(arrayImagesAndAnswers)];
+    let imagem;
+    
+    do {
+
+        imagem = arrayImagesAndAnswers[getRandomIndex(arrayImagesAndAnswers)];
+    } while (imagem.resposta === respostaAnterior && arrayImagesAndAnswers.length > 1);
+
     const randomImage = imagem.caminho;
     let respostasArray = [imagem.resposta];
 
@@ -47,6 +54,8 @@ function updateImage() {
     imageElement.src = randomImage;
 
     contador.innerHTML = valorAcertos;
+
+    respostaAnterior = imagem.resposta; 
 }
 
 function pegarRespostas(respostasArray) {
@@ -94,6 +103,7 @@ function respostaCerta(respostaCerta) {
         if (botao.textContent == respostaCerta) { // se o botão clicado for o certo ele adiciona ao contador
             botao.addEventListener('click', () => {
                 valorAcertos++;
+                respostaAnterior = respostaCerta;
                 updateImage();
             });
         } else { // senão ele apenas troca a imagem e troca a resposta, sem adicionar ao contador
