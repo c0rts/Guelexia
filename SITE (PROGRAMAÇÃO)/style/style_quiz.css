@@ -19,12 +19,12 @@ body {
 }
 
 .light-theme {
-    background-image: url('../assests/fundo_claro_g.png');
+    background-image: url('../assets/fundos-site/fundo_claro_g.png');
     color: black;
 }
 
 .dark-theme {
-    background-image: url('../assests/fundo_escuro_g.png');
+    background-image: url('../assets/fundos-site/fundo_escuro_g.png');
     color: white;
 }
 

@@ -73,7 +73,7 @@ document.getElementById("saveProfile").addEventListener('click', function() {
     formData.append('picture_id', picture_id);
     formData.append('lastUsername', lastUsername);
 
-    fetch('http://localhost/Guelexia/SITE%20(PROGRAMA%C3%87%C3%83O)/updateProfile.php', {
+    fetch('http://localhost/Guelexia/SITE%20(PROGRAMA%C3%87%C3%83O)/scripts/php/updateProfile.php', {
         method: 'POST',
         body: formData,
     })

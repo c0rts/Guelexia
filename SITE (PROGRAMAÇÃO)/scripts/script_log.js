@@ -39,7 +39,7 @@ const cadastroForm = document.getElementById('cadastroForm');
 cadastroForm.addEventListener('submit', function(event) {
     event.preventDefault();
     const formData = new FormData(this);
-    fetch('http://localhost/Guelexia/SITE%20(PROGRAMA%C3%87%C3%83O)/login.php', {
+    fetch('http://localhost/Guelexia/SITE%20(PROGRAMA%C3%87%C3%83O)/scripts/php/login.php', {
         method: 'POST',
         body: formData,
     })
@@ -67,7 +67,7 @@ const loginForm = document.getElementById('loginForm');
 loginForm.addEventListener('submit', function(event) {
     event.preventDefault();
     const formData = new FormData(this);
-    fetch('http://localhost/Guelexia/SITE%20(PROGRAMA%C3%87%C3%83O)/login.php', {
+    fetch('http://localhost/Guelexia/SITE%20(PROGRAMA%C3%87%C3%83O)/scripts/php/login.php', {
         method: 'POST',
         body: formData,
     })

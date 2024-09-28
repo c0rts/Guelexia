@@ -1,4 +1,4 @@
-import { Parrimas } from "./_level1.js";
+import { Parrimas } from "./levels/_level1.js";
 import { valorpic } from "./components/fts-head.js";
 document.getElementById('perfil-ft').setAttribute('src', valorpic);
 let selectedWordLeft = null;
@@ -125,10 +125,9 @@ function checkRhyme() {
             selectedWordLeft.classList.add('selected');
             selectedWordRight.classList.add('selected');
             selectedWordLeft.classList.remove('selected');
-                selectedWordLeft.classList.remove('selected');
-                100
-                selectedWordLeft.classList.add('correct');
-                selectedWordRight.classList.add('correct');
+            selectedWordLeft.classList.remove('selected');
+            selectedWordLeft.classList.add('correct');
+            selectedWordRight.classList.add('correct');
             setTimeout(() => {
                 selectedWordLeft.style.visibility = 'hidden';
                 selectedWordRight.style.visibility = 'hidden';

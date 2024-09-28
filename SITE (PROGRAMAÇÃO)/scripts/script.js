@@ -7,10 +7,10 @@ const tema = localStorage.getItem("theme");
 
 if(tema == 'light') {
 
-    tarefa[0].setAttribute("src", "assests/fts-perfil/FT3.png");
+    tarefa[0].setAttribute("src", "assets/fts-perfil/FT3.png");
 } else {
 
-    tarefa[0].setAttribute("src", "assests/tar.png");
+    tarefa[0].setAttribute("src", "assets/tar.png");
 }
 
 document.getElementById('perfil-ft').setAttribute('src', valorpic);
