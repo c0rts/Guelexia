@@ -11,7 +11,7 @@ function sendRequest() {
         throw new Error ('Por favor insira uma palavra.');
     }
 
-    fetch(`https://api.dicionario-aberto.net/word/${word}`)
+    fetch(`https://api.dicionario-aberto.net/word/${word.toLowerCase()}`)
         .then(response => {
             if(!response.ok){
                 throw new Error('Palavra não encontrada ou erro na digitação');

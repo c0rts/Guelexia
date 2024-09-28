@@ -26,11 +26,11 @@ function AlternarsenhavisivelLogin() {
 
     if (passwordInput.type === "password") {
         passwordInput.type = "text";
-        toggleIcon.src = "assests/olho-fechado.png";
+        toggleIcon.src = "../assets/olho-fechado.png";
         toggleIcon.alt = "Esconder Senha";
     } else {
         passwordInput.type = "password";
-        toggleIcon.src = "assests/olho-aberto.png";
+        toggleIcon.src = "../assets/olho-aberto.png";
         toggleIcon.alt = "Mostrar Senha";
     }
 }
