@@ -1,16 +1,16 @@
 const imagens_1 = [
-    { caminho: './../assets/fts-jogos/Astronauta.png', resposta: 'Astronauta' },
-    { caminho: './../assets/fts-jogos/Constelacao.png', resposta: 'Constelação' },
+    { caminho: './../assets/fts-jogos/Bola.png', resposta: 'Bola' },
+    { caminho: './../assets/fts-jogos/Aviao.png', resposta: 'Avião' },
     { caminho: './../assets/fts-jogos/Estrela.png', resposta: 'Estrela' },
-    { caminho: './../assets/fts-jogos/Foguete.png', resposta: 'Foguete' },
+    { caminho: './../assets/fts-jogos/Flor.png', resposta: 'Flor' },
     { caminho: './../assets/fts-jogos/Lua.png', resposta: 'Lua' },
-    { caminho: './../assets/fts-jogos/Meteoro.png', resposta: 'Meteoro' },
+    { caminho: './../assets/fts-jogos/Livro.png', resposta: 'Livro' },
     { caminho: './../assets/fts-jogos/Nuvem.png', resposta: 'Nuvem' },
-    { caminho: './../assets/fts-jogos/Planeta.png', resposta: 'Planeta' },
-    { caminho: './../assets/fts-jogos/Satelite.png', resposta: 'Satelite' },
+    { caminho: './../assets/fts-jogos/Planeta.png', resposta: 'Marte' },
+    { caminho: './../assets/fts-jogos/Maça.png', resposta: 'Maçã' },
     { caminho: './../assets/fts-jogos/Sol.png', resposta: 'Sol' },
     { caminho: './../assets/fts-jogos/Terra.png', resposta: 'Terra' },
-    { caminho: './../assets/fts-jogos/Explosao.png', resposta: 'Explosao' },
+    { caminho: './../assets/fts-jogos/Casa.png', resposta: 'Casa' },
 ];
 
 const Questions = [

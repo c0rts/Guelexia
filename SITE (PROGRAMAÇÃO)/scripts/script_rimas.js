@@ -1,3 +1,5 @@
+import { Parrimas3 } from "./levels/_level3.js";
+import { Parrimas2 } from "./levels/_level2.js";
 import { Parrimas } from "./levels/_level1.js";
 import { valorpic } from "./components/fts-head.js";
 document.getElementById('perfil-ft').setAttribute('src', valorpic);
@@ -5,6 +7,28 @@ let selectedWordLeft = null;
 let selectedWordRight = null;
 let score = 0;
 const maxScore = 10; // Número máximo de pares possíveis
+
+const diffLevel = localStorage.getItem("diffLevel");
+let rimespairsdiff ;
+
+if(diffLevel == '1') {
+
+    rimespairsdiff = Parrimas;
+} else if(diffLevel == '2') {
+
+    rimespairsdiff = Parrimas2;
+} else if(diffLevel == '3') {
+
+    rimespairsdiff = Parrimas3;
+} else if(!diffLevel) {
+
+    localStorage.setItem("diffLevel", 1);
+    rimespairsdiff = Parrimas;
+} else {
+
+    throw new Error("There is no level difficult!");
+}
+
 
 startingGame();
 
@@ -60,7 +84,7 @@ function getRandomIndex(arr) {
 
 function randomizeWords() {
     
-    let wordsRigthAndLeft = [Parrimas[getRandomIndex(Parrimas)]];
+    let wordsRigthAndLeft = [rimespairsdiff[getRandomIndex(rimespairsdiff)]];
     
     let wordsLeft = [wordsRigthAndLeft[0].par1];
     let wordsRight = [wordsRigthAndLeft[0].par2];
@@ -68,7 +92,7 @@ function randomizeWords() {
     wordsRigthAndLeft = [[], []];
 
     while (wordsLeft.length < 10) {
-        const wordsToAdd = Parrimas[getRandomIndex(Parrimas)];
+        const wordsToAdd = rimespairsdiff[getRandomIndex(rimespairsdiff)];
         if (!wordsLeft.includes(wordsToAdd.par1)) {
             wordsLeft.push(wordsToAdd.par1);
             wordsRight.push(wordsToAdd.par2);
@@ -116,7 +140,7 @@ function checkRhyme() {
     const leftWord = selectedWordLeft.getAttribute('data-word');
     const rightWord = selectedWordRight.getAttribute('data-word');
 
-    for(const element of Parrimas) {
+    for(const element of rimespairsdiff) {
 
         if(element.par1 === leftWord && element.par2 === rightWord) {
 
