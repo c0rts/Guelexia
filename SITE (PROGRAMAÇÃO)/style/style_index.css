@@ -2,6 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'fontelexia';
+    text-shadow: -1px -1px 0px #ffff, 1px -1px 0px #ffff, -1px 1px 0px #ffff, 1px 1px 0px #ffff; 
+}
+
+@font-face {
+    font-family: 'fontelexia';
+    src: url(../assets/Pixel\ Digivolve.otf) format(opentype);
 }
 
 body {
@@ -119,6 +126,7 @@ main {
 
 .imgs{
     height: 110px;
+    font-size: 75px;
 }
 
 .btn:hover {

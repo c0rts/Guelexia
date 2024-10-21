@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'fontelexia';
 }
 
 body {
@@ -11,6 +12,11 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+}
+
+@font-face {
+    font-family: 'fontelexia';
+    src: url(../assets/Pixel\ Digivolve.otf) format(opentype);
 }
 
 header {
@@ -90,11 +96,15 @@ header {
 .light-theme {
     background-image: url('../assets/fundos-site/fundo_claro_g.png'); /* Substitua pelo caminho da sua imagem de fundo claro*/
     color: black;
+    text-shadow: -1px -1px 0px #ffff, 1px -1px 0px #ffff, -1px 1px 0px #ffff, 1px 1px 0px #ffff;
+
 }
 
 .dark-theme {
     background-image: url('../assets/fundos-site/fundo_escuro_g.png'); /* Substitua pelo caminho da sua imagem de fundo escuro*/
     color: white;
+    text-shadow: -1px -1px 0px #0000, 1px -1px 0px #0000, -1px 1px 0px #0000, 1px 1px 0px #0000;
+
 }
 
 .profile-section {

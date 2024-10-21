@@ -3,6 +3,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'fontelexia';
+}
+
+@font-face {
+    font-family: 'fontelexia';
+    src: url(../assets/Pixel\ Digivolve.otf) format(opentype);
 }
 
 body {
