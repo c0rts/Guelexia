@@ -1,15 +1,15 @@
-CREATE DATABASE gueleixa;
+    CREATE DATABASE gueleixa;
 
-USE gueleixa;
+    USE gueleixa;
 
-CREATE TABLE tb_user (
-id INT auto_increment PRIMARY KEY,
-username VARCHAR(255),
-email VARCHAR(255),
-password VARCHAR(255),
-picture_id TINYINT NOT NULL CHECK (picture_id BETWEEN 0 AND 3)
-);
+    CREATE TABLE tb_user (
+    id INT auto_increment PRIMARY KEY,
+    username VARCHAR(255),
+    email VARCHAR(255),
+    password VARCHAR(255),
+    picture_id TINYINT NOT NULL CHECK (picture_id BETWEEN 0 AND 3)
+    );
 
-SELECT * FROM tb_user;
+    SELECT * FROM tb_user;
 
-INSERT INTO tb_user (username, email, password, picture_id) VALUES ("Guel", "guel@guel.com", "guel123", 0);
+    INSERT INTO tb_user (username, email, password, picture_id) VALUES ("Guel", "guel@guel.com", "guel123", 0);
