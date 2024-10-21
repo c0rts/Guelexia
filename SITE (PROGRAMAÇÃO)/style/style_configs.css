@@ -88,12 +88,12 @@ header {
 }
 
 .light-theme {
-    background-image: url('../assests/fundo_claro_g.png'); /* Substitua pelo caminho da sua imagem de fundo claro*/
+    background-image: url('../assets/fundos-site/fundo_claro_g.png'); /* Substitua pelo caminho da sua imagem de fundo claro*/
     color: black;
 }
 
 .dark-theme {
-    background-image: url('../assests/fundo_escuro_g.png'); /* Substitua pelo caminho da sua imagem de fundo escuro*/
+    background-image: url('../assets/fundos-site/fundo_escuro_g.png'); /* Substitua pelo caminho da sua imagem de fundo escuro*/
     color: white;
 }
 
