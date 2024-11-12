@@ -90,6 +90,27 @@ header {
     justify-content: center;
     align-items: center;
 }
+#volta{
+
+    display: flex;
+    flex-flow: nowrap;
+    position:absolute;
+    top: 75px;
+    left: 40px;
+    height: 75px;
+    width: 125px;
+
+}
+
+#setaimg{
+    height: 100px;
+    width: 100px;
+    transition:  0.5s ease;
+
+}
+#setaimg:hover {
+    scale: 1.2;
+}
 
 .image{
     max-width: 300px;

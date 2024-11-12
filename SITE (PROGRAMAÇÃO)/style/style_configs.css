@@ -107,6 +107,28 @@ header {
 
 }
 
+#volta{
+
+    display: flex;
+    flex-flow: nowrap;
+    position:absolute;
+    top: 75px;
+    left: 40px;
+    height: 75px;
+    width: 125px;
+
+}
+
+#setaimg{
+    height: 100px;
+    width: 100px;
+    transition:  0.5s ease;
+
+}
+#setaimg:hover {
+    scale: 1.2;
+}
+
 .profile-section {
     display: flex;
     flex-direction: column;
@@ -127,8 +149,9 @@ header {
 }
 
 #perfil-pic{
-    width: 200px;
-    height: 200px;
+    border-radius: 50%;
+    width: 290px;
+    height: 290px;
 }
 
 .fts-subnav{

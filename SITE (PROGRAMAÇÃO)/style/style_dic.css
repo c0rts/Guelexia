@@ -71,11 +71,34 @@ header {
 
 main {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     padding: 20px;
     justify-content: center;
 }
+
+#volta{
+
+    display: flex;
+    flex-flow: nowrap;
+    position:absolute;
+    top: 75px;
+    left: 40px;
+    height: 75px;
+    width: 125px;
+
+}
+
+#setaimg{
+    height: 100px;
+    width: 100px;
+    transition:  0.5s ease;
+
+}
+#setaimg:hover {
+    scale: 1.2;
+}
+
 
 #container {
     background-color: rgba(104, 104, 104, 0.719);
