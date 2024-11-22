@@ -25,14 +25,16 @@ body {
     background-size: cover;
 }
 
-.light-theme {
-    background-image: url('../assets/fundos-site/fundo_claro_g.png'); /* Substitua pelo caminho da sua imagem de fundo claro*/
-    color: black;
-}
+
 
 .dark-theme {
-    background-image: url('../assets/fundos-site/fundo_escuro_g.png'); /* Substitua pelo caminho da sua imagem de fundo escuro*/
-    color: white;
+    background-image: url('../assets/fundos-site/fundo_escuro_g.png');
+    text-align: justify;
+    text-shadow: 
+    -5px -3px 0 rgb(0, 0, 0), /*esquerdo em cima*/
+    5px -3px 0 rgb(0, 0, 0),/*direito em cima*/
+    -5px 3px 0 rgb(0, 0, 0),/*esquerdo em baixo*/
+    5px 3px 0 rgb(0, 0, 0);/*direito em baixo*/
 }
 
 header {
@@ -40,8 +42,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 5px 15px;
-    background-color: #432651;
-    border-bottom: 2px solid #e9ecef;
+    background-color: #1e1935;
 }
 
 .logo img {
@@ -60,9 +61,10 @@ header {
 }
 
 .log-bnt img {
-    height: 25px; 
+    height: 30px; 
     cursor: pointer;
     transition: transform 0.5s ease;
+    border-radius: 50%;
 }
 
 .log-bnt img:hover {
@@ -79,16 +81,17 @@ header {
 
 .main-box {
     margin: 50px;
-    width: 300px; /* Tamanho médio da div quadrada */
-    height: 300px;
-    border: 2px solid #000000; /* Borda de 2px */
-    margin-bottom: 20px; /* Espaço entre a div principal e as opções */
+    width: 425px; /* Tamanho médio da div quadrada */
+    height: 350px;
+    margin-bottom: 20px; 
     display:flex;
     overflow: hidden;
-    background-color: #ffffff8e;
     border-radius: 20px;
     justify-content: center;
     align-items: center;
+    background-image: url(../assets/tabua_3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 #volta{
 
@@ -125,7 +128,6 @@ header {
     flex-wrap: wrap;
     gap: 25px; /* Espaçamento entre as opções */
     justify-content: center;
-    cursor: pointer;
     transition: transform 0.5s ease;
 }
 
@@ -133,19 +135,18 @@ header {
     transform: scale(1.1)
 }
 
+
 .opcao_btn {
-    width: 180px; /* Largura das opções */
-    height: 90px; /* Altura das opções */
-    border: 2px solid #000;
-    background-color: rgb(255, 255, 255);
-    font-size: 20px;
+    width: 212px; /* Largura das opções */
+    height: 115px; /* Altura das opções */
+    font-size: xx-large; 
+
 }
 
 .image-btn {
     width: 120px; /* Largura dos botões */
     height: 40px; /* Altura dos botões */
     border: 2px solid #000;
-    background-color: #fff;
     cursor: pointer;
     transition: transform 0.3s;
 }
@@ -155,35 +156,13 @@ header {
 }
 
 .paragrafoAcertos, .contadorAcertos {
+    margin-top: 25px ;
     display: inline-block;
     font-size: 40px;
-    color:#ffffff;
-}
-
-.contadorAcertos {
     color: green;
 }
 
-#dif_blc{
-    margin: 5px;
-    display: flex;
-    width:200px;
-    height: 35px;
-    flex-wrap: wrap;
-    gap: 10px; /* Espaçamento entre as opções */
-    justify-content: center;
-    cursor: pointer;
-    transition: transform 0.5s ease;
-}
-
-.dif:hover {
-    transform: scale(1.1)
-}
-
-.dif_btn {
-    width: 80px; /* Largura das opções */
-    height: 20px; /* Altura das opções */
-    border: 2px solid #000;
-    background-color: rgb(255, 255, 255);
-    font-size: 10px;
+.contadorAcertos {
+    margin-top: 75px;
+    color: green;
 }

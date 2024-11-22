@@ -24,14 +24,16 @@ body {
     background-size: cover;
 }
 
-.light-theme {
-    background-image: url('../assets/fundos-site/fundo_claro_g.png'); /* Substitua pelo caminho da sua imagem de fundo claro*/
-    color: black;
-}
 
 .dark-theme {
-    background-image: url('../assets/fundos-site/fundo_escuro_g.png'); /* Substitua pelo caminho da sua imagem de fundo escuro*/
+    background-image: url('../assets/fundos-site/fundo_escuro_g.png');
     color: white;
+    text-align: justify;
+    text-shadow: 
+    -5px -3px 0 rgb(0, 0, 0), /*esquerdo em cima*/
+    5px -3px 0 rgb(0, 0, 0),/*direito em cima*/
+    -5px 3px 0 rgb(0, 0, 0),/*esquerdo em baixo*/
+    5px 3px 0 rgb(0, 0, 0);/*direito em baixo*/
 }
 
 header {
@@ -39,8 +41,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 5px 15px;
-    background-color: #432651;
-    border-bottom: 2px solid #e9ecef;
+    background-color: #1e1935;
 }
 
 .logo img {
@@ -59,9 +60,10 @@ header {
 }
 
 .log-bnt img {
-    height: 25px; 
+    height: 30px; 
     cursor: pointer;
     transition: transform 0.5s ease;
+    border-radius: 50%;
 }
 
 .log-bnt img:hover {

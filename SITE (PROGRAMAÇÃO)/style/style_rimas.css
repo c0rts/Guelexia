@@ -19,14 +19,15 @@ body {
     background-size: cover;
 }
 
-.light-theme {
-    background-image: url('../assets/fundos-site/fundo_claro_g.png'); /* Substitua pelo caminho da sua imagem de fundo claro*/
-    color: black;
-}
-
 .dark-theme {
-    background-image: url('../assets/fundos-site/fundo_escuro_g.png'); /* Substitua pelo caminho da sua imagem de fundo escuro*/
+    background-image: url('../assets/fundos-site/fundo_escuro_g.png');
     color: white;
+    text-align: justify;
+    text-shadow: 
+    -5px -3px 0 rgb(0, 0, 0), /*esquerdo em cima*/
+    5px -3px 0 rgb(0, 0, 0),/*direito em cima*/
+    -5px 3px 0 rgb(0, 0, 0),/*esquerdo em baixo*/
+    5px 3px 0 rgb(0, 0, 0);/*direito em baixo*/
 }
 
 header {
@@ -34,8 +35,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 5px 15px;
-    background-color: #432651;
-    border-bottom: 2px solid #e9ecef;
+    background-color: #1e1935;
 }
 
 .logo img {
@@ -56,9 +56,10 @@ header {
 
 
 .log-bnt img {
-    height: 25px; 
+    height: 30px; 
     cursor: pointer;
     transition: transform 0.5s ease;
+    border-radius: 50%;
 }
 
 .log-bnt img:hover {
@@ -89,8 +90,10 @@ header {
 
 .game-container {
     display: flex;
-    justify-content: space-around;
-    margin-top: 50px;
+    margin-top: 120px;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row nowrap;
 }
 
 .left-list, .right-list {
@@ -99,51 +102,54 @@ header {
 }
 
 .word {
+    font-size: xxx-large;
     padding: 10px;
     margin: 5px;
     border: 2px solid #000;
     cursor: pointer;
     user-select: none;
-    height: 45px;
-    width: 75px;
+    height: 112px;
+    width: 300px;
     text-align: center;
     align-content: center;
     border-radius: 15px;
-    background-color: #ffffffb0;
+    background-image: url(../assets/tabua_2.png);
+    background-size: cover;
 }
 
 .word.selected {
-    background-color: rgba(0, 0, 255, 0.781);
-    color: #fff;
+    color: rgb(208, 255, 202);
+    scale: 1.1;
 }
 
 .word.error {
-    animation: errorBlink 0.5s;
+    animation: errorBlink 0.9s;
 }
 
 .word.correct{
-    animation: certoBlink 0.5s;
+    animation: certoBlink 0.9s;
 }
 
 @keyframes errorBlink {
-    0%, 100% { background-color: #f00; color: #fff; }
-    50% { background-color: #fff; color: #f00; }
+    0%, 100% {color: #fff; }
+    50% {color: #f00; }
 }
 
 @keyframes certoBlink {
-    0%, 100% { background-color: #17ff22; color: #110f0f; }
-    50% { background-color: #fff; color: #110f0f; }
+    0%, 100% {color: #ffffff; }
+    50% {color: #33ff00; }
 }
 
 #score{
     height: 30px;
+    font-size: xxx-large;
     width: 200px;
-    border: 1px solid white;
     padding: 50px;
     display: flex;
-    color: #fff;
+    color: #00ff37;
     align-items: center;
     text-align: center;
     justify-content: center;
-    margin-left: 850px;
+    margin-left: 300px;
+    margin-right: 300px;
 }

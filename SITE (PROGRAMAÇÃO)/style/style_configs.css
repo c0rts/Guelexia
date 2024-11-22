@@ -24,8 +24,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 5px 15px;
-    background-color: #432651;
-    border-bottom: 2px solid #e9ecef;
+    background-color: #1e1935;
 }
 
 .logo img {
@@ -46,17 +45,17 @@ header {
 .main-content {
     display: flex;
     justify-content: center;
-    padding: 20px;
     flex: 1;
+    align-items: center;
 }
 
 .container_perfil{    display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    border: solid;
     width: 500px;
-    margin: 20px;
+    gap: 100px;
+    font-size: x-large;
 }
 
 .container_opções {
@@ -64,9 +63,10 @@ header {
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    border: solid;
     width: 900px;
     margin: 20px;
+    font-size: xx-large;
+    justify-content: center;
 }
 
 .opc-btns{
@@ -76,15 +76,17 @@ header {
     gap: 5px;
     text-align: center;
     align-items: center;
-    justify-items: center;
+    justify-content: center;
     padding: 10px;
+    margin-top:40px;
 }
 
 .btn-opc, .btn-dif{
-    width: 100px;
-    height: 50px;
+    width: 200px;
+    height: 80px;
     border-radius: 5px;
-    background-color: #9e9e9ea4;
+    background-color: #c0bdbd;
+    font-size: xx-large;
 }
 
 #tema{
@@ -93,18 +95,15 @@ header {
     cursor: pointer;
 }
 
-.light-theme {
-    background-image: url('../assets/fundos-site/fundo_claro_g.png'); /* Substitua pelo caminho da sua imagem de fundo claro*/
-    color: black;
-    text-shadow: -1px -1px 0px #ffff, 1px -1px 0px #ffff, -1px 1px 0px #ffff, 1px 1px 0px #ffff;
-
-}
-
 .dark-theme {
-    background-image: url('../assets/fundos-site/fundo_escuro_g.png'); /* Substitua pelo caminho da sua imagem de fundo escuro*/
+    background-image: url('../assets/fundos-site/fundo_escuro_g.png');
     color: white;
-    text-shadow: -1px -1px 0px #0000, 1px -1px 0px #0000, -1px 1px 0px #0000, 1px 1px 0px #0000;
-
+    text-align: justify;
+    text-shadow: 
+    -5px -3px 0 rgb(0, 0, 0), /*esquerdo em cima*/
+    5px -3px 0 rgb(0, 0, 0),/*direito em cima*/
+    -5px 3px 0 rgb(0, 0, 0),/*esquerdo em baixo*/
+    5px 3px 0 rgb(0, 0, 0);/*direito em baixo*/
 }
 
 #volta{
@@ -133,13 +132,16 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px;
-}
+    margin-top: 30px;
 
+
+    
+}
+/*div da foto grande de perfil */
 .profile-picture {
     display: flex;
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
     border: 1px solid black;
     background-color: #cccccc88;
@@ -147,11 +149,11 @@ header {
     align-items: center;
     justify-content: center;
 }
-
+/*foto do perfil src*/
 #perfil-pic{
     border-radius: 50%;
-    width: 290px;
-    height: 290px;
+    width: 340px;
+    height: 340px;
 }
 
 .fts-subnav{
@@ -172,9 +174,13 @@ header {
   z-index: 1;
 }
 
+.mini-ft{
+    height: 60px;
+
+}
 .mini-ft img{
-    width: 50px;
-    height: 50px;
+    width: 100%;
+    height: 100%;
 }
 
 .subnav-cont button {
@@ -193,43 +199,43 @@ header {
   align-items: center;
   justify-content: center;
 }
-
+/*botao editar foto, salva alteração e salva configuração*/
 .btn {
     padding: 10px 20px;
     margin: 10px;
     border: none;
     border-radius: 5px;
+    height: 50px;
     cursor: pointer;
-}
-
-.btn-edit {
-    background-color: #4CAF50;
+    background-color: #008CBA;
     color: white;
+    font-size: x-large;
 }
-
+/*div troca de nome e botao de salva*/
 .form-section {
+    gap: 20px;
+    text-align: center;
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 300px;
-    margin-bottom: 20px;
-}
+    max-width: 750px;
+    justify-content: center;
+    align-items: center;
 
+}
+/*titulo troca de nome*/
 .form-section label {
     margin-bottom: 5px;
     padding: 5px;
 }
-
+/*campo troca nome*/
 .form-section input {
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-}
-
-.btn-save {
-    background-color: #008CBA;
-    color: white;
+    height: 50px;
+    width: 100%;
 }
 
 .other-options {
@@ -244,6 +250,20 @@ header {
 }
 
 .btn-about {
-    background-color: #555;
+    background-color: #008CBA;
     color: white;
+}
+
+.fundo-bonito{
+    height: 270px;
+    width: 600px;
+    background-image: url(../assets/tabua_2.png);
+    background-size: 650px;
+    background-repeat: no-repeat;
+    background-position:center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
 }

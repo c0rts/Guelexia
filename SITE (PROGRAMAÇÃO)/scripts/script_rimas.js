@@ -6,7 +6,7 @@ document.getElementById('perfil-ft').setAttribute('src', valorpic);
 let selectedWordLeft = null;
 let selectedWordRight = null;
 let score = 0;
-const maxScore = 10; // Número máximo de pares possíveis
+const maxScore = 6; // Número máximo de pares possíveis
 
 const diffLevel = localStorage.getItem("diffLevel");
 let rimespairsdiff ;
@@ -91,7 +91,7 @@ function randomizeWords() {
     
     wordsRigthAndLeft = [[], []];
 
-    while (wordsLeft.length < 10) {
+    while (wordsLeft.length < 6) {
         const wordsToAdd = rimespairsdiff[getRandomIndex(rimespairsdiff)];
         if (!wordsLeft.includes(wordsToAdd.par1)) {
             wordsLeft.push(wordsToAdd.par1);
@@ -114,7 +114,7 @@ function createDivDataWordHtml() {
     const leftListHtml = document.querySelector(".left-list");
     const rightListHtml = document.querySelector(".right-list");
 
-    for(let i = 0; i < 10; i++) {
+    for(let i = 0; i < 6; i++) {
 
         const divToClick = document.createElement("div");
         divToClick.className = "word";
@@ -124,7 +124,7 @@ function createDivDataWordHtml() {
         leftListHtml.appendChild(divToClick);
     }
 
-    for(let i = 0; i < 10; i++) {
+    for(let i = 0; i < 6; i++) {
 
         const divToClick = document.createElement("div");
         divToClick.className = "word";
@@ -157,7 +157,7 @@ function checkRhyme() {
                 selectedWordRight.style.visibility = 'hidden';
                 resetSelection();
                 checkGameOver();
-            }, 500);
+            }, 750);
 
             break;  
         } 
@@ -174,7 +174,7 @@ function checkRhyme() {
                 selectedWordLeft.classList.remove('error');
                 selectedWordRight.classList.remove('error');
                 resetSelection();
-            }, 200);
+            }, 750);
             break;
         }
     }

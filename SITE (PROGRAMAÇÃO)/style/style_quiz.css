@@ -25,14 +25,15 @@ body {
     background-size: cover;
 }
 
-.light-theme {
-    background-image: url('../assets/fundos-site/fundo_claro_g.png');
-    color: black;
-}
-
 .dark-theme {
     background-image: url('../assets/fundos-site/fundo_escuro_g.png');
     color: white;
+    text-align: justify;
+    text-shadow: 
+    -5px -3px 0 rgb(0, 0, 0), /*esquerdo em cima*/
+    5px -3px 0 rgb(0, 0, 0),/*direito em cima*/
+    -5px 3px 0 rgb(0, 0, 0),/*esquerdo em baixo*/
+    5px 3px 0 rgb(0, 0, 0);/*direito em baixo*/
 }
 
 .dark-theme button{
@@ -40,12 +41,11 @@ body {
 }
 
 header {
-    background-color: #432651;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 5px 15px;
-    border-bottom: 2px solid #e9ecef;
+    background-color: #1e1935;
 }
 
 .logo img {
@@ -64,9 +64,10 @@ header {
 }
 
 .log-bnt img {
-    height: 25px; 
+    height: 30px; 
     cursor: pointer;
     transition: transform 0.5s ease;
+    border-radius: 50%;
 }
 
 .log-bnt img:hover {
@@ -77,7 +78,7 @@ main {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 20px;
+    padding: 50px;
     justify-content: center;
 }
 
@@ -113,23 +114,41 @@ main {
 .blc-per{
     padding: 15px;
     width: 1500px;
-    height: 400px;
-    margin: 5px;
-    background-color: #797979be;
+    height: 550px;
+    margin: 50px 0px 0px 0px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+
 }
 
 #per{
-    font-size: xx-large;
+    font-size: xxx-large;
     line-height: 50px;
+
 }
 
-.blc-alt{
-    background-color: #797979be;
-    margin: 5px;
-    width: 1500px;
-    height: 400px;
+#backimg-per{
     display: flex;
-    flex-flow: column wrap;
+    position:absolute;
+    top: 50px;
+    left: 0px;
+    width: 1800px;
+    height: 400px;
+    object-fit: cover;
+    z-index: -1;
+}
+
+
+.blc-alt{
+    top: 0px;
+    width: 1500px;
+    height: 275px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 button{
@@ -137,18 +156,27 @@ button{
     border-radius: 10px;
     margin: 20px;
     text-align: center;
-    height: 50px;
-    font-size: x-large;
-    background-color: #ffffff00;
+    height: 200px;
+    font-size: xx-large;
     border: none;
     transition: transform 0.5s ease;
-    text-decoration:underline;
     width:fit-content;
+    width: 350px;
+    background-image: url(../assets/tabua_4.png);
+    background-size: 700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-shadow: 
+    -5px -3px 0 rgb(150, 149, 149), /*esquerdo em cima*/
+    5px -3px 0 rgb(150, 149, 149),/*direito em cima*/
+    -5px 3px 0 rgb(150, 149, 149),/*esquerdo em baixo*/
+    5px 3px 0 rgb(150, 149, 149);/*direito em baixo*/
 }
 
 button:hover{
-    -webkit-text-stroke: 0.5px rgb(255, 255, 255);
+    -webkit-text-stroke: 0.5px;
     transform: scale(1.5);
+    z-index: 2;
 }
 
 #pontos{
