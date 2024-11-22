@@ -1,24 +1,26 @@
 
 
-// Função para alternar entre os modos de login e cadastro
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', () => {
     const switchInput = document.getElementById('switch');
-    const cadastroForm = document.getElementById('cadastroForm');
-    const loginForm = document.getElementById('loginForm');
-    
-    switchInput.addEventListener('change', function() {
-        if (this.checked) {
-            // Modo Login
-            cadastroForm.classList.add('hidden');
-            loginForm.classList.remove('hidden');
+    const switchTitle = document.getElementById('switch-title');
+    const formCadastro = document.getElementById('form-cadastro');
+    const formLogin = document.getElementById('form-login');
+
+    // Alterna entre os formulários e atualiza o título
+    switchInput.addEventListener('change', () => {
+        if (switchInput.checked) {
+            switchTitle.textContent = 'Modo Login';
+            switchTitle.style.color = '#4caf50'; // Destaque
+            formCadastro.style.display = 'none';
+            formLogin.style.display = 'block';
         } else {
-            // Modo Cadastro
-            cadastroForm.classList.remove('hidden');
-            loginForm.classList.add('hidden');
+            switchTitle.textContent = 'Modo Cadastro';
+            switchTitle.style.color = '#555'; // Neutro
+            formLogin.style.display = 'none';
+            formCadastro.style.display = 'block';
         }
     });
 });
-
 // Função para alternar visibilidade da senha no formulário de login
 function AlternarsenhavisivelLogin() {
     var passwordInput = document.getElementById("senha_login");

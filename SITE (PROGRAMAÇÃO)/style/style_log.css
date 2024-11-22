@@ -12,7 +12,12 @@
 }
 
 body {
-    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -24,11 +29,11 @@ body {
     background-image: url('../assets/fundos-site/fundo_escuro_g.png');
     color: white;
     text-align: justify;
-    text-shadow: 
-    -5px -3px 0 rgb(0, 0, 0), /*esquerdo em cima*/
-    5px -3px 0 rgb(0, 0, 0),/*direito em cima*/
-    -5px 3px 0 rgb(0, 0, 0),/*esquerdo em baixo*/
-    5px 3px 0 rgb(0, 0, 0);/*direito em baixo*/
+    text-shadow:
+    2px 2px 5px black,
+    0 0 10px rgb(0, 0, 0), 
+    0 0 10px rgb(0, 0, 0);
+    font-size: x-large;
 }
 
 header {
@@ -37,6 +42,8 @@ header {
     align-items: center;
     padding: 5px 15px;
     background-color: #1e1935;
+    justify-content: center;
+    text-align: center;
 }
 
 .logo img {
@@ -47,6 +54,7 @@ header {
 .site-name {
     flex-grow: 1;
     text-align: center;
+    align-items: center;
 }
 
 .site-name h1 {
@@ -59,7 +67,6 @@ main{
     flex-flow: column wrap;
 }
 #volta{
-
     display: flex;
     flex-flow: nowrap;
     position:absolute;
@@ -80,82 +87,61 @@ main{
     scale: 1.2;
 }
 
+
  .switch-container {
-    margin-top: 5px;
-    display: flex;
-    text-align: center;
     margin-bottom: 20px;
-    justify-content: center;
-    align-items: center;
 }
 
-.switch-label {
-    font-size: 18px;
-    cursor: pointer;
-    display: inline-block;
-    margin-top: 50px;
-    margin: 50px auto 10px;
-    position: absolute;
-    width: 150px;
-    height: 30px;
-    background: #E0E0E0;
-    border-radius: 26px;
-    overflow: hidden;
-    text-align: center;
-    line-height: 30px;
-    user-select: none;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.switch-label:before{
-    content: attr(data-off);
-    position: absolute;
-    font-size: 12px;
-    font-weight: 500;
-    top: 50%;
-    left: 10px;
-    transform: translateY(-50%);
-   
-}
-
-.switch-label:after {
-    content: attr(data-on);
-    position: absolute;
-    font-size: 12px;
-    font-weight: 500;
-    top: 50%;
-    left: 70px;
-    transform: translateY(-50%);
-   
-}
-
-.switch-label:before {
-    left: 10px; 
-}
-
-.switch-label:after {
-    left: 78px; 
-}
-
-.switch-indicator {
+.switch {
     position: relative;
-    display: flex;
-    top: 35px;
-    left: 50vh;
-    transform: translateY(-50%);
-    width: 70px;
-    height: 30px;
-    background: #ffffffc0;
-    border-radius: 26px;
-    transition: left 0.3s ease;
-    margin-left: auto;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
 }
-.switch-container input[type="checkbox"] {
+
+.switch input {
     display: none;
 }
 
-.switch-container input[type="checkbox"]:checked + .switch-label + .switch-indicator {
-    left: 78px; /* Posição da barra branca quando o switch está ativado */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 24px;
+    transition: 0.4s;
+}
+
+.slider:before {
+    content: "";
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+input:checked + .slider {
+    background-color: #4caf50;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+/* Indicador de Título */
+#switch-title {
+    font-size: xx-large;
+    color: #555;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+    text-align: center;
 }
 
 .form-container {
@@ -163,14 +149,12 @@ main{
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    margin: 20px auto;
-    width: 500px;
+    margin: 75px auto;
+    width: 750px;
+    height: 700px;
     max-width: 100%;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-    border: 1px solid black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .form-container form {
@@ -182,11 +166,11 @@ main{
 }
 
 .form-container h2 {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .inserir-campo {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     text-align: left;
 }
 
@@ -197,11 +181,12 @@ main{
 .inserir-campo input[type="email"],
 .inserir-campo input[type="text"],
 .inserir-campo input[type="password"] {
-    width: calc(100% - 20px);
-    padding: 10px;
+    width: calc(100% - 25px);
+    padding: 15px;
     border: 1px solid #ccc;
     border-radius: 3px;
     box-sizing: border-box;
+    font-size: x-large;
 }
 
 .inserir-campo input[type="password"].show-password {

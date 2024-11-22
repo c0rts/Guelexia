@@ -14,58 +14,56 @@
             <a href="index.html"><img src="../assets/g.png" alt="Logo do Site"></a>
         </div>
         <div class="site-name">
-            <h1>Nome do Site</h1>
+            <h1>Cadastro / Login</h1>
         </div>
     </header>
     <main>
-
         <div id="volta">
             <a href="index.html"><img id="setaimg" src="../assets/seta.png"/></a>
         </div>
-        
-        <div class="switch-container">
-            <input type="checkbox" id="switch">
-            <label for="switch" class="switch-label" data-off="Cadastrar" data-on="Login"></label>
-            <div class="switch-indicator"></div>
-        </div>        
+
         <div class="form-container">
-            <!-- Formulário de Cadastro -->
-            <form id="cadastroForm" method="post">
+            <div class="switch-container">
+                <h3 id="switch-title">Modo Cadastro</h3>
+                <label class="switch">
+                    <input type="checkbox" id="switch">
+                    <span class="slider"></span>
+                </label>
+            </div>
+            <form id="form-cadastro">
                 <h2>Cadastro</h2>
-                <div class="inserir-campo">
-                    <label for="usuario_cadastro">Usuário:</label>
-                    <input type="text" id="usuario_cadastro" name="username" required>
-                </div>
-                <div class="inserir-campo">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="inserir-campo">
-                    <label for="senha_cadastro">Senha:</label>
-                    <input type="password" id="senha_cadastro" name="password" required>
-                </div>
-                <div class="inserir-campo">
-                    <label for="confirmar_senha">Confirmar Senha:</label>
-                    <input type="password" id="confirmar_senha" name="checkPassword" required>
-                </div>
-                <button type="submit">Cadastrar</button>
+                    <div class="inserir-campo">
+                        <label for="usuario_cadastro">Usuário:</label>
+                        <input type="text" id="usuario_cadastro" name="username" required>
+                    </div>
+                    <div class="inserir-campo">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="inserir-campo">
+                        <label for="senha_cadastro">Senha:</label>
+                        <input type="password" id="senha_cadastro" name="password" required>
+                    </div>
+                    <div class="inserir-campo">
+                        <label for="confirmar_senha">Confirmar Senha:</label>
+                        <input type="password" id="confirmar_senha" name="checkPassword" required>
+                    </div>
+                    <button type="submit">Cadastrar</button>
             </form>
-            
-            <!-- Formulário de Login -->
-            <form id="loginForm" class="hidden">
+            <form id="form-login" style="display: none;">
                 <h2>Login</h2>
-                <div class="inserir-campo">
-                    <label for="usuario_login">Usuário:</label>
-                    <input type="text" id="usuario_login" name="usuario_login" required>
-                </div>
-                <div class="inserir-campo">
-                    <label for="senha_login">Senha:</label>
-                    <input type="password" id="senha_login" name="senha_login" required>
-                    <span class="alternar-senha" onclick="AlternarsenhavisivelLogin()">
-                        <img src="../assets/olho-aberto.png" alt="mostrar a senha" id="imagem-alternar-login">
-                    </span>
-                </div>
-                <button type="submit">Entrar</button>
+                    <div class="inserir-campo">
+                        <label for="usuario_login">Usuário:</label>
+                        <input type="text" id="usuario_login" name="usuario_login" required>
+                    </div>
+                    <div class="inserir-campo">
+                        <label for="senha_login">Senha:</label>
+                        <input type="password" id="senha_login" name="senha_login" required>
+                        <span class="alternar-senha" onclick="AlternarsenhavisivelLogin()">
+                            <img src="../assets/olho-aberto.png" alt="mostrar a senha" id="imagem-alternar-login">
+                        </span>
+                    </div>
+                    <button type="submit">Entrar</button>
             </form>
         </div>
     </main>
