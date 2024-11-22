@@ -2,14 +2,53 @@ import {pics} from './components/fts-head.js';
 const tema = document.getElementById('tema');
 const body = document.body;
 
+function mostradif (){ 
+    console.log(document.conten('.btn-dif'));
+}
 
 document.querySelectorAll('.btn-dif').forEach(button => {
 
     button.addEventListener('click', () => {
 
         localStorage.setItem("diffLevel", button.value);
+        mostradif ();
     });
 });
+
+document.querySelectorAll('.btn-opc').forEach(button => {
+
+    button.addEventListener('click', () => {
+
+        localStorage.setItem("fontlevel", button.value);
+    });
+});
+
+const fontLevel = localStorage.getItem("fontLevel");
+
+if(fontLevel == '1') {
+
+    body.style.fontSize = 'large';
+    console.log('Dificuldade pequena');
+    console.log('Dificuldade média');
+    console.log('Dificuldade grande');
+
+} else if(fontLevel == '2') {
+
+    body.style.fontSize = 'x-large';
+    console.log('Tamanho da fonte média');
+
+} else if(fontLevel == '3') {
+
+    body.style.fontSize = 'xx-large';
+    console.log('tamanho da fonte grande');
+
+} else if(!fontLevel) {
+
+    localStorage.setItem("fontLevel", 1);
+} else {
+
+    throw new Error("There is no font level!");
+}
 
 // Verifica o tema atual e aplica a classe correspondente
 if (localStorage.getItem('theme') === 'dark') {
