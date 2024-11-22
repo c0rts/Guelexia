@@ -14,13 +14,13 @@ function sendRequest() {
     fetch(`https://api.dicionario-aberto.net/word/${word.toLowerCase()}`)
         .then(response => {
             if(!response.ok){
-                throw new Error('Palavra não encontrada ou erro na digitação');
+                throw new alert('Palavra não encontrada ou erro na digitação');
             }
             return response.json();
         })
         .then(data => {
             if(data.legth === 0 ){
-                throw new Error('Nenhuma definição encontrada, peço desculpas');
+                throw new alert('Nenhuma definição encontrada, peço desculpas');
             }
 
             const xmlString = data[0].xml;

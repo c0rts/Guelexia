@@ -90,3 +90,4 @@ document.getElementById("saveProfile").addEventListener('click', function() {
         alert('Ocorreu um erro: ' + error.message);
     });
 });
+

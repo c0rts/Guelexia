@@ -112,9 +112,10 @@ main {
     margin: 100px;
     gap: 10px;
     text-align: center;
-    
-
+    text-decoration: none;
 }
+
+a { color: inherit; }
 
 .btn {
     color: inherit;

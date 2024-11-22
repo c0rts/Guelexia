@@ -1,0 +1,1798 @@
+{
+  "id": "d677a77a-e97b-4c76-996a-d714e48ae435",
+  "version": "2.0",
+  "name": "Testes_TCC",
+  "url": "http://localhost/Guelexia/SITE%20(PROGRAMA%c3%87%c3%83O)/pages/configs.html",
+  "tests": [{
+    "id": "206af0b4-8243-49d2-8953-24620aec322d",
+    "name": "CT-001",
+    "commands": [{
+      "id": "27f73e8f-a036-47ca-a48b-290148fbb306",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/Guelexia/SITE%20(PROGRAMA%c3%87%c3%83O)/pages/login.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d344ca8f-99a4-47bc-a491-7925f94a36ee",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x652",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4b8075b7-c616-454a-bf20-15c7294c9e56",
+      "comment": "",
+      "command": "click",
+      "target": "id=usuario_cadastro",
+      "targets": [
+        ["id=usuario_cadastro", "id"],
+        ["name=username", "name"],
+        ["css=#usuario_cadastro", "css:finder"],
+        ["xpath=//input[@id='usuario_cadastro']", "xpath:attributes"],
+        ["xpath=//form[@id='cadastroForm']/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8310ddd8-c1dc-40d9-a029-20c150c4ab34",
+      "comment": "",
+      "command": "type",
+      "target": "id=usuario_cadastro",
+      "targets": [
+        ["id=usuario_cadastro", "id"],
+        ["name=username", "name"],
+        ["css=#usuario_cadastro", "css:finder"],
+        ["xpath=//input[@id='usuario_cadastro']", "xpath:attributes"],
+        ["xpath=//form[@id='cadastroForm']/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": "fernandoviski"
+    }, {
+      "id": "fd8198e0-9021-4b6a-869b-865957c6e4e2",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='cadastroForm']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//form/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "328718d7-cec2-40a4-8493-f8a5f3db531c",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='cadastroForm']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//form/div[2]/input", "xpath:position"]
+      ],
+      "value": "seusaco@hotmail.com"
+    }, {
+      "id": "91b36a57-82ed-4107-8815-6568b0044bd1",
+      "comment": "",
+      "command": "click",
+      "target": "id=senha_cadastro",
+      "targets": [
+        ["id=senha_cadastro", "id"],
+        ["name=password", "name"],
+        ["css=#senha_cadastro", "css:finder"],
+        ["xpath=//input[@id='senha_cadastro']", "xpath:attributes"],
+        ["xpath=//form[@id='cadastroForm']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "92b6f2a0-0c01-4688-b939-e93eed0e2b3c",
+      "comment": "",
+      "command": "type",
+      "target": "id=senha_cadastro",
+      "targets": [
+        ["id=senha_cadastro", "id"],
+        ["name=password", "name"],
+        ["css=#senha_cadastro", "css:finder"],
+        ["xpath=//input[@id='senha_cadastro']", "xpath:attributes"],
+        ["xpath=//form[@id='cadastroForm']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "1257890"
+    }, {
+      "id": "6ad4d12d-dbe3-4885-84e5-516383025c13",
+      "comment": "",
+      "command": "click",
+      "target": "id=confirmar_senha",
+      "targets": [
+        ["id=confirmar_senha", "id"],
+        ["name=checkPassword", "name"],
+        ["css=#confirmar_senha", "css:finder"],
+        ["xpath=//input[@id='confirmar_senha']", "xpath:attributes"],
+        ["xpath=//form[@id='cadastroForm']/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f7b9bfc-c762-42cd-bd9a-c25f16ae83b8",
+      "comment": "",
+      "command": "type",
+      "target": "id=confirmar_senha",
+      "targets": [
+        ["id=confirmar_senha", "id"],
+        ["name=checkPassword", "name"],
+        ["css=#confirmar_senha", "css:finder"],
+        ["xpath=//input[@id='confirmar_senha']", "xpath:attributes"],
+        ["xpath=//form[@id='cadastroForm']/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "1257890"
+    }, {
+      "id": "8a25f0f2-3ba9-4e75-b764-aca35919ca2d",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(6)",
+      "targets": [
+        ["css=button:nth-child(6)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='cadastroForm']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cadastrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "301af722-188b-47c1-b71c-5d98127df8fc",
+    "name": "CT-002",
+    "commands": [{
+      "id": "1a3eb2c2-8752-490f-bed4-56d12054c2bb",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/Guelexia/SITE%20(PROGRAMA%c3%87%c3%83O)/pages/login.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c1d92f3a-2faa-4b37-b557-160237593e6a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x652",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b6421aed-7cba-4577-ac04-73fe8c6da1ea",
+      "comment": "",
+      "command": "click",
+      "target": "css=.switch-label",
+      "targets": [
+        ["css=.switch-label", "css:finder"],
+        ["xpath=//label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "79bd92fb-29b3-446c-beb0-db37362c0768",
+      "comment": "",
+      "command": "click",
+      "target": "id=usuario_login",
+      "targets": [
+        ["id=usuario_login", "id"],
+        ["name=usuario_login", "name"],
+        ["css=#usuario_login", "css:finder"],
+        ["xpath=//input[@id='usuario_login']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/div/input", "xpath:idRelative"],
+        ["xpath=//form[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b94d2a4e-5937-42c2-8645-94e647b92c1d",
+      "comment": "",
+      "command": "type",
+      "target": "id=usuario_login",
+      "targets": [
+        ["id=usuario_login", "id"],
+        ["name=usuario_login", "name"],
+        ["css=#usuario_login", "css:finder"],
+        ["xpath=//input[@id='usuario_login']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/div/input", "xpath:idRelative"],
+        ["xpath=//form[2]/div/input", "xpath:position"]
+      ],
+      "value": "fernandoviski"
+    }, {
+      "id": "e8b72494-b10d-4a2c-a959-2a0ec80d23d5",
+      "comment": "",
+      "command": "click",
+      "target": "id=senha_login",
+      "targets": [
+        ["id=senha_login", "id"],
+        ["name=senha_login", "name"],
+        ["css=#senha_login", "css:finder"],
+        ["xpath=//input[@id='senha_login']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//form[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d7f5316-786e-4a69-9e6a-5c9848d7cbea",
+      "comment": "",
+      "command": "type",
+      "target": "id=senha_login",
+      "targets": [
+        ["id=senha_login", "id"],
+        ["name=senha_login", "name"],
+        ["css=#senha_login", "css:finder"],
+        ["xpath=//input[@id='senha_login']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//form[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "1257890"
+    }, {
+      "id": "90e99c04-13cf-4ea5-8673-fbf5a256da17",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(4)",
+      "targets": [
+        ["css=button:nth-child(4)", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/button", "xpath:idRelative"],
+        ["xpath=//form[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Entrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "62b8378e-e1f0-42a6-a469-e78e53af822c",
+    "name": "CT-003",
+    "commands": [{
+      "id": "939924bc-77ad-4790-9e97-cc86feb90953",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/Guelexia/SITE%20(PROGRAMA%c3%87%c3%83O)/pages/configs.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3948e241-c9a6-484d-b529-f5e1f5f0514b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x652",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fdee90b4-b283-4b22-a157-948b05fa2a6a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mini-ft:nth-child(3) > img",
+      "targets": [
+        ["css=.mini-ft:nth-child(3) > img", "css:finder"],
+        ["xpath=//button[3]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0f1ea9a4-71b2-46ee-9706-8af0d921b71e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mini-ft:nth-child(2) > img",
+      "targets": [
+        ["css=.mini-ft:nth-child(2) > img", "css:finder"],
+        ["xpath=//button[2]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bb72b8c4-805b-4b7c-9a10-5b5e4ce849fd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mini-ft:nth-child(1) > img",
+      "targets": [
+        ["css=.mini-ft:nth-child(1) > img", "css:finder"],
+        ["xpath=//button/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c97f8df3-5b53-460c-a9fd-408f6cc7116e",
+      "comment": "",
+      "command": "click",
+      "target": "id=saveProfile",
+      "targets": [
+        ["id=saveProfile", "id"],
+        ["css=#saveProfile", "css:finder"],
+        ["xpath=//button[@id='saveProfile']", "xpath:attributes"],
+        ["xpath=//div[2]/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar Alterações')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "5657e81f-a57e-4e19-9b01-f13bdb92ef34",
+    "name": "CT-004",
+    "commands": [{
+      "id": "83d6ec2d-bd70-4dcf-b5d1-d1406524750a",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/Guelexia/SITE%20(PROGRAMA%c3%87%c3%83O)/pages/configs.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e4b9f4c1-475d-4644-82e5-7e795ad48eb0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x652",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f4342f31-3834-4718-a0d3-c20153e60723",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf6276eb-7890-46c8-9857-9a3c4c079b57",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "seupaidegalocha2"
+    }, {
+      "id": "6e4ea5b0-9892-4159-9b76-95af37cf0357",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "9244efe0-8299-4b68-8f3c-0233a5aae37a",
+      "comment": "",
+      "command": "click",
+      "target": "id=saveProfile",
+      "targets": [
+        ["id=saveProfile", "id"],
+        ["css=#saveProfile", "css:finder"],
+        ["xpath=//button[@id='saveProfile']", "xpath:attributes"],
+        ["xpath=//div[2]/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar Alterações')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "d6ed00c7-d8b4-4964-a2d5-bbf0a5b314b1",
+    "name": "CT-005",
+    "commands": [{
+      "id": "2d77aedf-69bf-4591-9920-05cee109ef6e",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/Guelexia/SITE%20(PROGRAMA%c3%87%c3%83O)/pages/configs.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "69831088-a6d8-4c53-89bc-d0cdfe0d4181",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x652",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ae0dad59-02fc-47aa-ac09-92c8e834fd04",
+      "comment": "",
+      "command": "click",
+      "target": "id=fnt-2",
+      "targets": [
+        ["id=fnt-1", "id"],
+        ["css=#fnt-1", "css:finder"],
+        ["xpath=//button[@id='fnt-1']", "xpath:attributes"],
+        ["xpath=//div[3]/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Pequena')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1c58463f-14d9-4fa5-8527-4ec6ddc00e8a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(6)",
+      "targets": [
+        ["css=.btn:nth-child(6)", "css:finder"],
+        ["xpath=//div[3]/div/div/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar Configurações')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "06272929-e67c-4f98-a79c-72d913831d2c",
+      "comment": "",
+      "command": "click",
+      "target": "id=fnt-1",
+      "targets": [
+        ["id=fnt-2", "id"],
+        ["css=#fnt-2", "css:finder"],
+        ["xpath=//button[@id='fnt-2']", "xpath:attributes"],
+        ["xpath=//div[3]/div/div/div/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Média')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "01acf668-5cf6-409e-b051-ccbc22ca8619",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(6)",
+      "targets": [
+        ["css=.btn:nth-child(6)", "css:finder"],
+        ["xpath=//div[3]/div/div/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar Configurações')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "08e99e50-8bb8-47ce-aea3-b34fa0d70982",
+      "comment": "",
+      "command": "click",
+      "target": "id=fnt-3",
+      "targets": [
+        ["id=fnt-3", "id"],
+        ["css=#fnt-3", "css:finder"],
+        ["xpath=//button[@id='fnt-3']", "xpath:attributes"],
+        ["xpath=//div[3]/div/div/div/button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'Grande')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d7dde32-1d50-4084-b8dd-123c8df015b8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(6)",
+      "targets": [
+        ["css=.btn:nth-child(6)", "css:finder"],
+        ["xpath=//div[3]/div/div/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar Configurações')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "58484d9a-6cee-4660-b49e-4c22a0e43ef0",
+    "name": "CT-006",
+    "commands": [{
+      "id": "eff1ec5d-fb90-4921-ad74-3b89288f66dd",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/Guelexia/SITE%20(PROGRAMA%c3%87%c3%83O)/pages/configs.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3e344ce6-1f8c-442b-b57c-b9167af67b82",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x652",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0ce91503-da0f-47e5-998a-8a6a874183a3",
+      "comment": "",
+      "command": "click",
+      "target": "id=dif-1",
+      "targets": [
+        ["id=dif-1", "id"],
+        ["css=#dif-1", "css:finder"],
+        ["xpath=//button[@id='dif-1']", "xpath:attributes"],
+        ["xpath=//div[3]/div/div/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Fácil')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8c918d85-b534-42f6-ad08-bcedc2f44ff2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(6)",
+      "targets": [
+        ["css=.btn:nth-child(6)", "css:finder"],
+        ["xpath=//div[3]/div/div/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar Configurações')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "147f86db-0ad1-468e-b48b-c16a1dc796b8",
+      "comment": "",
+      "command": "click",
+      "target": "id=dif-3",
+      "targets": [
+        ["id=dif-3", "id"],
+        ["css=#dif-3", "css:finder"],
+        ["xpath=//button[@id='dif-3']", "xpath:attributes"],
+        ["xpath=//div[2]/button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'Díficil')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d30067b5-a6fe-4b6d-84b2-2679ab3015d3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(6)",
+      "targets": [
+        ["css=.btn:nth-child(6)", "css:finder"],
+        ["xpath=//div[3]/div/div/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar Configurações')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e622129e-ffa6-4e77-a880-64c8a8367bec",
+      "comment": "",
+      "command": "click",
+      "target": "id=dif-2",
+      "targets": [
+        ["id=dif-2", "id"],
+        ["css=#dif-2", "css:finder"],
+        ["xpath=//button[@id='dif-2']", "xpath:attributes"],
+        ["xpath=//div[2]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Médio')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "04248f11-b266-405b-a23c-072563f03a1e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(6)",
+      "targets": [
+        ["css=.btn:nth-child(6)", "css:finder"],
+        ["xpath=//div[3]/div/div/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar Configurações')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "7a209fbd-72f0-4e13-853b-c993208eac28",
+    "name": "CT-008",
+    "commands": [{
+      "id": "ffd62550-0c65-4afe-ac73-bd21f25fad5e",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/Guelexia/SITE%20(PROGRAMA%c3%87%c3%83O)/pages/rimas.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d8ad2cf4-e20c-477b-969e-d6dd7466e892",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x652",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "853cbc28-047f-4825-9adb-34261f4c4117",
+      "comment": "",
+      "command": "click",
+      "target": "css=.left-list > .word:nth-child(1)",
+      "targets": [
+        ["css=.left-list > .word:nth-child(1)", "css:finder"],
+        ["xpath=//div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "16e1f54f-40a7-4125-b7e7-666e904da922",
+      "comment": "",
+      "command": "click",
+      "target": "css=.right-list > .word:nth-child(1)",
+      "targets": [
+        ["css=.right-list > .word:nth-child(1)", "css:finder"],
+        ["xpath=//div[2]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "16d0ed43-3fea-4110-9797-bbefbd27e382",
+      "comment": "",
+      "command": "click",
+      "target": "css=.left-list > .word:nth-child(2)",
+      "targets": [
+        ["css=.left-list > .word:nth-child(2)", "css:finder"],
+        ["xpath=//div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5aabcbd3-7822-4af4-ad8e-5a93edd70f6f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.right-list > .word:nth-child(2)",
+      "targets": [
+        ["css=.right-list > .word:nth-child(2)", "css:finder"],
+        ["xpath=//div[2]/div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d9589aae-f6a6-488f-ad43-865ba0b2459b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.left-list > .word:nth-child(3)",
+      "targets": [
+        ["css=.left-list > .word:nth-child(3)", "css:finder"],
+        ["xpath=//div/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c2f3f45-b0c3-4c0e-af4f-372175c6a839",
+      "comment": "",
+      "command": "click",
+      "target": "css=.right-list > .word:nth-child(10)",
+      "targets": [
+        ["css=.right-list > .word:nth-child(10)", "css:finder"],
+        ["xpath=//div[2]/div[10]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "edd589f5-f05f-490c-a2de-d7ad10239a7e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.left-list > .word:nth-child(10)",
+      "targets": [
+        ["css=.left-list > .word:nth-child(10)", "css:finder"],
+        ["xpath=//div[10]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "107d347f-e179-4768-9102-28f1f29541c3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.right-list > .word:nth-child(4)",
+      "targets": [
+        ["css=.right-list > .word:nth-child(4)", "css:finder"],
+        ["xpath=//div[2]/div[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "583bbd6e-ff0e-4738-82e5-8e9c9d865fa4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.left-list > .word:nth-child(5)",
+      "targets": [
+        ["css=.left-list > .word:nth-child(5)", "css:finder"],
+        ["xpath=//div[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7274fcfd-2f25-460b-bc9c-a425f08cb116",
+      "comment": "",
+      "command": "click",
+      "target": "css=.right-list > .word:nth-child(3)",
+      "targets": [
+        ["css=.right-list > .word:nth-child(3)", "css:finder"],
+        ["xpath=//div[2]/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4660dcc0-9dc5-423a-a989-4de4f7e8a5cc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.left-list > .word:nth-child(4)",
+      "targets": [
+        ["css=.left-list > .word:nth-child(4)", "css:finder"],
+        ["xpath=//div[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d8da1c41-8b52-453e-849f-1b39125b14d0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.selected",
+      "targets": [
+        ["css=.selected", "css:finder"],
+        ["xpath=//div[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f9487172-c750-4949-8564-c7d755d4ac21",
+      "comment": "",
+      "command": "click",
+      "target": "css=.left-list > .word:nth-child(6)",
+      "targets": [
+        ["css=.left-list > .word:nth-child(6)", "css:finder"],
+        ["xpath=//div[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f6a4c39b-3c44-411a-a1a4-925b7a9d9327",
+      "comment": "",
+      "command": "click",
+      "target": "css=.right-list > .word:nth-child(5)",
+      "targets": [
+        ["css=.right-list > .word:nth-child(5)", "css:finder"],
+        ["xpath=//div[2]/div[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a98088e6-75be-4c45-9780-98a0178b0dd6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.left-list > .word:nth-child(7)",
+      "targets": [
+        ["css=.left-list > .word:nth-child(7)", "css:finder"],
+        ["xpath=//div[7]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8751cbf1-8fab-4b0f-9e76-fd5c6ca3e58c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.right-list > .word:nth-child(7)",
+      "targets": [
+        ["css=.right-list > .word:nth-child(7)", "css:finder"],
+        ["xpath=//div[2]/div[7]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "225c7b65-3425-4a66-8980-bd95c188f2b1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.left-list > .word:nth-child(8)",
+      "targets": [
+        ["css=.left-list > .word:nth-child(8)", "css:finder"],
+        ["xpath=//div[8]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2f68edb5-df22-4054-a5a3-4411ad47db12",
+      "comment": "",
+      "command": "click",
+      "target": "css=.right-list > .word:nth-child(9)",
+      "targets": [
+        ["css=.right-list > .word:nth-child(9)", "css:finder"],
+        ["xpath=//div[2]/div[9]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bffdcdf5-372e-4512-881b-7ef871be25ba",
+      "comment": "",
+      "command": "click",
+      "target": "css=.left-list > .word:nth-child(9)",
+      "targets": [
+        ["css=.left-list > .word:nth-child(9)", "css:finder"],
+        ["xpath=//div[9]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6d9a3967-27ab-40c2-a6e2-2cdc579619f3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.right-list > .word:nth-child(6)",
+      "targets": [
+        ["css=.right-list > .word:nth-child(6)", "css:finder"],
+        ["xpath=//div[2]/div[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "88e2dd5b-6706-4b0b-9eaa-709a346a1967",
+      "comment": "",
+      "command": "click",
+      "target": "css=.left-list > .word:nth-child(4)",
+      "targets": [
+        ["css=.left-list > .word:nth-child(4)", "css:finder"],
+        ["xpath=//div[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "07ad3b4a-7c8a-4669-ac6d-cf07969d280f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.right-list > .word:nth-child(8)",
+      "targets": [
+        ["css=.right-list > .word:nth-child(8)", "css:finder"],
+        ["xpath=//div[2]/div[8]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e903a61-0d04-443e-86f9-77012c9af560",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Fim do jogo! Você acertou 10 de 10 pares possíveis.",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "da436305-0de8-45ea-8e1d-07f0a527c31f",
+    "name": "CT-009",
+    "commands": [{
+      "id": "4e197914-ccc0-48fa-9316-542857682616",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/Guelexia/SITE%20(PROGRAMA%c3%87%c3%83O)/pages/rimas.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "57f83c05-b6e7-43fd-940a-4b804e66119b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x652",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7b5b7690-895b-4d85-b4ba-deaeaf1f98ab",
+      "comment": "",
+      "command": "click",
+      "target": "css=.left-list > .word:nth-child(1)",
+      "targets": [
+        ["css=.left-list > .word:nth-child(1)", "css:finder"],
+        ["xpath=//div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "41c3771d-060b-4e9d-bdd5-1234f7480f35",
+      "comment": "",
+      "command": "click",
+      "target": "css=.right-list > .word:nth-child(5)",
+      "targets": [
+        ["css=.right-list > .word:nth-child(5)", "css:finder"],
+        ["xpath=//div[2]/div[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6ec9256f-d797-4fcb-aa85-d674d1eaabac",
+      "comment": "",
+      "command": "click",
+      "target": "css=.left-list > .word:nth-child(6)",
+      "targets": [
+        ["css=.left-list > .word:nth-child(6)", "css:finder"],
+        ["xpath=//div[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "92662163-34e6-4df8-89a9-7bdbeaf02026",
+      "comment": "",
+      "command": "click",
+      "target": "css=.game-container",
+      "targets": [
+        ["css=.game-container", "css:finder"],
+        ["xpath=//body/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0285a90d-1d58-4dc5-bab9-340abeaa8908",
+      "comment": "",
+      "command": "click",
+      "target": "css=.game-container",
+      "targets": [
+        ["css=.game-container", "css:finder"],
+        ["xpath=//body/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "74cea039-1698-4ffa-94b9-2a3942c3f84a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.right-list > .word:nth-child(2)",
+      "targets": [
+        ["css=.right-list > .word:nth-child(2)", "css:finder"],
+        ["xpath=//div[2]/div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5a8a1b21-7af2-4bf0-80a9-73d494985fb9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.right-list > .word:nth-child(8)",
+      "targets": [
+        ["css=.right-list > .word:nth-child(8)", "css:finder"],
+        ["xpath=//div[2]/div[8]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6980b6f6-8d1c-412e-b746-484cf65f4ff9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.left-list > .word:nth-child(2)",
+      "targets": [
+        ["css=.left-list > .word:nth-child(2)", "css:finder"],
+        ["xpath=//div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "486f9f25-855b-426c-b3e1-90c7f1d0db20",
+      "comment": "",
+      "command": "click",
+      "target": "css=.left-list > .word:nth-child(9)",
+      "targets": [
+        ["css=.left-list > .word:nth-child(9)", "css:finder"],
+        ["xpath=//div[9]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bb3bc4e4-0d30-42d1-aab7-4ba3ff4fa2a6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.right-list",
+      "targets": [
+        ["css=.right-list", "css:finder"],
+        ["xpath=//div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dd477dff-a67b-4728-81bf-0b04b38181e3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.right-list > .word:nth-child(2)",
+      "targets": [
+        ["css=.right-list > .word:nth-child(2)", "css:finder"],
+        ["xpath=//div[2]/div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f3316841-efd5-40c6-96d2-a888ac0f794b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.right-list > .word:nth-child(10)",
+      "targets": [
+        ["css=.right-list > .word:nth-child(10)", "css:finder"],
+        ["xpath=//div[2]/div[10]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0c0d0ced-c562-4b5f-84a9-eee77741fe3c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.left-list > .word:nth-child(3)",
+      "targets": [
+        ["css=.left-list > .word:nth-child(3)", "css:finder"],
+        ["xpath=//div/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c4fcdc0-f0ed-4c4b-8318-90b495d0300d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.left-list > .word:nth-child(6)",
+      "targets": [
+        ["css=.left-list > .word:nth-child(6)", "css:finder"],
+        ["xpath=//div[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "62864221-1171-4646-8107-57798584ff5b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.right-list",
+      "targets": [
+        ["css=.right-list", "css:finder"],
+        ["xpath=//div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf5fbb3c-4eca-421c-a430-2361bf8025e4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.right-list > .word:nth-child(3)",
+      "targets": [
+        ["css=.right-list > .word:nth-child(3)", "css:finder"],
+        ["xpath=//div[2]/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5360f448-ece4-4455-b9a3-320d564bee66",
+      "comment": "",
+      "command": "click",
+      "target": "css=.right-list > .word:nth-child(4)",
+      "targets": [
+        ["css=.right-list > .word:nth-child(4)", "css:finder"],
+        ["xpath=//div[2]/div[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb76c4dc-a0ae-43a4-aa54-8e5d8ffee49e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.left-list > .word:nth-child(1)",
+      "targets": [
+        ["css=.left-list > .word:nth-child(1)", "css:finder"],
+        ["xpath=//div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "c3f73b2c-eedc-4fee-a7e2-d145bad1d42d",
+    "name": "CT-010",
+    "commands": [{
+      "id": "69bd0ffc-fb1e-48ac-95fe-470c3f612c63",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/Guelexia/SITE%20(PROGRAMA%c3%87%c3%83O)/pages/O_que.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ca2983a5-a78f-4cdf-9058-21ded77d596a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x652",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "83f675b6-5475-4f66-9cb6-bb5dcbbb90ff",
+      "comment": "",
+      "command": "click",
+      "target": "id=opcao_btn_3",
+      "targets": [
+        ["id=opcao_btn_3", "id"],
+        ["css=#opcao_btn_3", "css:finder"],
+        ["xpath=//button[@id='opcao_btn_3']", "xpath:attributes"],
+        ["xpath=//div[@id='opcoes_blc']/div[4]/button", "xpath:idRelative"],
+        ["xpath=//div[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Explosao')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3256796f-0372-4ecd-9786-fb01c42c393d",
+      "comment": "",
+      "command": "click",
+      "target": "id=opcao_btn_0",
+      "targets": [
+        ["id=opcao_btn_0", "id"],
+        ["css=#opcao_btn_0", "css:finder"],
+        ["xpath=//button[@id='opcao_btn_0']", "xpath:attributes"],
+        ["xpath=//div[@id='opcoes_blc']/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Telescópio')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "af38e7ef-484e-4973-9863-010fe3842339",
+      "comment": "",
+      "command": "click",
+      "target": "id=opcao_btn_2",
+      "targets": [
+        ["id=opcao_btn_2", "id"],
+        ["css=#opcao_btn_2", "css:finder"],
+        ["xpath=//button[@id='opcao_btn_2']", "xpath:attributes"],
+        ["xpath=//div[@id='opcoes_blc']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Constelação')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "472f923f-ab55-4533-857d-adabc9631abc",
+      "comment": "",
+      "command": "click",
+      "target": "id=opcao_btn_2",
+      "targets": [
+        ["id=opcao_btn_2", "id"],
+        ["css=#opcao_btn_2", "css:finder"],
+        ["xpath=//button[@id='opcao_btn_2']", "xpath:attributes"],
+        ["xpath=//div[@id='opcoes_blc']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Meteoro')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "08f8961e-7735-40e3-bfd9-656805bd2009",
+      "comment": "",
+      "command": "click",
+      "target": "id=opcao_btn_0",
+      "targets": [
+        ["id=opcao_btn_0", "id"],
+        ["css=#opcao_btn_0", "css:finder"],
+        ["xpath=//button[@id='opcao_btn_0']", "xpath:attributes"],
+        ["xpath=//div[@id='opcoes_blc']/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Coração')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a2a4b58a-7a0f-467b-8d5f-ae41d029f0b2",
+      "comment": "",
+      "command": "click",
+      "target": "id=opcao_btn_2",
+      "targets": [
+        ["id=opcao_btn_2", "id"],
+        ["css=#opcao_btn_2", "css:finder"],
+        ["xpath=//button[@id='opcao_btn_2']", "xpath:attributes"],
+        ["xpath=//div[@id='opcoes_blc']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Explosao')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a0a56e06-9379-4ccd-895c-f1d52d9a6520",
+      "comment": "",
+      "command": "click",
+      "target": "id=opcao_btn_2",
+      "targets": [
+        ["id=opcao_btn_2", "id"],
+        ["css=#opcao_btn_2", "css:finder"],
+        ["xpath=//button[@id='opcao_btn_2']", "xpath:attributes"],
+        ["xpath=//div[@id='opcoes_blc']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Foguete')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "431c569e-9c50-49b4-bb0b-63f703db895e",
+    "name": "CT-011",
+    "commands": [{
+      "id": "b0600170-a498-4590-970e-04530c4115ab",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/Guelexia/SITE%20(PROGRAMA%c3%87%c3%83O)/pages/O_que.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b2841540-0e5a-439e-bf52-24c098cea291",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x652",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "242e3fdb-e0d0-4150-b711-3aab68c70359",
+      "comment": "",
+      "command": "click",
+      "target": "id=opcao_btn_1",
+      "targets": [
+        ["id=opcao_btn_1", "id"],
+        ["css=#opcao_btn_1", "css:finder"],
+        ["xpath=//button[@id='opcao_btn_1']", "xpath:attributes"],
+        ["xpath=//div[@id='opcoes_blc']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Foguete')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0f97ef0b-66dd-483f-8791-d3d9241815ba",
+      "comment": "",
+      "command": "click",
+      "target": "id=opcao_btn_0",
+      "targets": [
+        ["id=opcao_btn_0", "id"],
+        ["css=#opcao_btn_0", "css:finder"],
+        ["xpath=//button[@id='opcao_btn_0']", "xpath:attributes"],
+        ["xpath=//div[@id='opcoes_blc']/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Coração')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4c77f8ee-386c-41a2-bda8-a166d48f29b4",
+      "comment": "",
+      "command": "click",
+      "target": "id=opcoes_blc",
+      "targets": [
+        ["id=opcoes_blc", "id"],
+        ["css=#opcoes_blc", "css:finder"],
+        ["xpath=//div[@id='opcoes_blc']", "xpath:attributes"],
+        ["xpath=//div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ecfaf4ff-f1d6-4c2f-92ec-40f1b926802f",
+      "comment": "",
+      "command": "click",
+      "target": "id=opcao_btn_2",
+      "targets": [
+        ["id=opcao_btn_2", "id"],
+        ["css=#opcao_btn_2", "css:finder"],
+        ["xpath=//button[@id='opcao_btn_2']", "xpath:attributes"],
+        ["xpath=//div[@id='opcoes_blc']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Saturno')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "20698b50-dd27-47aa-bd9f-0af75f941e80",
+      "comment": "",
+      "command": "click",
+      "target": "id=opcao_btn_1",
+      "targets": [
+        ["id=opcao_btn_1", "id"],
+        ["css=#opcao_btn_1", "css:finder"],
+        ["xpath=//button[@id='opcao_btn_1']", "xpath:attributes"],
+        ["xpath=//div[@id='opcoes_blc']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Coração')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "415822ba-3b96-47d0-b806-20f57f6c55db",
+      "comment": "",
+      "command": "click",
+      "target": "id=opcao_btn_1",
+      "targets": [
+        ["id=opcao_btn_1", "id"],
+        ["css=#opcao_btn_1", "css:finder"],
+        ["xpath=//button[@id='opcao_btn_1']", "xpath:attributes"],
+        ["xpath=//div[@id='opcoes_blc']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Astronauta')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "16c8a3d5-f03e-4f5a-81a4-48194ea06f55",
+      "comment": "",
+      "command": "click",
+      "target": "id=opcao_btn_3",
+      "targets": [
+        ["id=opcao_btn_3", "id"],
+        ["css=#opcao_btn_3", "css:finder"],
+        ["xpath=//button[@id='opcao_btn_3']", "xpath:attributes"],
+        ["xpath=//div[@id='opcoes_blc']/div[4]/button", "xpath:idRelative"],
+        ["xpath=//div[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Jupiter')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "390e85bd-59ea-4eed-b82e-63e1743c3541",
+      "comment": "",
+      "command": "click",
+      "target": "id=opcao_btn_2",
+      "targets": [
+        ["id=opcao_btn_2", "id"],
+        ["css=#opcao_btn_2", "css:finder"],
+        ["xpath=//button[@id='opcao_btn_2']", "xpath:attributes"],
+        ["xpath=//div[@id='opcoes_blc']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Coração')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c6ed7274-9019-4223-9f01-90acbb28cbab",
+      "comment": "",
+      "command": "click",
+      "target": "id=opcao_btn_0",
+      "targets": [
+        ["id=opcao_btn_0", "id"],
+        ["css=#opcao_btn_0", "css:finder"],
+        ["xpath=//button[@id='opcao_btn_0']", "xpath:attributes"],
+        ["xpath=//div[@id='opcoes_blc']/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Explosao')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4f30c3b-79fb-41f0-a3fd-027d69afa04b",
+      "comment": "",
+      "command": "click",
+      "target": "id=opcao_btn_1",
+      "targets": [
+        ["id=opcao_btn_1", "id"],
+        ["css=#opcao_btn_1", "css:finder"],
+        ["xpath=//button[@id='opcao_btn_1']", "xpath:attributes"],
+        ["xpath=//div[@id='opcoes_blc']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Meteoro')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f7ec1e5-abf0-4335-ad2a-e13c2172c852",
+      "comment": "",
+      "command": "click",
+      "target": "id=opcao_btn_3",
+      "targets": [
+        ["id=opcao_btn_3", "id"],
+        ["css=#opcao_btn_3", "css:finder"],
+        ["xpath=//button[@id='opcao_btn_3']", "xpath:attributes"],
+        ["xpath=//div[@id='opcoes_blc']/div[4]/button", "xpath:idRelative"],
+        ["xpath=//div[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Explosao')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a5833636-9ba2-4ca4-8983-a06987c9225f",
+      "comment": "",
+      "command": "click",
+      "target": "id=opcao_btn_2",
+      "targets": [
+        ["id=opcao_btn_2", "id"],
+        ["css=#opcao_btn_2", "css:finder"],
+        ["xpath=//button[@id='opcao_btn_2']", "xpath:attributes"],
+        ["xpath=//div[@id='opcoes_blc']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Constelação')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ef8a5fdf-6add-4cb8-89c3-e1a4c7224298",
+      "comment": "",
+      "command": "click",
+      "target": "id=opcao_btn_0",
+      "targets": [
+        ["id=opcao_btn_0", "id"],
+        ["css=#opcao_btn_0", "css:finder"],
+        ["xpath=//button[@id='opcao_btn_0']", "xpath:attributes"],
+        ["xpath=//div[@id='opcoes_blc']/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Satelite')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ebfdc52-f803-42a4-9f16-e858f165e986",
+      "comment": "",
+      "command": "click",
+      "target": "id=opcao_btn_1",
+      "targets": [
+        ["id=opcao_btn_1", "id"],
+        ["css=#opcao_btn_1", "css:finder"],
+        ["xpath=//button[@id='opcao_btn_1']", "xpath:attributes"],
+        ["xpath=//div[@id='opcoes_blc']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Jupiter')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fece8a2b-b827-475e-a13e-59ba3c33ac65",
+      "comment": "",
+      "command": "click",
+      "target": "id=opcao_btn_1",
+      "targets": [
+        ["id=opcao_btn_1", "id"],
+        ["css=#opcao_btn_1", "css:finder"],
+        ["xpath=//button[@id='opcao_btn_1']", "xpath:attributes"],
+        ["xpath=//div[@id='opcoes_blc']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Explosao')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d6e28a5a-98ef-4bec-8665-a0cdf6ccb153",
+      "comment": "",
+      "command": "click",
+      "target": "id=opcao_btn_0",
+      "targets": [
+        ["id=opcao_btn_0", "id"],
+        ["css=#opcao_btn_0", "css:finder"],
+        ["xpath=//button[@id='opcao_btn_0']", "xpath:attributes"],
+        ["xpath=//div[@id='opcoes_blc']/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Meteoro')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "44826132-3e94-4ae8-879a-558fb470dcff",
+      "comment": "",
+      "command": "click",
+      "target": "id=opcao_btn_2",
+      "targets": [
+        ["id=opcao_btn_2", "id"],
+        ["css=#opcao_btn_2", "css:finder"],
+        ["xpath=//button[@id='opcao_btn_2']", "xpath:attributes"],
+        ["xpath=//div[@id='opcoes_blc']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Astronauta')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3b65d5c8-6be7-4724-bd0c-87ae0e562c5c",
+      "comment": "",
+      "command": "click",
+      "target": "id=opcao_btn_3",
+      "targets": [
+        ["id=opcao_btn_3", "id"],
+        ["css=#opcao_btn_3", "css:finder"],
+        ["xpath=//button[@id='opcao_btn_3']", "xpath:attributes"],
+        ["xpath=//div[@id='opcoes_blc']/div[4]/button", "xpath:idRelative"],
+        ["xpath=//div[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Astronauta')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "31cbfb1a-d60e-4703-9a65-6c0e55bd63f0",
+      "comment": "",
+      "command": "click",
+      "target": "id=opcoes_blc",
+      "targets": [
+        ["id=opcoes_blc", "id"],
+        ["css=#opcoes_blc", "css:finder"],
+        ["xpath=//div[@id='opcoes_blc']", "xpath:attributes"],
+        ["xpath=//div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f74d52b7-924f-40c5-a817-398ff6fffdb7",
+      "comment": "",
+      "command": "click",
+      "target": "id=opcao_btn_0",
+      "targets": [
+        ["id=opcao_btn_0", "id"],
+        ["css=#opcao_btn_0", "css:finder"],
+        ["xpath=//button[@id='opcao_btn_0']", "xpath:attributes"],
+        ["xpath=//div[@id='opcoes_blc']/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Jupiter')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "c615c1ad-8f13-452b-b22f-788832492fe3",
+    "name": "CT-012",
+    "commands": [{
+      "id": "b53e7169-eeeb-4c17-964e-cbf7b748082e",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/Guelexia/SITE%20(PROGRAMA%c3%87%c3%83O)/pages/quiz.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "058723dd-b7cb-457e-8368-8f0397405ec2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x652",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "719021de-c4f8-41b0-a6c5-f6b5bc33263b",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(3)",
+      "targets": [
+        ["css=button:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='container-tudo']/div[2]/button[3]", "xpath:idRelative"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'Melhorar a qualidade do ar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3cd5fc85-27c7-4a90-aed2-b3827de4929e",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(2)",
+      "targets": [
+        ["css=button:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='container-tudo']/div[2]/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Aumentar o preço da eletricidade')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f67042fd-2c7e-453b-9128-5d80ecb3c176",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(1)",
+      "targets": [
+        ["css=button:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='container-tudo']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Economizar energia')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ac10b780-1b85-4602-91d1-6bbf7e5bad41",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(4)",
+      "targets": [
+        ["css=button:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='container-tudo']/div[2]/button[4]", "xpath:idRelative"],
+        ["xpath=//button[4]", "xpath:position"],
+        ["xpath=//button[contains(.,'Energia da lua')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e01381a8-97b9-4ecb-bf1e-1415a6779d92",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(3)",
+      "targets": [
+        ["css=button:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='container-tudo']/div[2]/button[3]", "xpath:idRelative"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'Energia das estrelas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c7861f47-8330-4ea4-94d3-8d7ba2359c26",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(2)",
+      "targets": [
+        ["css=button:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='container-tudo']/div[2]/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Energia do vento')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee473d26-402d-491d-9f61-08b37a7d99e5",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(1)",
+      "targets": [
+        ["css=button:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='container-tudo']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Energia solar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1f26c9d5-9823-4877-b457-db1a42f40481",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(1)",
+      "targets": [
+        ["css=button:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='container-tudo']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Uma mensagem de boas-vindas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c721b29e-41c0-4879-8a1b-fd6b439e4c8e",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(2)",
+      "targets": [
+        ["css=button:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='container-tudo']/div[2]/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Tornar a viagem mais rápida')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "97568240-d074-4acf-8a3d-197ca5ef5af5",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(3)",
+      "targets": [
+        ["css=button:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='container-tudo']/div[2]/button[3]", "xpath:idRelative"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'Evitar o uso de tecnologia')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e79f3fd2-647a-45e9-863e-ce9fb83b927f",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(4)",
+      "targets": [
+        ["css=button:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='container-tudo']/div[2]/button[4]", "xpath:idRelative"],
+        ["xpath=//button[4]", "xpath:position"],
+        ["xpath=//button[contains(.,'Garantir que todos tenham oxigênio infinito')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c2fa0598-830a-47d4-8dbc-c1291bb44ef6",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(1)",
+      "targets": [
+        ["css=button:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='container-tudo']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Economizar espaço nas naves')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "434dd57c-02d6-4661-b2ac-1dc9b0923ab3",
+    "name": "CT-013",
+    "commands": [{
+      "id": "5eecfbd8-982e-4931-b26f-3d1c8bb55767",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/Guelexia/SITE%20(PROGRAMA%c3%87%c3%83O)/pages/quiz.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3fde1a2e-001a-4a68-a76b-394a8e2584af",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b9fa58c1-2da2-4ebd-8dd7-cbab34496d11",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(2)",
+      "targets": [
+        ["css=button:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='container-tudo']/div[2]/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Para se comunicar com outros peixes')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8ac1358f-2b5f-4eea-a444-175ec9e33b16",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(1)",
+      "targets": [
+        ["css=button:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='container-tudo']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Para se proteger de predadores')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0614c79f-b924-4a9c-b39e-f99041e63c80",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(4)",
+      "targets": [
+        ["css=button:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='container-tudo']/div[2]/button[4]", "xpath:idRelative"],
+        ["xpath=//button[4]", "xpath:position"],
+        ["xpath=//button[contains(.,'Para encontrar um parceiro')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "1bc38bbc-3b8b-4697-b420-c71c4469e487",
+    "name": "CT-014",
+    "commands": [{
+      "id": "f02a43aa-2568-4117-aaa9-582ac4f261eb",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/Guelexia/SITE%20(PROGRAMA%c3%87%c3%83O)/pages/dicionario.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4edde3a5-65ef-45ab-9030-23fb01514716",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x652",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9bfc89ac-b4bf-4c71-a38a-1f7c88a452b1",
+      "comment": "",
+      "command": "click",
+      "target": "id=palavra",
+      "targets": [
+        ["id=palavra", "id"],
+        ["name=palavra", "name"],
+        ["css=#palavra", "css:finder"],
+        ["xpath=//input[@id='palavra']", "xpath:attributes"],
+        ["xpath=//div[@id='pergunta']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e7506522-4f40-4a71-9e42-44f762f7c308",
+      "comment": "",
+      "command": "type",
+      "target": "id=palavra",
+      "targets": [
+        ["id=palavra", "id"],
+        ["name=palavra", "name"],
+        ["css=#palavra", "css:finder"],
+        ["xpath=//input[@id='palavra']", "xpath:attributes"],
+        ["xpath=//div[@id='pergunta']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "casa"
+    }, {
+      "id": "fef81c8f-a05b-469d-83f6-9b0f27c482f3",
+      "comment": "",
+      "command": "click",
+      "target": "id=btn-confirm",
+      "targets": [
+        ["id=btn-confirm", "id"],
+        ["css=#btn-confirm", "css:finder"],
+        ["xpath=//button[@id='btn-confirm']", "xpath:attributes"],
+        ["xpath=//div[@id='pergunta']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Confirmar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c33ad1bd-6bb2-44ef-b248-641300b02b4a",
+      "comment": "",
+      "command": "click",
+      "target": "id=resposta",
+      "targets": [
+        ["id=resposta", "id"],
+        ["css=#resposta", "css:finder"],
+        ["xpath=//div[@id='resposta']", "xpath:attributes"],
+        ["xpath=//div[@id='container']/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "719b59da-2f1a-4ce0-b6b2-01a13aa0dae3",
+    "name": "CT-015",
+    "commands": [{
+      "id": "3a979377-370c-4177-87eb-d7d033e97e09",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/Guelexia/SITE%20(PROGRAMA%c3%87%c3%83O)/pages/dicionario.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "889d0103-fc54-4ea3-892e-750598a8d3ce",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x652",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6fd758ca-b890-4f85-91fc-658126fc8881",
+      "comment": "",
+      "command": "click",
+      "target": "id=pergunta",
+      "targets": [
+        ["id=pergunta", "id"],
+        ["css=#pergunta", "css:finder"],
+        ["xpath=//div[@id='pergunta']", "xpath:attributes"],
+        ["xpath=//div[@id='container']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ade6b744-1513-472f-b509-a1022da8652e",
+      "comment": "",
+      "command": "type",
+      "target": "id=palavra",
+      "targets": [
+        ["id=palavra", "id"],
+        ["name=palavra", "name"],
+        ["css=#palavra", "css:finder"],
+        ["xpath=//input[@id='palavra']", "xpath:attributes"],
+        ["xpath=//div[@id='pergunta']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "aaaaaaaaaaa"
+    }, {
+      "id": "293c135f-e787-4637-a3d2-45495cdac01e",
+      "comment": "",
+      "command": "click",
+      "target": "id=btn-confirm",
+      "targets": [
+        ["id=btn-confirm", "id"],
+        ["css=#btn-confirm", "css:finder"],
+        ["xpath=//button[@id='btn-confirm']", "xpath:attributes"],
+        ["xpath=//div[@id='pergunta']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Confirmar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "161ba0d2-8f7e-4b59-909f-6e6fe4fa1f19",
+    "name": "CT-007",
+    "commands": [{
+      "id": "0863ab50-623e-4f37-99f4-fc1f5f628204",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/Guelexia/SITE%20(PROGRAMA%c3%87%c3%83O)/pages/configs.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "88ccc71c-dc95-4f05-b488-e915a2e8a4b2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1052x652",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6a88d893-e392-4955-9c1f-39d315a07794",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-logout",
+      "targets": [
+        ["css=.btn-logout", "css:finder"],
+        ["xpath=//body/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Sair')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "2568bc1e-893f-4399-97b1-ab191dda036d",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["206af0b4-8243-49d2-8953-24620aec322d"]
+  }],
+  "urls": ["http://localhost/Guelexia/SITE%20(PROGRAMA%c3%87%c3%83O)/pages/login.html", "http://localhost/Guelexia/SITE%20(PROGRAMA%c3%87%c3%83O)/pages/configs.html", "http://localhost/Guelexia/SITE%20(PROGRAMA%c3%87%c3%83O)/pages/rimas.html", "http://localhost/Guelexia/SITE%20(PROGRAMA%c3%87%c3%83O)/pages/O_que.html", "http://localhost/Guelexia/SITE%20(PROGRAMA%c3%87%c3%83O)/pages/quiz.html", "http://localhost/Guelexia/SITE%20(PROGRAMA%c3%87%c3%83O)/pages/dicionario.html"],
+  "plugins": []
+}
