@@ -3,7 +3,7 @@ const tema = document.getElementById('tema');
 const body = document.body;
 
 function mostradif (){ 
-    console.log(document.conten('.btn-dif'));
+    console.log(localStorage.getItem('difflevel'));
 }
 
 document.querySelectorAll('.btn-dif').forEach(button => {
@@ -19,59 +19,52 @@ document.querySelectorAll('.btn-opc').forEach(button => {
 
     button.addEventListener('click', () => {
 
-        localStorage.setItem("fontlevel", button.value);
+        localStorage.setItem("fontLevel", button.value);
+
+        applyFontSize();
     });
 });
 
-const fontLevel = localStorage.getItem("fontLevel");
 
-if(fontLevel == '1') {
+function applyFontSize() {
 
-    body.style.fontSize = 'large';
-    console.log('Dificuldade pequena');
-    console.log('Dificuldade média');
-    console.log('Dificuldade grande');
+    const body = document.querySelector('*');
+    const fontLevel = localStorage.getItem("fontLevel");
 
-} else if(fontLevel == '2') {
+    if (fontLevel === '1') {
 
-    body.style.fontSize = 'x-large';
-    console.log('Tamanho da fonte média');
+        body.style.fontSize = '20px';
+        console.log('Tamanho da fonte pequena');
 
-} else if(fontLevel == '3') {
+    } else if (fontLevel === '2') {
 
-    body.style.fontSize = 'xx-large';
-    console.log('tamanho da fonte grande');
+        body.style.fontSize = '40px';
+        console.log('Tamanho da fonte média');
 
-} else if(!fontLevel) {
+    } else if (fontLevel === '3') {
 
-    localStorage.setItem("fontLevel", 1);
-} else {
+        body.style.fontSize = '60px';
+        console.log('Tamanho da fonte grande');
 
-    throw new Error("There is no font level!");
+    } else {
+
+        console.error("Nível de fonte inválido ou não definido!");
+
+    }
 }
 
-// Verifica o tema atual e aplica a classe correspondente
+if (!localStorage.getItem("fontLevel")) {
+    localStorage.setItem("fontLevel", '1');
+}
+applyFontSize();
+
+
 if (localStorage.getItem('theme') === 'dark') {
     body.classList.add('dark-theme');
-    tema.textContent = 'Mudar para Claro';
 } else {
         body.classList.add('light-theme');
         tema.textContent = 'Mudar para Escuro';
 }
-
-tema.addEventListener('click', () => {
-    if (body.classList.contains('light-theme')) {
-        body.classList.remove('light-theme');
-        body.classList.add('dark-theme');
-        tema.textContent = 'Mudar para Claro';
-        localStorage.setItem('theme', 'dark');
-    } else {
-        body.classList.remove('dark-theme');
-        body.classList.add('light-theme');
-        tema.textContent = 'Mudar para Escuro';
-        localStorage.setItem('theme', 'light');
-    }
-});
 
 document.getElementById("email").textContent = localStorage.getItem("emailUser");
 
