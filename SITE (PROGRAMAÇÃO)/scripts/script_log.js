@@ -3,8 +3,8 @@
 document.addEventListener('DOMContentLoaded', () => {
     const switchInput = document.getElementById('switch');
     const switchTitle = document.getElementById('switch-title');
-    const formCadastro = document.getElementById('form-cadastro');
-    const formLogin = document.getElementById('form-login');
+    const formCadastro = document.getElementById('cadastroForm');
+    const formLogin = document.getElementById('loginForm');
 
     // Alterna entre os formulários e atualiza o título
     switchInput.addEventListener('change', () => {

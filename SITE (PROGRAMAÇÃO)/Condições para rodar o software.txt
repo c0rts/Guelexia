@@ -1,0 +1,10 @@
+-o servidor que eu usei foi o xampp que o camargo configurou;
+
+-o banco do dados foi o mysql configurado pela camargo tmb;
+
+-esses são os dados que o php usa para acessar e conectar no mySQL (vou copiar e colar o codigo que fica facil para vc achar se quiser alterar):
+
+$host = "localhost";
+$dbname = "gueleixa";
+$username = "root";
+$password = "";

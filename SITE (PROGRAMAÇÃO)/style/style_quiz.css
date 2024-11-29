@@ -114,7 +114,8 @@ main {
 
 .blc-per{
     padding: 15px;
-    min-width: 500px;
+    min-width: 300px;
+    max-width: 1400px;
     min-height: 550px;
     margin: 50px 0px 0px 0px;
     overflow: hidden;
