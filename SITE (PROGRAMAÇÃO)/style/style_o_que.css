@@ -56,12 +56,13 @@ header {
 }
 
 .site-name h1 {
-    font-size: 24px;
+    font-size: unset;
     color: #ffffff;
 }
 
 .log-bnt img {
-    height: 30px; 
+    min-height: 30px; 
+    max-height:50px; 
     cursor: pointer;
     transition: transform 0.5s ease;
     border-radius: 50%;
@@ -123,8 +124,8 @@ header {
 #opcoes_blc{
     margin: 40px;
     display: flex;
-    width:450px;
-    height: 200px;
+    width:650px;
+    min-height: 200px;
     flex-wrap: wrap;
     gap: 25px; /* Espaçamento entre as opções */
     justify-content: center;
@@ -137,9 +138,9 @@ header {
 
 
 .opcao_btn {
-    width: 212px; /* Largura das opções */
-    height: 115px; /* Altura das opções */
-    font-size: xx-large; 
+    width: 300px; /* Largura das opções */
+    min-height: 115px; /* Altura das opções */
+    font-size: unset;
 
 }
 
@@ -158,11 +159,11 @@ header {
 .paragrafoAcertos, .contadorAcertos {
     margin-top: 25px ;
     display: inline-block;
-    font-size: 40px;
-    color: green;
+    font-size: unset;
+    color: rgb(53, 255, 53);
 }
 
 .contadorAcertos {
     margin-top: 75px;
-    color: green;
+    color: rgb(53, 255, 53);
 }

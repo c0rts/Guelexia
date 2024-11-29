@@ -26,8 +26,8 @@ const Questions = [
         },
         {
             question: "Você está participando de uma competição científica onde o desafio é criar um novo tipo de veículo. Sua ideia é construir um carro que funcione completamente com água, sem poluir o meio ambiente. Após muitas tentativas, você finalmente consegue criar um modelo que pode andar por 100 quilômetros com apenas um litro de água. Qual seria o próximo passo para fazer com que esse carro revolucionário se torne acessível para todo o mundo?",
-            answers: ["Melhorar o design do carro", "Construir uma fábrica de carros", "Testar o carro em diferentes terrenos", "Divulgar a invenção na mídia"],
-            correct: "Divulgar a invenção na mídia"
+            answers: ["Melhorar o design do carro", "Construir uma fábrica de carros", "Testar carro em terrenos", "Divulgar invenção na mídia"],
+            correct: "Divulgar invenção na mídia"
         },
         {
             question: "Em uma expedição para as profundezas do oceano, um grupo de biólogos marinhos encontrou uma espécie de peixe que brilha no escuro e consegue viver em águas extremamente profundas, onde a luz do Sol não chega. Esses peixes emitem uma luz azulada que ilumina seu caminho e atrai pequenos organismos dos quais se alimentam. Qual seria a principal razão para esse peixe emitir luz no escuro?",
@@ -36,18 +36,18 @@ const Questions = [
         },
         {
             question: "Durante uma visita a um laboratório de química, você testemunha um experimento fascinante onde cientistas conseguem transformar um pedaço de metal comum em um material supercondutor, que permite que a eletricidade flua sem nenhuma resistência. Isso significa que, se aplicado corretamente, a tecnologia poderia revolucionar a forma como usamos eletricidade no dia a dia, tornando-a muito mais eficiente. Qual seria o maior benefício do uso de supercondutores em larga escala?",
-            answers: ["Economizar energia", "Aumentar o preço da eletricidade", "Melhorar a qualidade do ar", "Diminuir o uso de água"],
+            answers: ["Economizar energia", "Aumentar o preço da eletricidade", "Melhorar qualidade do ar", "Diminuir o uso de água"],
             correct: "Economizar energia"
         },
         {
-            question: "Um grupo de arqueólogos encontrou em uma caverna antiga uma série de pinturas feitas há milhares de anos. As imagens mostram animais que já estão extintos e pessoas caçando com ferramentas simples. No entanto, o mais interessante é que em uma das paredes há um desenho que parece retratar um tipo de roda ou círculo gigante que os arqueólogos não conseguem identificar. Qual é a teoria mais provável sobre o que os antigos habitantes dessa caverna estavam tentando mostrar com esse desenho?",
+            question: "Um grupo de arqueólogos encontrou em uma caverna antiga uma série de pinturas feitas há milhares de anos. As imagens mostram animais que já estão extintos e pessoas caçando com ferramentas simples. No entanto, o mais interessante é que em uma das paredes há um desenho que parece retratar um tipo de roda ou círculo gigante que os arqueólogos não conseguem identificar. Qual é a teoria mais provável sobre o desenho?",
             answers: ["Uma nova invenção", "Um evento celestial", "Um ritual religioso", "Um jogo antigo"],
             correct: "Uma nova invenção"
         },
         {
             question: "Em uma cidade futurística, cientistas desenvolveram robôs que podem ajudar as pessoas em suas atividades diárias, como cozinhar, limpar a casa e até fazer companhia. Esses robôs são equipados com inteligência artificial avançada que permite que eles aprendam com as pessoas e adaptem seus comportamentos com base nas preferências de cada indivíduo. O que seria o maior desafio ético ao permitir que esses robôs se tornem parte da vida cotidiana das pessoas?",
-            answers: ["Manter a privacidade das pessoas", "Garantir que os robôs nunca quebrem", "Fazer os robôs mais rápidos", "Garantir que todos possam ter um"],
-            correct: "Manter a privacidade das pessoas"
+            answers: ["Manter privacidade das pessoas", "Garantir que robôs não quebrem", "Fazer robôs mais rápidos", "Garantir que todos possam ter"],
+            correct: "Manter privacidade das pessoas"
         },
         {
             question: "Em uma viagem de férias para as montanhas, você e sua família decidem explorar uma caverna local que é famosa por suas formações rochosas e cristais brilhantes. Durante a exploração, você encontra uma passagem secreta que leva a uma sala cheia de pedras preciosas de todas as cores. Essas pedras parecem brilhar com luz própria, e uma delas, em especial, parece estar flutuando levemente no ar. O que poderia explicar esse fenômeno de uma pedra flutuante dentro da caverna?",
@@ -61,7 +61,7 @@ const Questions = [
         },
         {
             question: "Você é escolhido para participar de uma missão espacial a Marte, onde sua equipe deve montar uma base para explorar o planeta. Após meses de preparação, vocês chegam a Marte e começam a montar os primeiros módulos da base. Durante as primeiras semanas, a equipe descobre que o solo de Marte contém elementos que poderiam ser usados para produzir oxigênio. Qual seria a principal vantagem de produzir oxigênio diretamente em Marte, em vez de trazê-lo da Terra?",
-            answers: ["Economizar espaço nas naves", "Tornar a viagem mais rápida", "Evitar o uso de tecnologia", "Garantir que todos tenham oxigênio infinito"],
+            answers: ["Economizar espaço nas naves", "Tornar viagem rápida", "Evitar uso de tecnologia", "Garantir que tenham oxigênio"],
             correct: "Economizar espaço nas naves"
         }
 ];

@@ -43,7 +43,7 @@ function applyFontSize() {
 
     } else if (fontLevel === '3') {
 
-        body.style.fontSize = '60px';
+        body.style.fontSize = '50px';
         console.log('Tamanho da fonte grande');
 
     } else {

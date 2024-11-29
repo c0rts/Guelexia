@@ -38,7 +38,7 @@ header {
 }
 
 .site-name h1 {
-    font-size: 24px;
+    font-size: unset;
     color: #ffffff;
 }
 
@@ -55,7 +55,7 @@ header {
     padding: 20px;
     width: 500px;
     gap: 100px;
-    font-size: x-large;
+    font-size: unset;
 }
 
 .container_opções {
@@ -65,7 +65,7 @@ header {
     padding: 20px;
     width: 900px;
     margin: 20px;
-    font-size: xx-large;
+    font-size: unset;
     justify-content: center;
 }
 
@@ -77,7 +77,7 @@ header {
     text-align: center;
     align-items: center;
     justify-content: center;
-    padding: 10px;
+    padding: 10px 20p;
     margin-top:40px;
 }
 
@@ -86,14 +86,10 @@ header {
     height: 80px;
     border-radius: 5px;
     background-color: #c0bdbd;
-    font-size: xx-large;
+    font-size: unset;
+    
 }
 
-#tema{
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-}
 
 .dark-theme {
     background-image: url('../assets/fundos-site/fundo_escuro_g.png');
@@ -201,7 +197,7 @@ header {
 }
 /*botao editar foto, salva alteração e salva configuração*/
 .btn {
-    padding: 10px 20px;
+    
     margin: 10px;
     border: none;
     border-radius: 5px;
@@ -209,7 +205,7 @@ header {
     cursor: pointer;
     background-color: #008CBA;
     color: white;
-    font-size: x-large;
+    font-size: unset;
 }
 /*div troca de nome e botao de salva*/
 .form-section {
@@ -227,6 +223,11 @@ header {
 .form-section label {
     margin-bottom: 5px;
     padding: 5px;
+    text-shadow: 
+    -1px -1px 5px rgb(38, 0, 255), /*esquerdo em cima*/
+    1px  -1px 5px rgb(38, 0, 255),/*direito em cima*/
+    -1px 1px 5px rgb(38, 0, 255),/*esquerdo em baixo*/
+    1px 1px 5px rgb(38, 0, 255);/*direito em baixo*/
 }
 /*campo troca nome*/
 .form-section input {

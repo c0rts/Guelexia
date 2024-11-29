@@ -59,12 +59,13 @@ header {
 }
 
 .site-name h1 {
-    font-size: 24px;
+    font-size: unset;
     color: #ffffff;
 }
 
 .log-bnt img {
-    height: 30px; 
+    min-height: 30px; 
+    max-height:50px; 
     cursor: pointer;
     transition: transform 0.5s ease;
     border-radius: 50%;
@@ -113,8 +114,8 @@ main {
 
 .blc-per{
     padding: 15px;
-    width: 1500px;
-    height: 550px;
+    min-width: 1500px;
+    min-height: 550px;
     margin: 50px 0px 0px 0px;
     overflow: hidden;
     align-items: center;
@@ -123,7 +124,7 @@ main {
 }
 
 #per{
-    font-size: xxx-large;
+    font-size: unset;
     line-height: 50px;
 
 }
@@ -141,9 +142,10 @@ main {
 
 
 .blc-alt{
+    margin-top: 20px ;
     top: 0px;
-    width: 1500px;
-    height: 275px;
+    min-width: 1500px;
+    min-height: 275px;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -152,16 +154,15 @@ main {
 }
 
 button{
-    padding-left: 15px;
     border-radius: 10px;
     margin: 20px;
     text-align: center;
     height: 200px;
-    font-size: xx-large;
+    font-size: unset;
     border: none;
     transition: transform 0.5s ease;
     width:fit-content;
-    width: 350px;
+    min-width: 350px;
     background-image: url(../assets/tabua_4.png);
     background-size: 700px;
     background-position: center;
@@ -180,7 +181,8 @@ button:hover{
 }
 
 #pontos{
-    font-size: xx-large;
+    font-size: umset;
+    color: rgb(53, 255, 53);
 }
 
 #score{

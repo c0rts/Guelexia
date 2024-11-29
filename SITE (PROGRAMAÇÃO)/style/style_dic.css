@@ -55,12 +55,13 @@ header {
 }
 
 .site-name h1 {
-    font-size: 24px;
+    font-size: unset;
     color: #ffffff;
 }
 
 .log-bnt img {
-    height: 30px; 
+    min-height: 30px; 
+    max-height:50px; 
     cursor: pointer;
     transition: transform 0.5s ease;
     border-radius: 50%;
@@ -111,8 +112,8 @@ main {
 }
 
 #pergunta {
-    height: 300px;
-    width: 800px;
+    min-height: 300px;
+    min-width: 800px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -125,32 +126,50 @@ main {
 
 #pergunta label{
     margin-top: 30px;
-    font-size: 40px;
+    font-size: unset;
+    text-shadow: 
+    -1px -1px 5px rgb(38, 0, 255), /*esquerdo em cima*/
+    1px  -1px 5px rgb(38, 0, 255),/*direito em cima*/
+    -1px 1px 5px rgb(38, 0, 255),/*esquerdo em baixo*/
+    1px 1px 5px rgb(38, 0, 255);/*direito em baixo*/
 }
 
 #pergunta input{
     border-radius: 10px;
     height: 50px;
     background-color: rgba(255, 255, 255, 0.5);
-    font-size: 20px;
+    width: 675px;
+    font-size: unset;
     text-align: center;
 }
 
 #btn-confirm{
-    width: 250px;
-    height: 50px;
-    font-size: 25px;
+    width: 400px;
+    min-height: 50px;
+    font-size: unset;
 }
 
 #resposta{
     border: 2px solid black;
-    width:750px;
-    height: 500px;
+    min-width:750px;
+    min-height: 500px;
     background-color: rgba(255, 255, 255, 0.247);
     border-radius: 30px;
+    text-align: left;
 }
 
 #resposta p{
-    font-size: 20px;
+    font-size: unset;
     line-height: 30px;
+}
+
+#titulo{
+    text-align: center;
+    text-decoration:underline;
+    text-shadow: 
+    -1px -1px 5px rgb(38, 0, 255), /*esquerdo em cima*/
+    1px  -1px 5px rgb(38, 0, 255),/*direito em cima*/
+    -1px 1px 5px rgb(38, 0, 255),/*esquerdo em baixo*/
+    1px 1px 5px rgb(38, 0, 255);/*direito em baixo*/
+    
 }

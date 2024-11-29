@@ -33,7 +33,7 @@ body {
     2px 2px 5px black,
     0 0 10px rgb(0, 0, 0), 
     0 0 10px rgb(0, 0, 0);
-    font-size: x-large;
+    font-size: unset;
 }
 
 header {
@@ -137,7 +137,7 @@ input:checked + .slider:before {
 
 /* Indicador de Título */
 #switch-title {
-    font-size: xx-large;
+    font-size: unset;
     color: #555;
     margin-top: 10px;
     transition: color 0.3s ease;
@@ -186,7 +186,7 @@ input:checked + .slider:before {
     border: 1px solid #ccc;
     border-radius: 3px;
     box-sizing: border-box;
-    font-size: x-large;
+    font-size: unset;
 }
 
 .inserir-campo input[type="password"].show-password {

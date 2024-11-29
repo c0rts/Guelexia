@@ -49,14 +49,15 @@ header {
 }
 
 .site-name h1 {
-    font-size: 24px;
+    font-size: unset;
     color: #ffffff;
 }
 
 
 
 .log-bnt img {
-    height: 30px; 
+    min-height: 30px; 
+    max-height:50px; 
     cursor: pointer;
     transition: transform 0.5s ease;
     border-radius: 50%;
@@ -123,11 +124,11 @@ header {
 }
 
 .word.error {
-    animation: errorBlink 0.9s;
+    animation: errorBlink 1s;
 }
 
 .word.correct{
-    animation: certoBlink 0.9s;
+    animation: certoBlink 1s;
 }
 
 @keyframes errorBlink {
@@ -137,7 +138,7 @@ header {
 
 @keyframes certoBlink {
     0%, 100% {color: #ffffff; }
-    50% {color: #33ff00; }
+    50% {color: rgb(53, 255, 53);; }
 }
 
 #score{
@@ -146,7 +147,7 @@ header {
     width: 200px;
     padding: 50px;
     display: flex;
-    color: #00ff37;
+    color: rgb(53, 255, 53);
     align-items: center;
     text-align: center;
     justify-content: center;

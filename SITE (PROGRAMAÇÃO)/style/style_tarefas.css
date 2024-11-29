@@ -56,12 +56,13 @@ header {
 }
 
 .site-name h1 {
-    font-size: 24px;
+    font-size: unset;
     color: #ffffff;
 }
 
 .log-bnt img {
-    height: 30px; 
+    min-height: 30px; 
+    max-height:50px; 
     cursor: pointer;
     transition: transform 0.5s ease;
     border-radius: 50%;
@@ -132,7 +133,7 @@ main {
     background-color: rgba(255, 255, 255, 0.911);
     font-size: 20px;
     cursor: pointer;
-    font-size: 90px;
+    font-size: unset;
     color: rgb(40, 50, 107)
 }
 
