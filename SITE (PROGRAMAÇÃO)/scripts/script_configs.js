@@ -59,13 +59,6 @@ if (!localStorage.getItem("fontLevel")) {
 applyFontSize();
 
 
-if (localStorage.getItem('theme') === 'dark') {
-    body.classList.add('dark-theme');
-} else {
-        body.classList.add('light-theme');
-        tema.textContent = 'Mudar para Escuro';
-}
-
 document.getElementById("email").textContent = localStorage.getItem("emailUser");
 
 document.getElementById('username').value = localStorage.getItem('username');
